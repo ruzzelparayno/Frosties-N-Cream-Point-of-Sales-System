@@ -1,11 +1,31 @@
-﻿Public Class Edit
+﻿Imports MySql.Data.MySqlClient
 
+Public Class Edit
+
+    ' 🔹 Properties to receive product details from PosControl
     Public Property SelectedProductName As String
     Public Property SelectedProductPrice As Decimal
+    Public Property SelectedProductImage As Image
+
     Public lbl_quantity As New Label()
 
     Private Sub Edit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Default quantity 1
+        ' ✅ Show product details in Edit form
+        If Not String.IsNullOrEmpty(SelectedProductName) Then
+            Label1.Text = SelectedProductName
+        End If
+
+        Label4.Text = "₱" & SelectedProductPrice.ToString("N2")
+
+        If SelectedProductImage IsNot Nothing Then
+            PictureBox1.Image = SelectedProductImage
+            PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        Else
+            PictureBox1.Image = My.Resources.POS_imge ' optional placeholder
+        End If
+
+
+        ' Default quantity setup
         Dim qty As Integer = 1
         If Integer.TryParse(lbl_quantity.Text, qty) = False OrElse qty <= 0 Then
             qty = 1
@@ -89,4 +109,5 @@
         Me.Close()
         Dashboard.posInstance.BringToFront()
     End Sub
+
 End Class

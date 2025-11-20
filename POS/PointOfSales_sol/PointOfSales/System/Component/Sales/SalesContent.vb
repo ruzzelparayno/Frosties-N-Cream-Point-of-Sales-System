@@ -6,11 +6,24 @@ Public Class SalesContent
     Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
 
     ' Load sales into Guna2DataGridView1
-    Public Sub LoadSalesData()
+    Public Sub LoadSalesData(Optional ByVal filter As String = "", Optional ByVal sortBy As String = "SaleDate ASC")
         Try
             conn.Open()
-            Dim query As String = "SELECT SalesID, SaleDate, TotalAmount FROM sales ORDER BY SaleDate ASC"
+            Dim query As String = "SELECT SalesID, SaleDate, ProductName, TicketNumber, TotalAmount FROM sales WHERE 1=1"
+
+            ' Filter by search box if not empty
+            If filter <> "" Then
+                query &= " AND (ProductName LIKE @filter OR SaleDate LIKE @filter OR TicketNumber LIKE @filter)"
+            End If
+
+            ' Add sort
+            query &= " ORDER BY " & sortBy
+
             Dim cmd As New MySqlCommand(query, conn)
+            If filter <> "" Then
+                cmd.Parameters.AddWithValue("@filter", "%" & filter & "%")
+            End If
+
             Dim adapter As New MySqlDataAdapter(cmd)
             Dim dt As New DataTable()
             adapter.Fill(dt)
@@ -44,10 +57,7 @@ Public Class SalesContent
             End While
             reader.Close()
 
-            ' Clear previous datasets
             GunaChart1.Datasets.Clear()
-
-            ' Create new bar dataset
             Dim series As New Guna.Charts.WinForms.GunaBarDataset()
             series.Label = "Sales"
 
@@ -67,15 +77,52 @@ Public Class SalesContent
         End Try
     End Sub
 
+    ' Populate ComboBox1 with sort options
+    Private Sub LoadSortOptions()
+        ComboBox1.Items.Clear()
+        ComboBox1.Items.Add("Date Ascending")
+        ComboBox1.Items.Add("Date Descending")
+        ComboBox1.Items.Add("TotalAmount Ascending")
+        ComboBox1.Items.Add("TotalAmount Descending")
+        ComboBox1.SelectedIndex = 0
+    End Sub
+
+    ' Apply sorting based on ComboBox1 selection
+    Private Function GetSortQuery() As String
+        Select Case ComboBox1.SelectedItem.ToString()
+            Case "Date Ascending"
+                Return "SaleDate ASC"
+            Case "Date Descending"
+                Return "SaleDate DESC"
+            Case "TotalAmount Ascending"
+                Return "TotalAmount ASC"
+            Case "TotalAmount Descending"
+                Return "TotalAmount DESC"
+            Case Else
+                Return "SaleDate ASC"
+        End Select
+    End Function
 
     ' Refresh both grid and chart
-    Public Sub RefreshSales()
-        LoadSalesData()
+    Public Sub RefreshSales(Optional ByVal filter As String = "")
+        LoadSalesData(filter, GetSortQuery())
         LoadMonthlySalesChart()
     End Sub
 
+    ' Form Load
     Private Sub SalesContent_Load(sender As Object, e As EventArgs) Handles Me.Load
-        LoadSalesData()
-        LoadMonthlySalesChart()
+        LoadSortOptions()
+        RefreshSales()
     End Sub
+
+    ' ComboBox1 SelectedIndexChanged - update sorting
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        RefreshSales(SiticoneButtonTextbox2.Text)
+    End Sub
+
+    ' SiticoneButtonTextbox2 TextChanged - search filter
+    Private Sub SiticoneButtonTextbox2_TextChanged(sender As Object, e As EventArgs) Handles SiticoneButtonTextbox2.TextChanged
+        RefreshSales(SiticoneButtonTextbox2.Text)
+    End Sub
+
 End Class

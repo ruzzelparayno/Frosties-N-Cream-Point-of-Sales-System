@@ -1,22 +1,33 @@
 ﻿Public Class ShiftContent
-    Dim cashmanagementcontroll As New CashManagementControll
+    Public cashmanagementcontroll As New CashManagementControll
     Private Sub SiticoneButton3_Click(sender As Object, e As EventArgs) Handles SiticoneButton3.Click
         ShowControl(New CashManagementControll())
     End Sub
-    Private Sub ShowControl(uc As UserControl)
+    Public Sub ShowControl(uc As UserControl)
         uc.Dock = DockStyle.Fill
         Panel2.Controls.Clear()
         Panel2.Controls.Add(uc)
     End Sub
 
     Private Sub ShiftContent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ShowControl(New CashManagementControll())
+        ' Show existing CashManagementControll
+        ShowControl(cashmanagementcontroll)
+
+        ' Other UI adjustments
         Panel4.Show()
+        btnCategory.Visible = False
+        PictureBox1.Visible = False
     End Sub
 
+
     Private Sub btnCategory_Click(sender As Object, e As EventArgs) Handles btnCategory.Click
-        ShowControl(New ClosingShiftContent())
+        Dim closingForm As New ClosingShiftContent()
+        closingForm.MainForm = Me ' assign the current instance
+        ShowControl(closingForm)
+        PictureBox1.Visible = True
     End Sub
+
+
 
     ' 🔹 Whenever cash updates, recompute immediately
     Public Sub UpdateCash(newCash As Decimal)
@@ -128,4 +139,17 @@
     Private Sub Labels_TextChanged(sender As Object, e As EventArgs)
         ComputeNetSales()
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        ' Hide category button and PictureBox
+        btnCategory.Visible = True
+        PictureBox1.Visible = False
+
+        ' Show the existing CashManagementControll instance
+        ShowControl(cashmanagementcontroll)
+
+        ' Make sure Panel4 is visible
+        Panel4.Show()
+    End Sub
+
 End Class

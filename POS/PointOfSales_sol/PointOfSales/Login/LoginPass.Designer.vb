@@ -24,6 +24,7 @@ Partial Class LoginPass
     Private Sub InitializeComponent()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.SiticoneLabel4 = New SiticoneNetFrameworkUI.SiticoneLabel()
         Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.SiticoneTextBox2 = New SiticoneNetFrameworkUI.SiticoneTextBox()
@@ -33,7 +34,6 @@ Partial Class LoginPass
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Panel9.SuspendLayout()
         Me.Panel11.SuspendLayout()
         Me.SuspendLayout()
@@ -65,6 +65,15 @@ Partial Class LoginPass
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(340, 360)
         Me.Panel11.TabIndex = 0
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(312, 223)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
+        Me.CheckBox1.TabIndex = 25
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'SiticoneLabel4
         '
@@ -264,7 +273,7 @@ Partial Class LoginPass
         Me.SiticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray
         Me.SiticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray
         Me.SiticoneTextBox1.IsEnabled = True
-        Me.SiticoneTextBox1.Location = New System.Drawing.Point(10, 125)
+        Me.SiticoneTextBox1.Location = New System.Drawing.Point(9, 125)
         Me.SiticoneTextBox1.Name = "SiticoneTextBox1"
         Me.SiticoneTextBox1.PlaceholderColor = System.Drawing.Color.Gray
         Me.SiticoneTextBox1.PlaceholderText = "Username"
@@ -328,15 +337,6 @@ Partial Class LoginPass
         Me.Panel10.Padding = New System.Windows.Forms.Padding(50, 0, 50, 50)
         Me.Panel10.Size = New System.Drawing.Size(360, 19)
         Me.Panel10.TabIndex = 20
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(312, 223)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 25
-        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'LoginPass
         '

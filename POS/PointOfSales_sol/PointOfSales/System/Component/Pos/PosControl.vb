@@ -118,8 +118,26 @@ Public Class PosControl
         card.Controls.Add(lblPrice)
 
         Dim clickHandler = Sub(sender As Object, e As EventArgs)
-                               AddOrUpdateTicket(productName, productPrice)
+                               ' Determine which PictureBox was clicked
+                               Dim pic As PictureBox = Nothing
+
+                               If TypeOf sender Is PictureBox Then
+                                   pic = CType(sender, PictureBox)
+                               ElseIf TypeOf sender Is Panel Then
+                                   ' get PictureBox inside panel
+                                   pic = CType(CType(sender, Panel).Controls(0), PictureBox)
+                               ElseIf TypeOf sender Is Label Then
+                                   ' get PictureBox from parent panel
+                                   pic = CType(CType(sender, Label).Parent.Controls(0), PictureBox)
+                               End If
+
+                               Dim img As Image = Nothing
+                               If pic IsNot Nothing Then img = pic.Image
+
+                               ' Pass image to AddOrUpdateTicket
+                               AddOrUpdateTicket(productName, productPrice, img)
                            End Sub
+
 
         AddHandler card.Click, clickHandler
         AddHandler pb.Click, clickHandler
@@ -131,7 +149,7 @@ Public Class PosControl
 
     ' ✅ ADD OR UPDATE PRODUCT TO DATAGRIDVIEW
     ' Add or update ticket with Edit form
-    Private Sub AddOrUpdateTicket(productName As String, productPrice As Decimal)
+    Private Sub AddOrUpdateTicket(productName As String, productPrice As Decimal, Optional productImage As Image = Nothing)
         Try
             Dim stockNow As Integer = GetStockQuantity(productName)
             If stockNow <= 0 Then
@@ -151,21 +169,21 @@ Public Class PosControl
                 End If
             Next
 
-            ' Open Edit form
+            ' Open Edit form and pass product details safely
             Dim editForm As New Edit()
             editForm.SelectedProductName = productName
             editForm.SelectedProductPrice = productPrice
-            editForm.lbl_quantity.Text = currentQty.ToString()
-            editForm.ShowDialog() ' modal
+            editForm.SelectedProductImage = productImage
 
-            ' ✅ After Edit closes, nothing else to add: Edit already updates DataGridView and stock
-
+            editForm.ShowDialog()
             CalculateTotals()
 
         Catch ex As Exception
             MessageBox.Show("Error adding product: " & ex.Message)
         End Try
     End Sub
+
+
 
 
 
@@ -308,4 +326,24 @@ Public Class PosControl
         ' Use ShowDialog() to pause execution until the charge form closes
         chargeForm.ShowDialog()
     End Sub
+
+    Private Sub SiticoneButtonTextbox1_TextContentChanged(sender As Object, e As EventArgs) Handles SiticoneButtonTextbox1.TextContentChanged
+        Dim searchText As String = SiticoneButtonTextbox1.Text.Trim().ToLower()
+
+        ' Loop through all product cards in FlowLayoutPanel
+        For Each ctrl As Control In FlowLayoutPanel1.Controls
+            If TypeOf ctrl Is Panel Then
+                Dim card As Panel = CType(ctrl, Panel)
+                ' The product name label is the second control in the panel (index 1)
+                Dim lblName As Label = CType(card.Controls(1), Label)
+
+                If lblName.Text.ToLower().StartsWith(searchText) Then
+                    card.Visible = True
+                Else
+                    card.Visible = False
+                End If
+            End If
+        Next
+    End Sub
+
 End Class

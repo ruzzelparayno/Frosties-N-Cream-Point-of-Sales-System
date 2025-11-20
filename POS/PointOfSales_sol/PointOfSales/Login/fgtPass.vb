@@ -39,8 +39,9 @@ Public Class fgtPass
 
     Private Sub ShowControl(uc As UserControl)
         uc.Dock = DockStyle.Fill
-        Login.SiticoneDragPanel1.Controls.Clear()
-        Login.SiticoneDragPanel1.Controls.Add(uc)
+        Login.Panel8.Controls.Clear()
+        Login.Panel8.Controls.Add(uc)
+
 
     End Sub
 

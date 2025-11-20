@@ -288,6 +288,10 @@ Public Class DashboardContent
                     Label4.Text = totalSales.ToString("N2", CultureInfo.InvariantCulture)
                 End Using
             End Using
+
+            ' 🔹 Adjust font size based on text length
+            AdjustGrossSalesFont()
+
         Catch ex As Exception
             MessageBox.Show("Error loading today's gross sales: " & ex.Message)
         End Try
@@ -371,6 +375,23 @@ Public Class DashboardContent
         Catch ex As Exception
             MessageBox.Show("Error loading weekly sales: " & ex.Message)
         End Try
+    End Sub
+    ' =======================
+    ' 🔧 ADJUST FONT SIZE BASED ON LENGTH
+    ' =======================
+    Private Sub AdjustGrossSalesFont()
+        ' Remove formatting characters to count only digits
+        Dim numericText As String = Label4.Text.Replace(",", "").Replace(".", "")
+        If numericText.Length >= 9 Then
+            Label4.Font = New Font(Label4.Font.FontFamily, 8, Label4.Font.Style)
+        Else
+            ' Reset to default size depending on form state
+            If Me.Parent IsNot Nothing AndAlso Me.Parent.FindForm() IsNot Nothing AndAlso Me.Parent.FindForm().WindowState = FormWindowState.Maximized Then
+                Label4.Font = New Font(Label4.Font.FontFamily, 60, Label4.Font.Style)
+            Else
+                Label4.Font = New Font(Label4.Font.FontFamily, 40, Label4.Font.Style)
+            End If
+        End If
     End Sub
 
 End Class

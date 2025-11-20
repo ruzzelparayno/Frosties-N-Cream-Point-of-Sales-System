@@ -1,5 +1,6 @@
 ﻿Public Class CashManagementControll
     ' Removed Private shiftAmount As Decimal = 0D - shift amount is read directly from lbl_sc1.Text
+    Public Property ParentShift As ShiftContent
 
     Private Sub cashmanagementcontroll_load(sender As Object, e As EventArgs) Handles MyBase.Load
         clearalllabels()
@@ -53,6 +54,8 @@
         ' ✅ Ensure Panel4 is visible (This assumes Panel4 is a control within ShiftContent)
         If shiftForm IsNot Nothing Then
             shiftForm.Panel4.Show()
+            shiftForm.btnCategory.Visible = True
+            shiftForm.PictureBox1.Visible = False
             shiftForm.SiticoneButton3.Hide()
         End If
 
@@ -259,5 +262,53 @@
             ' ignore DB read error here, not critical
         End Try
     End Sub
+    Public Sub ResetShift()
+        ' Reset labels
+        lbl_cashp1.Text = "₱0"
+        lbl_sc1.Text = "₱0"
+        lbl_refund1.Text = "₱0"
+        lbl_eca.Text = "₱0"
+        lbl_ns.Text = "₱0"
+        lbl_ncash.Text = "₱0"
+
+        ' Reset Open Shift button and TextBox visibility
+        SiticoneButton1.Visible = True
+        SiticoneTextBox1.Visible = True
+        Label1.Visible = True
+        Label2.Visible = True
+
+        ' Reset ShiftContent controls
+        If ParentShift IsNot Nothing Then
+            ParentShift.btnCategory.Visible = False
+            ParentShift.PictureBox1.Visible = False
+            ParentShift.SiticoneButton3.Visible = True
+        End If
+
+        ' Hide all internal labels
+        lbl_cashn.Visible = False
+        lbl_datet.Visible = False
+        lbl_cashp1.Visible = False
+        lbl_refund1.Visible = False
+        lbl_eca.Visible = False
+        Label17.Visible = False
+        Label14.Visible = False
+        Label12.Visible = False
+        Label11.Visible = False
+        Label10.Visible = False
+        Label6.Visible = False
+        Label5.Visible = False
+        Label4.Visible = False
+        Label3.Visible = False
+        lbl_gs.Visible = False
+        lbl_srefunds.Visible = False
+        lbl_sdiscounts.Visible = False
+        lbl_nsn.Visible = False
+        lbl_gcashn.Visible = False
+        lbl_ns.Visible = False
+        lbl_ncash.Visible = False
+        lbl_ngcash.Visible = False
+        lbl_sc1.Visible = False
+    End Sub
+
 
 End Class

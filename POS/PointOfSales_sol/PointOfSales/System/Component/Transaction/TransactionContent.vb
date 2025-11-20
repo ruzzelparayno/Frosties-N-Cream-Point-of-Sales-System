@@ -8,54 +8,69 @@ Public Class TransactionContent
     Private Sub TransactionContent_load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadTransactions()
     End Sub
-    Public Sub LoadTransactions()
+    ' Add this inside your TransactionContent class
+
+    ' Update LoadTransactions to accept an optional filter parameter
+    Public Sub LoadTransactions(Optional ByVal filter As String = "")
         Try
-            ' Open the database connection
             conn.Open()
 
-            ' Query to fetch transaction details including Status, ordered by most recent SaleDate
+            ' Base query
             Dim query As String = "
-        SELECT 
-            TicketNumber, 
-            ProductName, 
-            SaleDate, 
-            Subtotal, 
-            DiscountType, 
-            Vat, 
-            TotalAmount, 
-            Status 
-        FROM sales 
-        ORDER BY SaleDate DESC;
-    "
+            SELECT 
+                TicketNumber, 
+                ProductName, 
+                SaleDate, 
+                Subtotal, 
+                DiscountType, 
+                Vat, 
+                TotalAmount, 
+                Status 
+            FROM sales 
+            WHERE 1=1
+        "
 
-            ' Execute the query and fill the DataTable
+            ' Add filtering if search text is provided
+            If filter <> "" Then
+                query &= " AND (ProductName LIKE @filter OR TicketNumber LIKE @filter OR SaleDate LIKE @filter)"
+            End If
+
+            query &= " ORDER BY SaleDate DESC"
+
             Dim cmd As New MySqlCommand(query, conn)
+            If filter <> "" Then
+                cmd.Parameters.AddWithValue("@filter", "%" & filter & "%")
+            End If
+
             Dim adapter As New MySqlDataAdapter(cmd)
             dt = New DataTable()
             adapter.Fill(dt)
 
-            ' Bind the data to the DataGridView
-            dgv_transactions.DataSource = dt
-            dgv_transactions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-            dgv_transactions.ReadOnly = True
+            Guna2DataGridView1.DataSource = dt
+            Guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+            Guna2DataGridView1.ReadOnly = True
 
         Catch ex As Exception
             MessageBox.Show("Error loading transactions: " & ex.Message)
-
         Finally
-            ' Ensure the connection is closed even if an error occurs
             conn.Close()
         End Try
-
     End Sub
 
+    ' Add this event handler for SiticoneButtonTextbox1 text change
+    Private Sub SiticoneButtonTextbox1_TextChanged(sender As Object, e As EventArgs) Handles SiticoneButtonTextbox1.TextChanged
+        ' Pass the search text to LoadTransactions
+        LoadTransactions(SiticoneButtonTextbox1.Text.Trim())
+    End Sub
+
+
     'Show ProductName in tooltip when hovering
-    Private Sub dgv_transactions_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_transactions.CellMouseEnter
+    Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs)
         If e.RowIndex >= 0 AndAlso e.ColumnIndex >= 0 Then
-            If dgv_transactions.Columns(e.ColumnIndex).Name = "ProductName" Then
-                Dim cellValue = dgv_transactions.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
+            If Guna2DataGridView1.Columns(e.ColumnIndex).Name = "ProductName" Then
+                Dim cellValue = Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
                 If cellValue IsNot Nothing Then
-                    dgv_transactions.Rows(e.RowIndex).Cells(e.ColumnIndex).ToolTipText = cellValue.ToString
+                    Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).ToolTipText = cellValue.ToString
                 End If
             End If
         End If
@@ -89,11 +104,11 @@ Public Class TransactionContent
     End Function
 
 
-    Private Sub dgv_transactions_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_transactions.CellDoubleClick
+    Private Sub dgv_transactions_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) 
         If e.RowIndex < 0 Then Exit Sub
 
         ' ✅ Get selected row data
-        Dim selectedRow = dgv_transactions.Rows(e.RowIndex)
+        Dim selectedRow = Guna2DataGridView1.Rows(e.RowIndex)
         Dim ticketNum = selectedRow.Cells("TicketNumber").Value.ToString()
         Dim productName = selectedRow.Cells("ProductName").Value.ToString().Trim()
         Dim subtotal = selectedRow.Cells("Subtotal").Value.ToString()

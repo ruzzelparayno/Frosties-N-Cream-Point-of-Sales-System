@@ -23,17 +23,20 @@ Partial Class ShiftContent
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnCategory = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.SiticoneButton3 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.btnCategory)
         Me.Panel1.Controls.Add(Me.SiticoneButton3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -41,6 +44,18 @@ Partial Class ShiftContent
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(758, 51)
         Me.Panel1.TabIndex = 16
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = Global.PointOfSales.My.Resources.Resources.Back_To
+        Me.PictureBox1.Location = New System.Drawing.Point(10, 6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(49, 40)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
         '
         'btnCategory
         '
@@ -93,7 +108,7 @@ Partial Class ShiftContent
         Me.btnCategory.IsReadOnly = False
         Me.btnCategory.IsToggleButton = False
         Me.btnCategory.IsToggled = False
-        Me.btnCategory.Location = New System.Drawing.Point(141, 6)
+        Me.btnCategory.Location = New System.Drawing.Point(65, 6)
         Me.btnCategory.LongPressDurationMS = 1000
         Me.btnCategory.Name = "btnCategory"
         Me.btnCategory.NormalFontStyle = System.Drawing.FontStyle.Regular
@@ -226,6 +241,7 @@ Partial Class ShiftContent
         Me.Name = "ShiftContent"
         Me.Size = New System.Drawing.Size(758, 587)
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -235,4 +251,5 @@ Partial Class ShiftContent
     Friend WithEvents SiticoneButton3 As SiticoneNetFrameworkUI.SiticoneButton
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel4 As Panel
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

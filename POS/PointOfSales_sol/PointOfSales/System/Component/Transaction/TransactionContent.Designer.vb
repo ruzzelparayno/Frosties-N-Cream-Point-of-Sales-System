@@ -22,29 +22,68 @@ Partial Class TransactionContent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.SiticoneDashboardCard1 = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
-        Me.SiticoneButtonTextbox1 = New SiticoneNetFrameworkUI.SiticoneButtonTextbox()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.dgv_transactions = New System.Windows.Forms.DataGridView()
-        Me.SiticoneDashboardCard1.SuspendLayout()
+        Me.SiticonePanel2 = New SiticoneNetFrameworkUI.SiticonePanel()
+        Me.SiticoneButtonTextbox1 = New SiticoneNetFrameworkUI.SiticoneButtonTextbox()
+        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Panel3.SuspendLayout()
-        CType(Me.dgv_transactions, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SiticonePanel2.SuspendLayout()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'SiticoneDashboardCard1
+        'Panel3
         '
-        Me.SiticoneDashboardCard1.BackColor = System.Drawing.Color.Black
-        Me.SiticoneDashboardCard1.BackgroundEndColor = System.Drawing.Color.White
-        Me.SiticoneDashboardCard1.BackgroundStartColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.SiticoneDashboardCard1.BorderColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard1.BorderEndColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard1.BorderStartColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard1.Controls.Add(Me.SiticoneButtonTextbox1)
-        Me.SiticoneDashboardCard1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.SiticoneDashboardCard1.Location = New System.Drawing.Point(0, 0)
-        Me.SiticoneDashboardCard1.Name = "SiticoneDashboardCard1"
-        Me.SiticoneDashboardCard1.Size = New System.Drawing.Size(758, 54)
-        Me.SiticoneDashboardCard1.TabIndex = 7
+        Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.Controls.Add(Me.Guna2DataGridView1)
+        Me.Panel3.Controls.Add(Me.SiticonePanel2)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Padding = New System.Windows.Forms.Padding(10)
+        Me.Panel3.Size = New System.Drawing.Size(758, 536)
+        Me.Panel3.TabIndex = 8
+        '
+        'SiticonePanel2
+        '
+        Me.SiticonePanel2.AcrylicTintColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel2.BackColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel2.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center
+        Me.SiticonePanel2.BorderDashPattern = Nothing
+        Me.SiticonePanel2.BorderGradientEndColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel2.BorderGradientStartColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel2.BorderThickness = 2.0!
+        Me.SiticonePanel2.Controls.Add(Me.SiticoneButtonTextbox1)
+        Me.SiticonePanel2.CornerRadiusBottomLeft = 16.0!
+        Me.SiticonePanel2.CornerRadiusBottomRight = 16.0!
+        Me.SiticonePanel2.CornerRadiusTopLeft = 16.0!
+        Me.SiticonePanel2.CornerRadiusTopRight = 16.0!
+        Me.SiticonePanel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.SiticonePanel2.EnableAcrylicEffect = False
+        Me.SiticonePanel2.EnableMicaEffect = False
+        Me.SiticonePanel2.EnableRippleEffect = False
+        Me.SiticonePanel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SiticonePanel2.GradientColors = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.LightGray, System.Drawing.Color.Gray}
+        Me.SiticonePanel2.GradientPositions = New Single() {0!, 0.5!, 1.0!}
+        Me.SiticonePanel2.Location = New System.Drawing.Point(10, 10)
+        Me.SiticonePanel2.Name = "SiticonePanel2"
+        Me.SiticonePanel2.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid
+        Me.SiticonePanel2.RippleAlpha = 50
+        Me.SiticonePanel2.RippleAlphaDecrement = 3
+        Me.SiticonePanel2.RippleColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticonePanel2.RippleMaxSize = 600.0!
+        Me.SiticonePanel2.RippleSpeed = 15.0!
+        Me.SiticonePanel2.ShowBorder = False
+        Me.SiticonePanel2.Size = New System.Drawing.Size(738, 54)
+        Me.SiticonePanel2.TabIndex = 11
+        Me.SiticonePanel2.TabStop = True
+        Me.SiticonePanel2.TrackSystemTheme = False
+        Me.SiticonePanel2.UseBorderGradient = False
+        Me.SiticonePanel2.UseMultiGradient = False
+        Me.SiticonePanel2.UsePatternTexture = False
+        Me.SiticonePanel2.UseRadialGradient = False
         '
         'SiticoneButtonTextbox1
         '
@@ -69,7 +108,7 @@ Partial Class TransactionContent
         Me.SiticoneButtonTextbox1.HoverBorderColor = System.Drawing.Color.Gray
         Me.SiticoneButtonTextbox1.HoverImage = Nothing
         Me.SiticoneButtonTextbox1.IdleImage = Nothing
-        Me.SiticoneButtonTextbox1.Location = New System.Drawing.Point(573, 5)
+        Me.SiticoneButtonTextbox1.Location = New System.Drawing.Point(550, 4)
         Me.SiticoneButtonTextbox1.Name = "SiticoneButtonTextbox1"
         Me.SiticoneButtonTextbox1.PlaceholderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(139, Byte), Integer))
         Me.SiticoneButtonTextbox1.PlaceholderFocusColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(229, Byte), Integer))
@@ -90,42 +129,74 @@ Partial Class TransactionContent
         Me.SiticoneButtonTextbox1.TopLeftCornerRadius = 8
         Me.SiticoneButtonTextbox1.TopRightCornerRadius = 8
         '
-        'Panel3
+        'Guna2DataGridView1
         '
-        Me.Panel3.BackColor = System.Drawing.Color.White
-        Me.Panel3.Controls.Add(Me.dgv_transactions)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 54)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Padding = New System.Windows.Forms.Padding(10)
-        Me.Panel3.Size = New System.Drawing.Size(758, 482)
-        Me.Panel3.TabIndex = 8
-        '
-        'dgv_transactions
-        '
-        Me.dgv_transactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_transactions.Location = New System.Drawing.Point(3, 6)
-        Me.dgv_transactions.Name = "dgv_transactions"
-        Me.dgv_transactions.Size = New System.Drawing.Size(752, 473)
-        Me.dgv_transactions.TabIndex = 0
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(10, 64)
+        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
+        Me.Guna2DataGridView1.ReadOnly = True
+        Me.Guna2DataGridView1.RowHeadersVisible = False
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(738, 462)
+        Me.Guna2DataGridView1.TabIndex = 13
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4
+        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = True
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
         'TransactionContent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.SiticoneDashboardCard1)
         Me.Name = "TransactionContent"
         Me.Size = New System.Drawing.Size(758, 536)
-        Me.SiticoneDashboardCard1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
-        CType(Me.dgv_transactions, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SiticonePanel2.ResumeLayout(False)
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents SiticoneDashboardCard1 As SiticoneNetFrameworkUI.SiticoneDashboardCard
-    Friend WithEvents SiticoneButtonTextbox1 As SiticoneNetFrameworkUI.SiticoneButtonTextbox
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents dgv_transactions As DataGridView
+    Friend WithEvents SiticonePanel2 As SiticonePanel
+    Friend WithEvents SiticoneButtonTextbox1 As SiticoneButtonTextbox
+    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
 End Class

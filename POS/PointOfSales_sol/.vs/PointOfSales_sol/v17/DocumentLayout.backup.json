@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\POS version 5.1\\PointOfSales_sol\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version 5.1\\pointofsales_sol\\pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version 5.2\\pointofsales_sol\\pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version 5.1\\pointofsales_sol\\pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version 5.2\\pointofsales_sol\\pointofsales\\system\\component\\shift\\cashmanagementcontroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\cashmanagementcontroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version 5.2\\pointofsales_sol\\pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\shiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version 5.2\\pointofsales_sol\\pointofsales\\system\\component\\shift\\cashmanagementcontroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\cashmanagementcontroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version 5.2\\pointofsales_sol\\pointofsales\\system\\component\\shift\\closingshiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\closingshiftcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DashboardContent.vb",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version 5.1\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
-              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\DashboardContent.vb",
-              "ToolTip": "C:\\Users\\User\\Downloads\\POS version 5.1\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb*",
-              "RelativeToolTip": "PointOfSales\\System\\Component\\DashboardContent.vb*",
-              "ViewState": "AgIAAFQBAAAAAAAAAAAAAHgBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CashManagementControll.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAAABwBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-13T15:51:36.499Z",
+              "WhenOpened": "2025-11-13T18:24:15.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DashboardContent.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version 5.1\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
-              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\DashboardContent.vb",
-              "ToolTip": "C:\\Users\\User\\Downloads\\POS version 5.1\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb [Design]*",
-              "RelativeToolTip": "PointOfSales\\System\\Component\\DashboardContent.vb [Design]*",
+              "DocumentIndex": 0,
+              "Title": "ShiftContent.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-13T15:51:27.633Z",
+              "WhenOpened": "2025-11-13T18:14:20.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShiftContent.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ShiftContent.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\ShiftContent.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-13T18:14:04.771Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CashManagementControll.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-13T18:07:05.048Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClosingShiftContent.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ClosingShiftContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\ClosingShiftContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version 5.2\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\ClosingShiftContent.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\ClosingShiftContent.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-13T18:06:47.894Z",
+              "EditorCaption": ""
             }
           ]
         }

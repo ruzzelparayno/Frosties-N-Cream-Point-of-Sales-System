@@ -108,9 +108,9 @@ Partial Class Charge_Success
         Me.SiticoneButton1.BadgeFont = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SiticoneButton1.BadgeValue = 0
         Me.SiticoneButton1.BadgeValueForeColor = System.Drawing.Color.White
-        Me.SiticoneButton1.BorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.SiticoneButton1.BorderWidth = 2
-        Me.SiticoneButton1.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(115, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.SiticoneButton1.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.SiticoneButton1.ButtonImage = Nothing
         Me.SiticoneButton1.ButtonTextLeftPadding = 0
         Me.SiticoneButton1.CanBeep = True
@@ -136,9 +136,9 @@ Partial Class Charge_Success
         Me.SiticoneButton1.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton1.HintText = Nothing
-        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.White
         Me.SiticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.Black
+        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.SiticoneButton1.HoverTransitionDuration = 250
         Me.SiticoneButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton1.ImagePadding = 5

@@ -33,8 +33,11 @@ Partial Class Edit
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.SiticoneUpDown1 = New SiticoneNetFrameworkUI.SiticoneUpDown()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl_getproductname
@@ -120,6 +123,8 @@ Partial Class Edit
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.Controls.Add(Me.PictureBox1)
+        Me.Panel3.Controls.Add(Me.Label4)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(35, 76)
         Me.Panel3.Name = "Panel3"
@@ -128,13 +133,12 @@ Partial Class Edit
         '
         'Label1
         '
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(129, 11)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(319, 80)
+        Me.Label1.Size = New System.Drawing.Size(128, 24)
         Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Use This label to Display The Product Name"
+        Me.Label1.Text = "Product Name:"
         '
         'SiticoneButton1
         '
@@ -147,7 +151,7 @@ Partial Class Edit
         Me.SiticoneButton1.BadgeFont = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SiticoneButton1.BadgeValue = 0
         Me.SiticoneButton1.BadgeValueForeColor = System.Drawing.Color.White
-        Me.SiticoneButton1.BorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.SiticoneButton1.BorderWidth = 2
         Me.SiticoneButton1.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.SiticoneButton1.ButtonImage = Nothing
@@ -175,9 +179,9 @@ Partial Class Edit
         Me.SiticoneButton1.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton1.HintText = Nothing
-        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.White
         Me.SiticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.Black
+        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.SiticoneButton1.HoverTransitionDuration = 250
         Me.SiticoneButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton1.ImagePadding = 5
@@ -256,6 +260,23 @@ Partial Class Edit
         Me.SiticoneUpDown1.UseGradient = False
         Me.SiticoneUpDown1.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
+        'Label4
+        '
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(129, 35)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(128, 24)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Price:"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(5, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(90, 74)
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        '
         'Edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -275,6 +296,7 @@ Partial Class Edit
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel3.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -288,4 +310,6 @@ Partial Class Edit
     Friend WithEvents Label3 As Label
     Friend WithEvents SiticoneImageButton1 As SiticoneNetFrameworkUI.SiticoneImageButton
     Friend WithEvents SiticoneUpDown1 As SiticoneNetFrameworkUI.SiticoneUpDown
+    Friend WithEvents Label4 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

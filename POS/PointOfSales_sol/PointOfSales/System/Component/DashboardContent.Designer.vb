@@ -371,12 +371,11 @@ Partial Class DashboardContent
         'GunaChart1
         '
         Me.GunaChart1.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.GunaChart1.Dock = System.Windows.Forms.DockStyle.Fill
         ChartFont1.FontName = "Arial"
         Me.GunaChart1.Legend.LabelFont = ChartFont1
-        Me.GunaChart1.Location = New System.Drawing.Point(30, 30)
+        Me.GunaChart1.Location = New System.Drawing.Point(21, 33)
         Me.GunaChart1.Name = "GunaChart1"
-        Me.GunaChart1.Size = New System.Drawing.Size(320, 395)
+        Me.GunaChart1.Size = New System.Drawing.Size(326, 361)
         Me.GunaChart1.TabIndex = 0
         ChartFont2.FontName = "Arial"
         ChartFont2.Size = 12
