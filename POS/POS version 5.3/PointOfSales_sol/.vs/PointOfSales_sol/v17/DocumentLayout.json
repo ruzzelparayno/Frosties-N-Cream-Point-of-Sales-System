@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version control\\pos version 5.3\\pos version 5.3\\pointofsales_sol\\pointofsales\\system\\component\\users\\usercontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\users\\usercontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version control\\pos version 5.3\\pos version 5.3\\pointofsales_sol\\pointofsales\\system\\component\\users\\usercontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\users\\usercontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version control\\pos version 5.3\\pos version 5.3\\pointofsales_sol\\pointofsales\\login\\loginpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\login\\loginpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version control\\pos version 5.3\\pos version 5.3\\pointofsales_sol\\pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version control\\pos version 5.3\\pos version 5.3\\pointofsales_sol\\pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\pos version control\\pos version 5.3\\pos version 5.3\\pointofsales_sol\\pointofsales\\login\\loginpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\login\\loginpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DashboardContent.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\DashboardContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\DashboardContent.vb",
+              "ViewState": "AgIAAEsBAAAAAAAAAAAAAG8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-18T13:27:22.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashboardContent.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\DashboardContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\DashboardContent.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-18T13:27:16.169Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserContent.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\System\\Component\\Users\\UserContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Users\\UserContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\System\\Component\\Users\\UserContent.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Users\\UserContent.vb",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwMgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-18T13:03:19.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserContent.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\System\\Component\\Users\\UserContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Users\\UserContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\System\\Component\\Users\\UserContent.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Users\\UserContent.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-18T13:02:55.103Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPass.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\Login\\LoginPass.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\Login\\LoginPass.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\Login\\LoginPass.vb",
+              "RelativeToolTip": "PointOfSales\\Login\\LoginPass.vb",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwBIAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-18T11:56:39.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginPass.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\Login\\LoginPass.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\Login\\LoginPass.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS version 5.3\\POS version 5.3\\PointOfSales_sol\\PointOfSales\\Login\\LoginPass.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\Login\\LoginPass.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-18T11:56:25.924Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
