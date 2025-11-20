@@ -225,6 +225,7 @@ Public Class PosControl
             End If
 
             CalculateTotals()
+
         Catch ex As Exception
             MessageBox.Show("Error adding product to ticket: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -245,19 +246,29 @@ Public Class PosControl
 
     Private Sub ListBox1_DoubleClick(sender As Object, e As EventArgs) Handles ListBox1.DoubleClick
         If ListBox1.SelectedIndex >= 0 Then
-            Dim editForm As New edit
             Dim selectedItem As String = ListBox1.SelectedItem.ToString()
-            Dim parts As String() = selectedItem.Split(New Char() {" "c}, 2, StringSplitOptions.None)
+            ' Example: "2x Coke" → extract quantity and name
+            Dim regex As New System.Text.RegularExpressions.Regex("^(\d+)x\s+(.+)$")
+            Dim match = regex.Match(selectedItem)
 
-            If parts.Length > 1 Then
-                editForm.lbl_quantity.Text = parts(0).Replace("x", "").Trim()
-                editForm.lbl_getproductname.Text = parts(1)
+            If match.Success Then
+                Dim qty As Integer = Convert.ToInt32(match.Groups(1).Value)
+                Dim pname As String = match.Groups(2).Value.Trim()
+
+                ' ✅ Create and configure the Edit form
+                Dim editForm As New Edit()
+                editForm.SelectedProductName = pname
+                editForm.lbl_quantity.Text = qty.ToString()
+                editForm.SelectedIndex = ListBox1.SelectedIndex
+
+                ' ✅ Show edit form
+                editForm.ShowDialog()
+            Else
+                MessageBox.Show("Could not parse product information. Please select a valid item.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-
-            editForm.SelectedIndex = ListBox1.SelectedIndex
-            editForm.ShowDialog()
         End If
     End Sub
+
 
     Private Sub SearchProducts(keyword As String)
         FlowLayoutPanel1.Controls.Clear()

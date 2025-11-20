@@ -2,22 +2,54 @@
 Imports System.Drawing.Printing
 
 Public Class Charge
-    Dim WithEvents PD As New PrintDocument
-    Dim PPD As New PrintPreviewDialog
+    Dim WithEvents PD As New PrintDocument()
+    Dim PPD As New PrintPreviewDialog()
     Dim longpaper As Integer
+
+    ' Sub-forms (your other forms)
+    Public Shared cashForm As New Charge_Cash()
+    Public Shared gcashForm As New Charge_Gcash()
+    Public Shared successForm As New Charge_Success()
+
 
     Private originalTotal As Decimal = 0D
 
     Private Sub Charge_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' ✅ Get PosControl instance from Dashboard
+        ' Ensure Dashboard POS exists
         Dim posForm As PosControl = Dashboard.posInstance
-
         If posForm Is Nothing Then
             MessageBox.Show("POS screen not found. Please open the POS module first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
 
-        ' ✅ Find lbl_total even if it’s inside nested controls
+        ' Embed child forms into your siticoneflatpanel1
+        Try
+            ' Prepare cash form
+            cashForm.Dock = DockStyle.Fill
+
+            ' Prepare gcash form
+            gcashForm.Dock = DockStyle.Fill
+
+            ' Clear panel and add both forms (we'll show/hide)
+            SiticoneFlatPanel1.Controls.Clear()
+            SiticoneFlatPanel1.Controls.Add(cashForm)
+            SiticoneFlatPanel1.Controls.Add(gcashForm)
+
+            cashForm.Show()
+            gcashForm.Hide()
+        Catch ex As Exception
+            ' If embed fails, continue (forms might already be added)
+        End Try
+
+        ' Wire text changed events from child forms to local handlers
+        Try
+            AddHandler cashForm.txt_cashs.TextChanged, AddressOf txt_cashs_TextChanged
+            AddHandler gcashForm.txt_ref.TextChanged, AddressOf txt_reference_TextChanged
+        Catch ex As Exception
+            ' ignore if child controls not present
+        End Try
+
+        ' Find lbl_total inside pos (recursive)
         Dim lblTotalInPanel As Label = FindLabelRecursive(posForm, "lbl_total")
 
         If lblTotalInPanel IsNot Nothing AndAlso Not String.IsNullOrWhiteSpace(lblTotalInPanel.Text) Then
@@ -28,13 +60,22 @@ Public Class Charge
         End If
 
         lbl_totalpaid.Text = "₱" & originalTotal.ToString("N2")
-        txt_cashs.Clear()
-        lbl_change.Text = "₱0.00"
-        lbl_ref.Hide()
-        txt_reference.Hide()
+
+        ' Initialize child controls
+        Try
+            cashForm.txt_cashs.Clear()
+            cashForm.lbl_change.Text = "₱0.00"
+            cashForm.lbl_totalP.Text = "₱0.00"
+        Catch ex As Exception
+        End Try
+
+        Try
+            gcashForm.txt_ref.Hide() ' keep reference hidden until GCash selected
+        Catch ex As Exception
+        End Try
     End Sub
 
-    ' 🔹 Recursive label finder
+    ' Recursive label finder (unchanged)
     Private Function FindLabelRecursive(parent As Control, labelName As String) As Label
         For Each ctrl As Control In parent.Controls
             If TypeOf ctrl Is Label AndAlso ctrl.Name = labelName Then
@@ -47,14 +88,19 @@ Public Class Charge
         Return Nothing
     End Function
 
-    ' ✅ Refresh the total each time the form appears
+    ' Refresh totals each time form becomes visible
     Public Sub RefreshTotalPaid()
         cb_employee.Checked = False
         cb_pwd.Checked = False
         cb_senior.Checked = False
-        txt_cashs.Clear()
-        txt_reference.Clear()
-        lbl_change.Text = ""
+
+        ' Clear child inputs
+        Try
+            cashForm.txt_cashs.Clear()
+            gcashForm.txt_ref.Clear()
+        Catch ex As Exception
+        End Try
+
 
         Dim subtotal As Decimal = 0D
         Dim posForm As PosControl = Dashboard.posInstance
@@ -68,29 +114,62 @@ Public Class Charge
         End If
 
         originalTotal = subtotal
-
         Me.Tag = subtotal
         lbl_totalpaid.Text = "₱" & Math.Round(subtotal, 2).ToString("N2")
+
+        ' reflect into child form if needed
+        Try
+            cashForm.lbl_totalP.Text = "₱" & Math.Round(subtotal, 2).ToString("N2")
+        Catch ex As Exception
+        End Try
     End Sub
 
-    Private Sub rb_gcash_CheckedChanged(sender As Object, e As EventArgs) Handles rb_gcash.CheckedChanged
-        lbl_cr.Hide()
-        lbl_ref.Show()
-        txt_reference.Show()
-        txt_cashs.Hide()
-        txt_cashs.Clear()
-        lbl_change.Text = "₱0.00"
+    ' When SiticoneRadioButton1 (Cash) is selected
+    Private Sub SiticoneRadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles SiticoneRadioButton1.CheckedChanged
+        If SiticoneRadioButton1.Checked Then
+            ' Show cash panel form, hide gcash form
+            Try
+                cashForm.Show()
+                gcashForm.Hide()
+            Catch ex As Exception
+            End Try
+
+            ' Show/hide appropriate fields
+            Try
+                gcashForm.txt_ref.Hide()
+            Catch ex As Exception
+            End Try
+            Try
+                cashForm.txt_cashs.Show()
+            Catch ex As Exception
+            End Try
+
+        End If
     End Sub
 
-    Private Sub rb_cash_CheckedChanged(sender As Object, e As EventArgs) Handles rb_cash.CheckedChanged
-        lbl_ref.Hide()
-        lbl_cr.Show()
-        txt_reference.Hide()
-        txt_cashs.Show()
-        txt_reference.Clear()
-        lbl_change.Text = "₱0.00"
+    ' When SiticoneRadioButton2 (GCash) is selected
+    Private Sub SiticoneRadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles SiticoneRadioButton2.CheckedChanged
+        If SiticoneRadioButton2.Checked Then
+            Try
+                gcashForm.Show()
+                cashForm.Hide()
+            Catch ex As Exception
+            End Try
+
+            Try
+                gcashForm.txt_ref.Show()
+            Catch ex As Exception
+            End Try
+            Try
+                cashForm.txt_cashs.Hide()
+                cashForm.txt_cashs.Clear()
+            Catch ex As Exception
+            End Try
+
+        End If
     End Sub
 
+    ' Discount checkbox handler
     Private Sub DiscountChanged(sender As Object, e As EventArgs) Handles cb_employee.CheckedChanged, cb_pwd.CheckedChanged, cb_senior.CheckedChanged
         ApplyDiscount()
     End Sub
@@ -101,10 +180,16 @@ Public Class Charge
             total = Math.Round(total * 0.8D, 2)
         End If
         lbl_totalpaid.Text = "₱" & total.ToString("N2")
+        ' update child total display
+        Try
+            cashForm.lbl_totalP.Text = "₱" & total.ToString("N2")
+        Catch ex As Exception
+        End Try
         CalculateChange()
     End Sub
 
-    Private Sub txt_cashs_TextChanged(sender As Object, e As EventArgs) Handles txt_cashs.TextChanged
+    ' proxy for cash text changed (wired via AddHandler)
+    Private Sub txt_cashs_TextChanged(sender As Object, e As EventArgs)
         CalculateChange()
     End Sub
 
@@ -112,22 +197,49 @@ Public Class Charge
         Dim cash As Decimal = 0D
         Dim totalPaid As Decimal = 0D
 
-        Decimal.TryParse(txt_cashs.Text.Replace("₱", "").Replace(",", "").Trim(), cash)
+        Dim cashText As String = ""
+        Try
+            cashText = cashForm.txt_cashs.Text
+        Catch ex As Exception
+            cashText = ""
+        End Try
+
+        Decimal.TryParse(cashText.Replace("₱", "").Replace(",", "").Trim(), cash)
         Decimal.TryParse(lbl_totalpaid.Text.Replace("₱", "").Replace(",", "").Trim(), totalPaid)
 
         Dim change As Decimal = cash - totalPaid
 
         If change >= 0D Then
-            lbl_change.Text = "₱" & change.ToString("N2")
+
+            Try
+                cashForm.lbl_change.Text = "₱" & change.ToString("N2")
+            Catch ex As Exception
+            End Try
         Else
-            lbl_change.Text = "₱0.00"
+
+            Try
+                cashForm.lbl_change.Text = "₱0.00"
+            Catch ex As Exception
+            End Try
         End If
     End Sub
 
-    Private Sub btn_charge_Click(sender As Object, e As EventArgs) Handles btn_charge.Click
+    ' Main charge button (handles SiticoneButton1)
+    Private Sub SiticoneButton1_Click(sender As Object, e As EventArgs) Handles SiticoneButton1.Click
+        ' forward to the main charge logic
+        ProcessCharge()
+    End Sub
+
+    ' Extracted charge logic to keep things tidy
+    Private Sub ProcessCharge()
         Dim cash As Decimal = 0D
         Dim totalPaid As Decimal = 0D
-        Dim cashText As String = txt_cashs.Text.Replace("₱", "").Replace(",", "").Trim()
+        Dim cashText As String = ""
+        Try
+            cashText = cashForm.txt_cashs.Text.Replace("₱", "").Replace(",", "").Trim()
+        Catch ex As Exception
+            cashText = ""
+        End Try
 
         Decimal.TryParse(lbl_totalpaid.Text.Replace("₱", "").Replace(",", "").Trim(), totalPaid)
 
@@ -137,23 +249,26 @@ Public Class Charge
         End If
 
         Dim modeOfPayment As String = ""
-        Dim reference As String = txt_reference.Text.Trim()
-        Dim posForm As PosControl = Dashboard.posInstance
+        Dim reference As String = ""
+        Try
+            reference = gcashForm.txt_ref.Text.Trim()
+        Catch ex As Exception
+            reference = ""
+        End Try
 
+        Dim posForm As PosControl = Dashboard.posInstance
         If posForm Is Nothing Then
             MessageBox.Show("POS form not found inside Dashboard!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
 
-        ' ✅ PAYMENT MODES VALIDATION
-        If rb_cash.Checked Then
+        ' Payment mode validation
+        If SiticoneRadioButton1.Checked Then
             modeOfPayment = "Cash"
-
             If Not Decimal.TryParse(cashText, cash) Then
                 MessageBox.Show("Please enter a valid cash amount!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Exit Sub
             End If
-
             If cash < totalPaid Then
                 MessageBox.Show("Cash is not enough!" & vbCrLf &
                                  "Total: ₱" & totalPaid.ToString("N2") & vbCrLf &
@@ -161,19 +276,21 @@ Public Class Charge
                                  "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Exit Sub
             End If
-
             Dim change As Decimal = cash - totalPaid
-            lbl_change.Text = "₱" & change.ToString("N2")
 
-        ElseIf rb_gcash.Checked Then
+            Try
+                cashForm.lbl_change.Text = "₱" & change.ToString("N2")
+            Catch ex As Exception
+            End Try
+
+        ElseIf SiticoneRadioButton2.Checked Then
             modeOfPayment = "GCash"
-
             If String.IsNullOrWhiteSpace(reference) Then
                 MessageBox.Show("Please enter GCash Reference Number!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Exit Sub
             End If
 
-            ' ✅ Check duplicate reference 
+            ' duplicate reference check
             Try
                 Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
                     conn.Open()
@@ -198,54 +315,64 @@ Public Class Charge
         End If
 
         ' ----------------- SUCCESS ACTIONS -----------------
-
-        ' 1. ✅ Update Cash Management Totals (CRITICAL FIX: Find the active instance)
-        Dim cashForm As CashManagementControll = Nothing
+        ' 1. Update Cash Management Totals
+        Dim cashMgr As CashManagementControll = Nothing
         Dim shiftForm As ShiftContent = Dashboard.shiftInstance
 
-        ' Check if ShiftContent exists and contains the CashManagementControll
-        If shiftForm IsNot Nothing AndAlso shiftForm.Panel2.Controls.Count > 0 Then
-            ' Assuming Panel2 is the container for CashManagementControll
-            If TypeOf shiftForm.Panel2.Controls(0) Is CashManagementControll Then
-                cashForm = DirectCast(shiftForm.Panel2.Controls(0), CashManagementControll)
-            End If
+        If shiftForm IsNot Nothing Then
+            Try
+                If shiftForm.Panel2.Controls.Count > 0 AndAlso TypeOf shiftForm.Panel2.Controls(0) Is CashManagementControll Then
+                    cashMgr = DirectCast(shiftForm.Panel2.Controls(0), CashManagementControll)
+                End If
+            Catch ex As Exception
+            End Try
         End If
 
-        If cashForm IsNot Nothing Then
-            ' This calls the updated function in CashManagementControll with .Refresh()
-            cashForm.UpdateCashManager(totalPaid, modeOfPayment)
-            ' Also update gross sales/discounts via UpdateShiftSales (discount handled as 0 here)
-            cashForm.UpdateShiftSales(refundValue:=0D, discountValue:=0D, grossSaleValue:=originalTotal)
+        If cashMgr IsNot Nothing Then
+            Try
+                cashMgr.UpdateCashManager(totalPaid, modeOfPayment)
+                cashMgr.UpdateShiftSales(refundValue:=0D, discountValue:=0D, grossSaleValue:=originalTotal)
+            Catch ex As Exception
+                ' continue even if cash manager update fails
+            End Try
         Else
-            ' Log an error if the cash manager isn't found, but proceed with the sale
             MessageBox.Show("Warning: Could not find active Cash Management Control to update totals.", "Update Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
 
-        ' 2. ✅ Save to Database (Saves to the 'sales' table) with Status 'Completed'
+        ' 2. Save to DB
         SaveToDatabase(posForm, modeOfPayment, reference, totalPaid)
+        ' ✅ Refresh Dashboard content after successful transaction
+        ' ✅ Refresh dashboard after successful sale
+        Try
+            If Dashboard.DashboardContent IsNot Nothing Then
+                Dashboard.DashboardContent.RefreshDashboard()
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Dashboard refresh failed: " & ex.Message)
+        End Try
 
-        ' 3. ✅ Refresh POS for new transaction (Clears DataGridView and total label)
+        ' 3. Print and clear
         MessageBox.Show("Payment successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
         PPD.Document = PD
         PPD.ShowDialog()
 
-        posForm.ClearTransaction() ' <-- move this after printing
-        Me.Hide()
+        Try
+            posForm.ClearTransaction()
+        Catch ex As Exception
+        End Try
 
+        Me.Hide()
     End Sub
 
     Private Sub SaveToDatabase(posForm As PosControl, modeOfPayment As String, reference As String, totalPaid As Decimal)
         Try
             Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
                 conn.Open()
-
-                ' Use transaction in case something fails
                 Using tr As MySqlTransaction = conn.BeginTransaction()
                     Try
-                        ' Insert one row per cart item into sales table
                         For i As Integer = 0 To posForm.ListBox1.Items.Count - 1
                             Dim itemText As String = posForm.ListBox1.Items(i).ToString()
-                            Dim priceText As String = posForm.ListBox2.Items(i).ToString().Replace("₱", "").Replace(",", "").Trim()
+                            Dim priceText As String = If(i < posForm.ListBox2.Items.Count, posForm.ListBox2.Items(i).ToString().Replace("₱", "").Replace(",", "").Trim(), "0")
                             Dim qty As Integer = 1
                             Dim regex As New System.Text.RegularExpressions.Regex("^(\d+)x\s+(.+)$")
                             Dim m = regex.Match(itemText)
@@ -257,13 +384,12 @@ Public Class Charge
 
                             Dim pricePerUnit As Decimal = 0D
                             If qty > 0 AndAlso Decimal.TryParse(priceText, pricePerUnit) Then
-                                ' priceText might be total for the line; compute unit price:
                                 Dim unitPrice As Decimal = pricePerUnit / qty
 
                                 Dim cmd As New MySqlCommand("
-                                INSERT INTO sales (TicketNumber, SaleDate, ProductName, Price, Quantity, SubTotal, TotalAmount, ModeOfPayment, Reference, Status)
-                                VALUES (@TicketNumber, @SaleDate, @ProductName, @Price, @Quantity, @SubTotal, @TotalAmount, @ModeOfPayment, @Reference, @Status)
-                            ", conn, tr)
+                                    INSERT INTO sales (TicketNumber, SaleDate, ProductName, Price, Quantity, SubTotal, TotalAmount, ModeOfPayment, Reference, Status)
+                                    VALUES (@TicketNumber, @SaleDate, @ProductName, @Price, @Quantity, @SubTotal, @TotalAmount, @ModeOfPayment, @Reference, @Status)
+                                ", conn, tr)
 
                                 cmd.Parameters.AddWithValue("@TicketNumber", posForm.lbl_tickets.Text)
                                 cmd.Parameters.AddWithValue("@SaleDate", DateTime.Now)
@@ -271,7 +397,7 @@ Public Class Charge
                                 cmd.Parameters.AddWithValue("@Price", unitPrice)
                                 cmd.Parameters.AddWithValue("@Quantity", qty)
                                 cmd.Parameters.AddWithValue("@SubTotal", unitPrice * qty)
-                                cmd.Parameters.AddWithValue("@TotalAmount", totalPaid) ' same total repeated per row; OK for now
+                                cmd.Parameters.AddWithValue("@TotalAmount", totalPaid)
                                 cmd.Parameters.AddWithValue("@ModeOfPayment", modeOfPayment)
                                 cmd.Parameters.AddWithValue("@Reference", reference)
                                 cmd.Parameters.AddWithValue("@Status", "Completed")
@@ -287,7 +413,7 @@ Public Class Charge
                 End Using
             End Using
 
-            ' ✅ Reload ProductContent safely (to update inventory/stock) - you already had this
+            ' Reload inventory
             If Dashboard.productInstance IsNot Nothing Then
                 Dashboard.productInstance.LoadInventory()
             End If
@@ -297,58 +423,28 @@ Public Class Charge
         End Try
     End Sub
 
-
+    ' When form visibility changes, refresh totals
     Private Sub Charge_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         If Me.Visible Then RefreshTotalPaid()
     End Sub
 
-    Private Sub PD_BeginPrint_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PD_BeginPrint.PrintPage
-        Dim pagesetup As New PageSettings
+    ' Set paper size before printing (BeginPrint)
+    Private Sub PD_BeginPrint(sender As Object, e As Printing.PrintEventArgs) Handles PD.BeginPrint
+        ' Estimate paper height based on item count
+        Dim posForm As PosControl = Dashboard.posInstance
+        Dim itemCount As Integer = If(posForm IsNot Nothing, posForm.ListBox1.Items.Count, 1)
+
+        ' Each product line adds about 20 units height
+        longpaper = 250 + (itemCount * 20)
+
+        Dim pagesetup As New PageSettings()
         pagesetup.PaperSize = New PaperSize("Custom", 300, longpaper)
         PD.DefaultPageSettings = pagesetup
     End Sub
-    ' ✅ Fetch sale header data
-    Private Function GetLatestSaleData(ticketNumber As String) As DataTable
-        Dim dt As New DataTable()
-        Try
-            Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
-                conn.Open()
-                Dim query As String = "SELECT SaleDate, TicketNumber, TotalAmount, ModeOfPayment, Reference FROM sales WHERE TicketNumber = @TicketNumber ORDER BY SaleDate DESC LIMIT 1"
-                Using cmd As New MySqlCommand(query, conn)
-                    cmd.Parameters.AddWithValue("@TicketNumber", ticketNumber)
-                    Using adapter As New MySqlDataAdapter(cmd)
-                        adapter.Fill(dt)
-                    End Using
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show("Error loading sale data for receipt: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-        Return dt
-    End Function
-
-    ' ✅ Fetch product details for that ticket
-    Private Function GetSaleItems(ticketNumber As String) As DataTable
-        Dim dt As New DataTable()
-        Try
-            Using conn As New MySqlConnection("server=localhost;user id=root;password=;database=pos")
-                conn.Open()
-                Dim query As String = "SELECT ProductName, Price, Quantity, (Price * Quantity) AS SubTotal FROM sales WHERE TicketNumber = @TicketNumber"
-                Using cmd As New MySqlCommand(query, conn)
-                    cmd.Parameters.AddWithValue("@TicketNumber", ticketNumber)
-                    Using da As New MySqlDataAdapter(cmd)
-                        da.Fill(dt)
-                    End Using
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show("Error loading sale items: " & ex.Message)
-        End Try
-        Return dt
-    End Function
 
 
-    Private Sub PD_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PD.PrintPage
+    ' Actual print page drawing
+    Private Sub PD_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PD.PrintPage
         Dim f8 As New Font("Arial", 8, FontStyle.Regular)
         Dim f10 As New Font("Arial", 8, FontStyle.Bold)
         Dim f14 As New Font("Arial", 10, FontStyle.Bold)
@@ -360,7 +456,6 @@ Public Class Charge
         Dim right As New StringFormat() With {.Alignment = StringAlignment.Far}
         Dim center As New StringFormat() With {.Alignment = StringAlignment.Center}
 
-        ' ---------- Get POS instance ----------
         Dim posForm As PosControl = Dashboard.posInstance
         If posForm Is Nothing Then
             MessageBox.Show("POS screen not found. Please open the POS module first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -368,12 +463,11 @@ Public Class Charge
         End If
 
         Dim ticketNumber As String = posForm.lbl_tickets.Text.Trim()
-        Dim modePayment As String = If(rb_cash.Checked, "Cash", If(rb_gcash.Checked, "GCash", "N/A"))
-        Dim reference As String = If(modePayment = "GCash", txt_reference.Text.Trim(), "")
+        Dim modePayment As String = If(SiticoneRadioButton1.Checked, "Cash", If(SiticoneRadioButton2.Checked, "GCash", "N/A"))
+        Dim reference As String = If(modePayment = "GCash", (If(gcashForm IsNot Nothing, gcashForm.txt_ref.Text.Trim(), "")), "")
 
         Dim line As String = "======================================="
 
-        ' ---------- Header ----------
         Dim currentY As Integer = 20
         e.Graphics.DrawString("Frosties N' Cream", f14, Brushes.Black, 95, currentY, center)
         currentY += 15
@@ -392,7 +486,7 @@ Public Class Charge
         e.Graphics.DrawString(line, f8, Brushes.Black, 100, currentY, center)
         currentY += 14
 
-        ' ---------- Product Header ----------
+        ' Product header
         e.Graphics.DrawString("Qty", f8, Brushes.Black, 15, currentY, center)
         e.Graphics.DrawString("Product", f8, Brushes.Black, 90, currentY, center)
         e.Graphics.DrawString("Price", f8, Brushes.Black, 178, currentY, right)
@@ -400,7 +494,7 @@ Public Class Charge
         e.Graphics.DrawString("----------------------------------------------------------------", f8, Brushes.Black, 100, currentY, center)
         currentY += 12
 
-        ' ---------- Product Lines ----------
+        ' Product lines
         Dim totalAmount As Decimal = 0D
 
         For i As Integer = 0 To posForm.ListBox1.Items.Count - 1
@@ -420,21 +514,18 @@ Public Class Charge
             Decimal.TryParse(priceText.Replace("₱", "").Replace(",", "").Trim(), lineTotal)
             Dim unitPrice As Decimal = If(qty > 0, Math.Round(lineTotal / qty, 2), 0D)
 
-            ' ✅ Print product line properly spaced
             e.Graphics.DrawString(qty.ToString(), f8, Brushes.Black, 15, currentY, center)
             e.Graphics.DrawString(prodName, f8, Brushes.Black, 90, currentY, center)
             e.Graphics.DrawString(lineTotal.ToString("N2"), f8, Brushes.Black, 178, currentY, right)
 
-            currentY += 12 ' ✅ move down after each product
+            currentY += 12
             totalAmount += lineTotal
         Next
 
-        ' ---------- Divider ----------
         currentY += 6
         e.Graphics.DrawString("----------------------------------------------------------------", f8, Brushes.Black, 100, currentY, center)
         currentY += 14
 
-        ' ---------- Payment Info ----------
         e.Graphics.DrawString("Payment: " & modePayment, f8, Brushes.Black, 10, currentY)
         currentY += 12
         If modePayment = "GCash" AndAlso reference <> "" Then
@@ -442,16 +533,24 @@ Public Class Charge
             currentY += 12
         End If
 
-        ' ---------- Total ----------
         e.Graphics.DrawString(line, f8, Brushes.Black, 100, currentY, center)
         currentY += 14
         e.Graphics.DrawString("TOTAL: ₱" & totalAmount.ToString("N2"), f10, Brushes.Black, 95, currentY, center)
         currentY += 20
         e.Graphics.DrawString("Thank you for your purchase!", f8, Brushes.Black, 95, currentY, center)
 
-        ' ✅ Adjust paper size automatically
         longpaper = currentY + 80
         PD.DefaultPageSettings.PaperSize = New PaperSize("Custom", 300, longpaper)
     End Sub
 
+    ' Empty handler used by AddHandler wiring
+    Private Sub txt_reference_TextChanged(sender As Object, e As EventArgs)
+        ' you may implement validation of reference here if desired
+    End Sub
+
+    Private Sub SiticoneImageButton1_Click(sender As Object, e As EventArgs) Handles SiticoneImageButton1.Click
+        Me.Close()
+        ' Return to POS screen via Dashboard
+        Dashboard.posInstance.BringToFront()
+    End Sub
 End Class

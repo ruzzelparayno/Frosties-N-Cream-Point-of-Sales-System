@@ -27,6 +27,11 @@ PointOfSales
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PointOfSales.My.Resources.Resources.Back_To">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PointOfSales.My.Resources.Resources.Dashboard">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -38,6 +43,16 @@ PointOfSales
 </summary>
 </member>
 <member name="P:PointOfSales.My.Resources.Resources.Logout">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.Minus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.Plus">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -68,6 +83,11 @@ PointOfSales
 </summary>
 </member>
 <member name="P:PointOfSales.My.Resources.Resources.Shift">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PointOfSales.My.Resources.Resources.success">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

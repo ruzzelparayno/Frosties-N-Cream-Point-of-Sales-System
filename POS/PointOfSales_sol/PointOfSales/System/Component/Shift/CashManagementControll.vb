@@ -68,7 +68,6 @@
         lbl_datet.Text = Date.Now.ToString("yyyy-MM-dd HH:mm:ss")
         clearopenshift()
         displayalllabels()
-
         ' ✅ Update totals
         ComputeTotal()
     End Sub

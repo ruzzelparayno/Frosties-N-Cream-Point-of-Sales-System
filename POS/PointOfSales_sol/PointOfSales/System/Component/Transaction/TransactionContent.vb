@@ -10,24 +10,43 @@ Public Class TransactionContent
     End Sub
     Public Sub LoadTransactions()
         Try
+            ' Open the database connection
             conn.Open()
-            ' Added Status column
-            Dim query As String = "SELECT TicketNumber, ProductName, SaleDate, Subtotal, DiscountType, Vat, TotalAmount, Status FROM sales ORDER BY SaleDate ASC"
+
+            ' Query to fetch transaction details including Status, ordered by most recent SaleDate
+            Dim query As String = "
+        SELECT 
+            TicketNumber, 
+            ProductName, 
+            SaleDate, 
+            Subtotal, 
+            DiscountType, 
+            Vat, 
+            TotalAmount, 
+            Status 
+        FROM sales 
+        ORDER BY SaleDate DESC;
+    "
+
+            ' Execute the query and fill the DataTable
             Dim cmd As New MySqlCommand(query, conn)
             Dim adapter As New MySqlDataAdapter(cmd)
-
             dt = New DataTable()
             adapter.Fill(dt)
 
+            ' Bind the data to the DataGridView
             dgv_transactions.DataSource = dt
             dgv_transactions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
             dgv_transactions.ReadOnly = True
 
         Catch ex As Exception
             MessageBox.Show("Error loading transactions: " & ex.Message)
+
         Finally
+            ' Ensure the connection is closed even if an error occurs
             conn.Close()
         End Try
+
     End Sub
 
     'Show ProductName in tooltip when hovering

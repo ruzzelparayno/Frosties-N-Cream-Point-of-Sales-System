@@ -24,7 +24,6 @@ Partial Class PosControl
     Private Sub InitializeComponent()
         Me.SiticoneDashboardCard = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
         Me.cb_cate1 = New System.Windows.Forms.ComboBox()
-        Me.SiticoneButtonTextbox1 = New SiticoneNetFrameworkUI.SiticoneButtonTextbox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_dandt = New System.Windows.Forms.Label()
         Me.lbl_tickets = New System.Windows.Forms.Label()
@@ -53,6 +52,7 @@ Partial Class PosControl
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.SiticoneButtonTextbox1 = New SiticoneNetFrameworkUI.SiticoneButtonTextbox()
         Me.SiticoneDashboardCard.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -75,8 +75,8 @@ Partial Class PosControl
         Me.SiticoneDashboardCard.BorderColor = System.Drawing.Color.Silver
         Me.SiticoneDashboardCard.BorderEndColor = System.Drawing.Color.Silver
         Me.SiticoneDashboardCard.BorderStartColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard.Controls.Add(Me.cb_cate1)
         Me.SiticoneDashboardCard.Controls.Add(Me.SiticoneButtonTextbox1)
+        Me.SiticoneDashboardCard.Controls.Add(Me.cb_cate1)
         Me.SiticoneDashboardCard.Dock = System.Windows.Forms.DockStyle.Top
         Me.SiticoneDashboardCard.Location = New System.Drawing.Point(0, 0)
         Me.SiticoneDashboardCard.Name = "SiticoneDashboardCard"
@@ -91,50 +91,6 @@ Partial Class PosControl
         Me.cb_cate1.Name = "cb_cate1"
         Me.cb_cate1.Size = New System.Drawing.Size(149, 28)
         Me.cb_cate1.TabIndex = 18
-        '
-        'SiticoneButtonTextbox1
-        '
-        Me.SiticoneButtonTextbox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SiticoneButtonTextbox1.BackColor = System.Drawing.Color.Transparent
-        Me.SiticoneButtonTextbox1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticoneButtonTextbox1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.SiticoneButtonTextbox1.BottomLeftCornerRadius = 8
-        Me.SiticoneButtonTextbox1.BottomRightCornerRadius = 8
-        Me.SiticoneButtonTextbox1.ButtonColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ButtonHoverColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ButtonImageHover = Nothing
-        Me.SiticoneButtonTextbox1.ButtonImageIdle = Nothing
-        Me.SiticoneButtonTextbox1.ButtonImagePress = Nothing
-        Me.SiticoneButtonTextbox1.ButtonPlaceholderColor = System.Drawing.Color.White
-        Me.SiticoneButtonTextbox1.ButtonPlaceholderFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.SiticoneButtonTextbox1.ButtonPressColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.SiticoneButtonTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.SiticoneButtonTextbox1.FocusBorderColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.SiticoneButtonTextbox1.FocusImage = Nothing
-        Me.SiticoneButtonTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(163, Byte), Integer))
-        Me.SiticoneButtonTextbox1.HoverBorderColor = System.Drawing.Color.Gray
-        Me.SiticoneButtonTextbox1.HoverImage = Nothing
-        Me.SiticoneButtonTextbox1.IdleImage = Nothing
-        Me.SiticoneButtonTextbox1.Location = New System.Drawing.Point(533, 5)
-        Me.SiticoneButtonTextbox1.Name = "SiticoneButtonTextbox1"
-        Me.SiticoneButtonTextbox1.PlaceholderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.SiticoneButtonTextbox1.PlaceholderFocusColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.SiticoneButtonTextbox1.PlaceholderFont = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.SiticoneButtonTextbox1.PlaceholderText = "Search?"
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.ButtonColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.ButtonPlaceholderColor = System.Drawing.Color.Gray
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.SiticoneButtonTextbox1.RippleColor = System.Drawing.Color.White
-        Me.SiticoneButtonTextbox1.Size = New System.Drawing.Size(201, 43)
-        Me.SiticoneButtonTextbox1.TabIndex = 17
-        Me.SiticoneButtonTextbox1.TextColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(163, Byte), Integer))
-        Me.SiticoneButtonTextbox1.TextContent = ""
-        Me.SiticoneButtonTextbox1.TextLeftMargin = 0
-        Me.SiticoneButtonTextbox1.TopLeftCornerRadius = 8
-        Me.SiticoneButtonTextbox1.TopRightCornerRadius = 8
         '
         'Panel1
         '
@@ -526,11 +482,11 @@ Partial Class PosControl
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.PointOfSales.My.Resources.Resources.POS
+        Me.PictureBox1.Image = Global.PointOfSales.My.Resources.Resources.POS_terminal
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(222, 62)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
@@ -559,6 +515,52 @@ Partial Class PosControl
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(524, 524)
         Me.FlowLayoutPanel1.TabIndex = 1
         '
+        'SiticoneButtonTextbox1
+        '
+        Me.SiticoneButtonTextbox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SiticoneButtonTextbox1.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneButtonTextbox1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.SiticoneButtonTextbox1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.SiticoneButtonTextbox1.BottomLeftCornerRadius = 20
+        Me.SiticoneButtonTextbox1.BottomRightCornerRadius = 20
+        Me.SiticoneButtonTextbox1.ButtonColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ButtonCornerRadius = 15
+        Me.SiticoneButtonTextbox1.ButtonHoverColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ButtonImageHover = Nothing
+        Me.SiticoneButtonTextbox1.ButtonImageIdle = Nothing
+        Me.SiticoneButtonTextbox1.ButtonImagePress = Nothing
+        Me.SiticoneButtonTextbox1.ButtonPlaceholderColor = System.Drawing.Color.Black
+        Me.SiticoneButtonTextbox1.ButtonPlaceholderFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneButtonTextbox1.ButtonPressColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.SiticoneButtonTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.SiticoneButtonTextbox1.FocusBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneButtonTextbox1.FocusImage = Nothing
+        Me.SiticoneButtonTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.SiticoneButtonTextbox1.HoverBorderColor = System.Drawing.Color.Gray
+        Me.SiticoneButtonTextbox1.HoverImage = Nothing
+        Me.SiticoneButtonTextbox1.IdleImage = Nothing
+        Me.SiticoneButtonTextbox1.Location = New System.Drawing.Point(533, 10)
+        Me.SiticoneButtonTextbox1.Name = "SiticoneButtonTextbox1"
+        Me.SiticoneButtonTextbox1.PlaceholderColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.SiticoneButtonTextbox1.PlaceholderFocusColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(12, Byte), Integer))
+        Me.SiticoneButtonTextbox1.PlaceholderFont = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneButtonTextbox1.PlaceholderText = "Search..."
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.ButtonColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.ButtonPlaceholderColor = System.Drawing.Color.Gray
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.SiticoneButtonTextbox1.RippleColor = System.Drawing.Color.White
+        Me.SiticoneButtonTextbox1.Size = New System.Drawing.Size(214, 38)
+        Me.SiticoneButtonTextbox1.TabIndex = 19
+        Me.SiticoneButtonTextbox1.TextColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.SiticoneButtonTextbox1.TextContent = ""
+        Me.SiticoneButtonTextbox1.TextLeftMargin = 0
+        Me.SiticoneButtonTextbox1.TopLeftCornerRadius = 20
+        Me.SiticoneButtonTextbox1.TopRightCornerRadius = 20
+        Me.SiticoneButtonTextbox1.ValidationEnabled = False
+        '
         'PosControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -585,7 +587,6 @@ Partial Class PosControl
     End Sub
 
     Friend WithEvents SiticoneDashboardCard1 As SiticoneNetFrameworkUI.SiticoneDashboardCard
-    Friend WithEvents SiticoneButtonTextbox1 As SiticoneNetFrameworkUI.SiticoneButtonTextbox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents SiticoneLabel1 As SiticoneNetFrameworkUI.SiticoneLabel
@@ -622,4 +623,5 @@ Partial Class PosControl
     Friend WithEvents cb_cate1 As ComboBox
     Friend WithEvents lbl_dandt As Label
     Friend WithEvents SiticoneDashboardCard As SiticoneNetFrameworkUI.SiticoneDashboardCard
+    Friend WithEvents SiticoneButtonTextbox1 As SiticoneNetFrameworkUI.SiticoneButtonTextbox
 End Class

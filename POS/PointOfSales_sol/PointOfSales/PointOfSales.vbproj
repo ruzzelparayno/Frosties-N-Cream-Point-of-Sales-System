@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,11 +24,11 @@
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
+    <MapFileExtensions>false</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -61,6 +62,24 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>63D86525AD1D71C6194271CB11A8C83B0ECF0648</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PointOfSales_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
@@ -98,8 +117,8 @@
     <Reference Include="QRCoder, Version=1.6.0.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
       <HintPath>..\packages\QRCoder.1.6.0\lib\net40\QRCoder.dll</HintPath>
     </Reference>
-    <Reference Include="SiticoneNetFrameworkUI, Version=2025.10.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Siticone.NetFramework.UI.2025.10.7\lib\net48\SiticoneNetFrameworkUI.dll</HintPath>
+    <Reference Include="SiticoneNetFrameworkUI, Version=2025.10.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.NetFramework.UI.2025.10.21\lib\net48\SiticoneNetFrameworkUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -159,6 +178,32 @@
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
+    <Import Include="SiticoneNetFrameworkUI" />
+    <Import Include="SiticoneNetFrameworkUI.Design" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.Countries" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.CountryCodes" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.CreditCards" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.DatePicker" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.Dialogs.DataGrid" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.DrawingStyle" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.Enum" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.Forms" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.FormTheme" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.GaugeHelper.Clock" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.GlobalEvents" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.ProgressBar" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.Sliders" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.Text" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.ThemeManager.AdvancedUpDown" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.ThemeManager.DataGrid" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.ThemeManager.Gauge" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.ThemeManager.Gauge.Helpers" />
+    <Import Include="SiticoneNetFrameworkUI.Helpers.ThemeManager.GlobalSystem" />
+    <Import Include="SiticoneNetFrameworkUI.Hokoyo.ComponentProvider" />
+    <Import Include="SiticoneNetFrameworkUI.Hokoyo.FormsManagement" />
+    <Import Include="SiticoneNetFrameworkUI.Hokoyo.InternetCheck" />
+    <Import Include="SiticoneNetFrameworkUI.Hokoyo.NewLicensingUI" />
     <Import Include="System" />
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
@@ -258,6 +303,24 @@
       <DependentUpon>LogoutContent.vb</DependentUpon>
     </Compile>
     <Compile Include="System\Component\Logout\LogoutContent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Cash.Designer.vb">
+      <DependentUpon>Charge-Cash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Cash.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Gcash.Designer.vb">
+      <DependentUpon>Charge-Gcash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Gcash.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Success.Designer.vb">
+      <DependentUpon>Charge-Success.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Component\Pos\Charge-Success.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="System\Component\Pos\PosControl.Designer.vb">
@@ -364,6 +427,15 @@
     <EmbeddedResource Include="System\Component\Logout\LogoutContent.resx">
       <DependentUpon>LogoutContent.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="System\Component\Pos\Charge-Cash.resx">
+      <DependentUpon>Charge-Cash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\Component\Pos\Charge-Gcash.resx">
+      <DependentUpon>Charge-Gcash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\Component\Pos\Charge-Success.resx">
+      <DependentUpon>Charge-Success.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="System\Component\Pos\PosControl.resx">
       <DependentUpon>PosControl.vb</DependentUpon>
     </EmbeddedResource>
@@ -396,6 +468,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -409,6 +482,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PointOfSales_TemporaryKey.pfx" />
     <None Include="Resources\POS imge.png" />
   </ItemGroup>
   <ItemGroup>
@@ -456,6 +530,20 @@
   <ItemGroup>
     <None Include="Resources\Users.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Back To.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment Success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-payment-success-32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
