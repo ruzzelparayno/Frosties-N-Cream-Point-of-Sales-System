@@ -129,11 +129,13 @@ Public Class TransactionContent
 
         ' ✅ If user confirmed refund
         If refundForm.DialogResult = DialogResult.OK Then
+            ' ✅ 1. Restore stock for refunded items
+            RestoreStockForTicket(ticketNum)
 
-            ' Refresh transactions (RefundForm already updated DB status)
+            ' ✅ 2. Refresh transactions
             LoadTransactions()
 
-            ' Update total refunded label in CashManagementControll
+            ' ✅ 3. Update total refunded label in CashManagementControll
             Dim shiftForm As ShiftContent = Dashboard.shiftInstance
             If shiftForm IsNot Nothing AndAlso shiftForm.Panel2.Controls.Count > 0 Then
                 Dim cashCtrl As CashManagementControll = TryCast(shiftForm.Panel2.Controls(0), CashManagementControll)
@@ -145,9 +147,10 @@ Public Class TransactionContent
                 End If
             End If
 
-            MessageBox.Show("Refund applied and UI updated.", "Refund", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Refund applied and stock restored successfully.", "Refund", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
+
 
     ' NEW FUNCTION: Get total refunded amount
     Private Function GetTotalRefunded() As Decimal
@@ -168,5 +171,37 @@ Public Class TransactionContent
         End Try
         Return totalRefund
     End Function
+    Private Sub RestoreStockForTicket(ticketNumber As String)
+        Try
+            Using c As New MySqlConnection(connectionString)
+                c.Open()
+                ' Find all items for that ticket (only those that were completed)
+                Dim q As String = "SELECT ProductName, Quantity FROM sales WHERE TicketNumber = @TicketNumber AND Status = 'Completed'"
+                Using cmd As New MySqlCommand(q, c)
+                    cmd.Parameters.AddWithValue("@TicketNumber", ticketNumber)
+                    Using reader = cmd.ExecuteReader()
+                        Dim toRestore As New List(Of (String, Integer))
+                        While reader.Read()
+                            Dim pname = reader("ProductName").ToString()
+                            Dim qty = If(IsDBNull(reader("Quantity")), 0, Convert.ToInt32(reader("Quantity")))
+                            If qty > 0 Then toRestore.Add((pname, qty))
+                        End While
+                        reader.Close()
+
+                        ' Update product stock for each item
+                        For Each pair In toRestore
+                            Using upd As New MySqlCommand("UPDATE products SET StockQuantity = StockQuantity + @qty WHERE ProductName = @pname", c)
+                                upd.Parameters.AddWithValue("@qty", pair.Item2)
+                                upd.Parameters.AddWithValue("@pname", pair.Item1)
+                                upd.ExecuteNonQuery()
+                            End Using
+                        Next
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error restoring stock for ticket: " & ex.Message, "DB Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
 
 End Class

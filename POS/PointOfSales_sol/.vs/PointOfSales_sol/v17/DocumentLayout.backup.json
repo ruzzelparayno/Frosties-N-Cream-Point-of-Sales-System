@@ -1,16 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\zaii\\desktop\\0\\latest system\\pointofsales_sol\\pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\latest system1\\pointofsales_sol\\pointofsales\\charge.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\charge.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\pointofsales\\charge.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\charge.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\latest system1\\pointofsales_sol\\pointofsales\\edit.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\edit.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\pointofsales\\system\\component\\pos\\poscontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\pos\\poscontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\pointofsales\\system\\component\\pos\\poscontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\pos\\poscontrol.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\pointofsales\\system\\component\\transaction\\transactioncontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\transaction\\transactioncontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\user\\downloads\\latest system1\\pointofsales_sol\\pointofsales\\edit.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\edit.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PointOfSales||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\zaii\\desktop\\0\\latest system\\pointofsales_sol\\pointofsales\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,31 +42,103 @@
       "DocumentGroups": [
         {
           "DockedWidth": 332,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PointOfSales",
-              "DocumentMoniker": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\PointOfSales\\PointOfSales.vbproj",
-              "RelativeDocumentMoniker": "PointOfSales\\PointOfSales.vbproj",
-              "ToolTip": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\PointOfSales\\PointOfSales.vbproj",
-              "RelativeToolTip": "PointOfSales\\PointOfSales.vbproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-26T11:19:02.085Z",
+              "DocumentIndex": 2,
+              "Title": "edit.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\edit.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\edit.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\edit.vb",
+              "RelativeToolTip": "PointOfSales\\edit.vb",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-30T03:48:18.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "edit.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\edit.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\edit.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\edit.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\edit.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-30T03:48:09.387Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PosControl.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\System\\Component\\Pos\\PosControl.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Pos\\PosControl.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\System\\Component\\Pos\\PosControl.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Pos\\PosControl.vb",
+              "ViewState": "AgIAAM4BAAAAAAAAAAAowPsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-28T13:37:51.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PosControl.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\System\\Component\\Pos\\PosControl.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Pos\\PosControl.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\System\\Component\\Pos\\PosControl.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Pos\\PosControl.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-28T13:34:57.668Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "charge.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\charge.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\charge.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\charge.vb",
+              "RelativeToolTip": "PointOfSales\\charge.vb",
+              "ViewState": "AgIAAH8BAAAAAAAAAAAAAMMBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-28T05:46:04.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransactionContent.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwM0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-27T07:59:01.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "charge.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\charge.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\charge.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\charge.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\charge.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-28T05:45:55.852Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DashboardContent.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
               "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\DashboardContent.vb",
-              "ToolTip": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb [Design]",
+              "ToolTip": "C:\\Users\\User\\Downloads\\Latest System1\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb [Design]",
               "RelativeToolTip": "PointOfSales\\System\\Component\\DashboardContent.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-26T10:41:24.97Z",

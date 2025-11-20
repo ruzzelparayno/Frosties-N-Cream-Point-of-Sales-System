@@ -96,6 +96,17 @@ Public Class PosControl
     Private Sub SiticoneActivityButton2_Click(sender As Object, e As EventArgs) Handles SiticoneActivityButton2.Click
         If ListBox1.SelectedIndex <> -1 Then
             Dim index = ListBox1.SelectedIndex
+            Dim itemText = ListBox1.Items(index).ToString()
+            ' parse qty and productName
+            Dim regex As New System.Text.RegularExpressions.Regex("^(\d+)x\s+(.+)$")
+            Dim m = regex.Match(itemText)
+            If m.Success Then
+                Dim qty As Integer = Convert.ToInt32(m.Groups(1).Value)
+                Dim pname As String = m.Groups(2).Value.Trim()
+                ' restore stock
+                ChangeStock(pname, qty)
+            End If
+
             ListBox1.Items.RemoveAt(index)
             ListBox2.Items.RemoveAt(index)
             CalculateTotals()
@@ -104,14 +115,19 @@ Public Class PosControl
         End If
     End Sub
 
+
     ' ✅ This existing method clears the items and totals.
     Public Sub ResetOrder()
+        ' Restore stock back for current cart
+        RestoreStockFromCart()
+
         ListBox1.Items.Clear()
         ListBox2.Items.Clear()
         lbl_vat.Text = "₱0.00"
         lbl_subtotal.Text = "₱0.00"
         lbl_total.Text = "₱0.00"
     End Sub
+
 
     Private Sub AddProductCard(productId As Integer, productName As String, productImage As Image, Optional productPrice As Decimal = 0D)
         Dim card As New Panel()
@@ -161,34 +177,59 @@ Public Class PosControl
     End Sub
 
     Private Sub AddOrUpdateTicket(productName As String, productPrice As Decimal)
-        Dim found As Boolean = False
-
-        For i As Integer = 0 To ListBox1.Items.Count - 1
-            Dim item As String = ListBox1.Items(i).ToString()
-            If item.Contains(productName) Then
-                Dim qty As Integer = 1
-                Dim regex As New System.Text.RegularExpressions.Regex("(\d+)x")
-                Dim match = regex.Match(item)
-                If match.Success Then
-                    qty = Convert.ToInt32(match.Groups(1).Value)
-                End If
-                qty += 1
-
-                ListBox1.Items(i) = $"{qty}x {productName}"
-                ListBox2.Items(i) = "₱" & (productPrice * qty).ToString("N2")
-
-                found = True
-                Exit For
+        Try
+            ' Check stock first
+            Dim stockNow As Integer = GetStockQuantity(productName)
+            If stockNow <= 0 Then
+                MessageBox.Show("No stock available for this product.", "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return
             End If
-        Next
 
-        If Not found Then
-            ListBox1.Items.Add($"1x {productName}")
-            ListBox2.Items.Add("₱" & productPrice.ToString("N2"))
-        End If
+            Dim found As Boolean = False
 
-        CalculateTotals()
+            For i As Integer = 0 To ListBox1.Items.Count - 1
+                Dim item As String = ListBox1.Items(i).ToString()
+                If item.Contains(productName) Then
+                    ' parse existing quantity
+                    Dim qty As Integer = 1
+                    Dim regex As New System.Text.RegularExpressions.Regex("(\d+)x")
+                    Dim match = regex.Match(item)
+                    If match.Success Then
+                        qty = Convert.ToInt32(match.Groups(1).Value)
+                    End If
+
+                    ' Before incrementing ensure stock still available for +1
+                    If GetStockQuantity(productName) <= 0 Then
+                        MessageBox.Show("No stock available to increase quantity for this product.", "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                        Return
+                    End If
+
+                    ' Update listboxes
+                    qty += 1
+                    ListBox1.Items(i) = $"{qty}x {productName}"
+                    ListBox2.Items(i) = "₱" & (productPrice * qty).ToString("N2")
+
+                    ' Decrease stock by 1 in products
+                    ChangeStock(productName, -1)
+
+                    found = True
+                    Exit For
+                End If
+            Next
+
+            If Not found Then
+                ' Add new item and decrease stock by 1
+                ListBox1.Items.Add($"1x {productName}")
+                ListBox2.Items.Add("₱" & productPrice.ToString("N2"))
+                ChangeStock(productName, -1)
+            End If
+
+            CalculateTotals()
+        Catch ex As Exception
+            MessageBox.Show("Error adding product to ticket: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
+
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
         If ListBox1.SelectedIndex <> -1 AndAlso ListBox1.SelectedIndex < ListBox2.Items.Count Then
@@ -360,6 +401,107 @@ Public Class PosControl
         ' 2. Advance the ticket number for the next transaction
         NextTicket()
         UpdateTicket()
+    End Sub
+    ' ------------------------
+    ' Stock helper functions
+    ' ------------------------
+    Public Function GetStockQuantity(productName As String) As Integer
+        Dim stock As Integer = 0
+        Try
+            Using c As New MySqlConnection(connectionString)
+                c.Open()
+                Dim q As String = "SELECT StockQuantity FROM products WHERE ProductName = @ProductName LIMIT 1"
+                Using cmd As New MySqlCommand(q, c)
+                    cmd.Parameters.AddWithValue("@ProductName", productName)
+                    Dim res = cmd.ExecuteScalar()
+                    If res IsNot Nothing AndAlso Not IsDBNull(res) Then
+                        stock = Convert.ToInt32(res)
+                    End If
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error checking stock: " & ex.Message, "DB Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+        Return stock
+    End Function
+
+    Public Function ChangeStock(productName As String, delta As Integer) As Boolean
+        ' delta can be negative (decrease) or positive (increase)
+        Try
+            Using c As New MySqlConnection(connectionString)
+                c.Open()
+                Dim q As String = "UPDATE products SET StockQuantity = StockQuantity + @Delta WHERE ProductName = @ProductName"
+                Using cmd As New MySqlCommand(q, c)
+                    cmd.Parameters.AddWithValue("@Delta", delta)
+                    cmd.Parameters.AddWithValue("@ProductName", productName)
+                    Dim affected As Integer = cmd.ExecuteNonQuery()
+                    Return affected > 0
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error updating stock: " & ex.Message, "DB Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return False
+        End Try
+    End Function
+
+    ' Restore stock for everything currently in the listboxes (used on Reset/Clear)
+    Public Sub RestoreStockFromCart()
+        Try
+            For i As Integer = 0 To ListBox1.Items.Count - 1
+                Dim itemText = ListBox1.Items(i).ToString()
+                ' Expect format "Nx ProductName"
+                Dim regex As New System.Text.RegularExpressions.Regex("^(\d+)x\s+(.+)$")
+                Dim m = regex.Match(itemText)
+                If m.Success Then
+                    Dim qty As Integer = Convert.ToInt32(m.Groups(1).Value)
+                    Dim pname As String = m.Groups(2).Value.Trim()
+                    ChangeStock(pname, qty) ' increase stock by qty
+                End If
+            Next
+        Catch ex As Exception
+            Debug.WriteLine("RestoreStockFromCart error: " & ex.Message)
+        End Try
+    End Sub
+    Private Sub InsertSales(productName As String, quantity As Integer, unitPrice As Decimal)
+        Try
+            Using c As New MySqlConnection(connectionString)
+                c.Open()
+                Dim q As String = "
+                INSERT INTO sales (TicketNumber, ProductName, Quantity, UnitPrice, SubTotal)
+                VALUES (@TicketNumber, @ProductName, @Quantity, @UnitPrice, @SubTotal)"
+                Using cmd As New MySqlCommand(q, c)
+                    cmd.Parameters.AddWithValue("@TicketNumber", PosControl.CurrentTicket)
+                    cmd.Parameters.AddWithValue("@ProductName", productName)
+                    cmd.Parameters.AddWithValue("@Quantity", quantity)
+                    cmd.Parameters.AddWithValue("@UnitPrice", unitPrice)
+                    cmd.Parameters.AddWithValue("@SubTotal", quantity * unitPrice)
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error inserting sales record: " & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub UpdateSales(productName As String, quantity As Integer, unitPrice As Decimal)
+        Try
+            Using c As New MySqlConnection(connectionString)
+                c.Open()
+                Dim q As String = "
+                UPDATE sales 
+                SET Quantity = @Quantity, SubTotal = @SubTotal
+                WHERE TicketNumber = @TicketNumber AND ProductName = @ProductName"
+                Using cmd As New MySqlCommand(q, c)
+                    cmd.Parameters.AddWithValue("@TicketNumber", PosControl.CurrentTicket)
+                    cmd.Parameters.AddWithValue("@ProductName", productName)
+                    cmd.Parameters.AddWithValue("@Quantity", quantity)
+                    cmd.Parameters.AddWithValue("@SubTotal", quantity * unitPrice)
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error updating sales record: " & ex.Message)
+        End Try
     End Sub
 
 End Class

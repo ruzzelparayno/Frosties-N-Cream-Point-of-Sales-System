@@ -38,6 +38,7 @@ Partial Class Charge
         Me.cb_pwd = New System.Windows.Forms.CheckBox()
         Me.cb_senior = New System.Windows.Forms.CheckBox()
         Me.btn_charge = New System.Windows.Forms.Button()
+        Me.PD_BeginPrint = New System.Drawing.Printing.PrintDocument()
         Me.SuspendLayout()
         '
         'Label1
@@ -186,7 +187,10 @@ Partial Class Charge
         Me.btn_charge.Text = "Charge"
         Me.btn_charge.UseVisualStyleBackColor = True
         '
-        'charge
+        'PD_BeginPrint
+        '
+        '
+        'Charge
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -207,7 +211,7 @@ Partial Class Charge
         Me.Controls.Add(Me.rb_gcash)
         Me.Controls.Add(Me.rb_cash)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "charge"
+        Me.Name = "Charge"
         Me.Text = "charge"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -230,4 +234,5 @@ Partial Class Charge
     Friend WithEvents cb_pwd As CheckBox
     Friend WithEvents cb_senior As CheckBox
     Friend WithEvents btn_charge As Button
+    Friend WithEvents PD_BeginPrint As Printing.PrintDocument
 End Class

@@ -22,16 +22,20 @@ Partial Class DashboardContent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardContent))
         Dim BarChartTheme1 As SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme = New SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme()
         Dim PieChartTheme1 As SiticoneNetFrameworkUI.SiticonePieChart.PieChartTheme = New SiticoneNetFrameworkUI.SiticonePieChart.PieChartTheme()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.SiticonePanel1 = New SiticoneNetFrameworkUI.SiticonePanel()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.SiticonePanel4 = New SiticoneNetFrameworkUI.SiticonePanel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SiticonePanel2 = New SiticoneNetFrameworkUI.SiticonePanel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.SiticonePanel1 = New SiticoneNetFrameworkUI.SiticonePanel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SiticonePanel3 = New SiticoneNetFrameworkUI.SiticonePanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -44,13 +48,11 @@ Partial Class DashboardContent
         Me.SiticonePieChart1 = New SiticoneNetFrameworkUI.SiticonePieChart()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.SiticonePanel4 = New SiticoneNetFrameworkUI.SiticonePanel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.SiticonePanel1.SuspendLayout()
+        Me.SiticonePanel4.SuspendLayout()
         Me.SiticonePanel2.SuspendLayout()
+        Me.SiticonePanel1.SuspendLayout()
         Me.SiticonePanel3.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -59,7 +61,6 @@ Partial Class DashboardContent
         Me.Panel7.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel9.SuspendLayout()
-        Me.SiticonePanel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel2
@@ -90,68 +91,68 @@ Partial Class DashboardContent
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(778, 121)
         Me.TableLayoutPanel1.TabIndex = 1
         '
-        'SiticonePanel1
+        'SiticonePanel4
         '
-        Me.SiticonePanel1.AcrylicTintColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticonePanel1.BackColor = System.Drawing.Color.Transparent
-        Me.SiticonePanel1.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center
-        Me.SiticonePanel1.BorderDashPattern = Nothing
-        Me.SiticonePanel1.BorderGradientEndColor = System.Drawing.Color.DimGray
-        Me.SiticonePanel1.BorderGradientStartColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.SiticonePanel1.BorderThickness = 2.0!
-        Me.SiticonePanel1.Controls.Add(Me.Label7)
-        Me.SiticonePanel1.Controls.Add(Me.Label6)
-        Me.SiticonePanel1.CornerRadiusBottomLeft = 16.0!
-        Me.SiticonePanel1.CornerRadiusBottomRight = 16.0!
-        Me.SiticonePanel1.CornerRadiusTopLeft = 16.0!
-        Me.SiticonePanel1.CornerRadiusTopRight = 16.0!
-        Me.SiticonePanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SiticonePanel1.EnableAcrylicEffect = False
-        Me.SiticonePanel1.EnableMicaEffect = False
-        Me.SiticonePanel1.EnableRippleEffect = False
-        Me.SiticonePanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.SiticonePanel1.GradientColors = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.LightGray, System.Drawing.Color.Gray}
-        Me.SiticonePanel1.GradientPositions = New Single() {0!, 0.5!, 1.0!}
-        Me.SiticonePanel1.Location = New System.Drawing.Point(521, 3)
-        Me.SiticonePanel1.Name = "SiticonePanel1"
-        Me.SiticonePanel1.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid
-        Me.SiticonePanel1.RippleAlpha = 50
-        Me.SiticonePanel1.RippleAlphaDecrement = 3
-        Me.SiticonePanel1.RippleColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticonePanel1.RippleMaxSize = 600.0!
-        Me.SiticonePanel1.RippleSpeed = 15.0!
-        Me.SiticonePanel1.ShowBorder = True
-        Me.SiticonePanel1.Size = New System.Drawing.Size(254, 115)
-        Me.SiticonePanel1.TabIndex = 6
-        Me.SiticonePanel1.TabStop = True
-        Me.SiticonePanel1.TrackSystemTheme = False
-        Me.SiticonePanel1.UseBorderGradient = False
-        Me.SiticonePanel1.UseMultiGradient = False
-        Me.SiticonePanel1.UsePatternTexture = False
-        Me.SiticonePanel1.UseRadialGradient = False
+        Me.SiticonePanel4.AcrylicTintColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticonePanel4.BackColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel4.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center
+        Me.SiticonePanel4.BorderDashPattern = Nothing
+        Me.SiticonePanel4.BorderGradientEndColor = System.Drawing.Color.DimGray
+        Me.SiticonePanel4.BorderGradientStartColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.SiticonePanel4.BorderThickness = 2.0!
+        Me.SiticonePanel4.Controls.Add(Me.Label2)
+        Me.SiticonePanel4.Controls.Add(Me.Label3)
+        Me.SiticonePanel4.CornerRadiusBottomLeft = 16.0!
+        Me.SiticonePanel4.CornerRadiusBottomRight = 16.0!
+        Me.SiticonePanel4.CornerRadiusTopLeft = 16.0!
+        Me.SiticonePanel4.CornerRadiusTopRight = 16.0!
+        Me.SiticonePanel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SiticonePanel4.EnableAcrylicEffect = False
+        Me.SiticonePanel4.EnableMicaEffect = False
+        Me.SiticonePanel4.EnableRippleEffect = False
+        Me.SiticonePanel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.SiticonePanel4.GradientColors = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.LightGray, System.Drawing.Color.Gray}
+        Me.SiticonePanel4.GradientPositions = New Single() {0!, 0.5!, 1.0!}
+        Me.SiticonePanel4.Location = New System.Drawing.Point(3, 3)
+        Me.SiticonePanel4.Name = "SiticonePanel4"
+        Me.SiticonePanel4.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid
+        Me.SiticonePanel4.RippleAlpha = 50
+        Me.SiticonePanel4.RippleAlphaDecrement = 3
+        Me.SiticonePanel4.RippleColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticonePanel4.RippleMaxSize = 600.0!
+        Me.SiticonePanel4.RippleSpeed = 15.0!
+        Me.SiticonePanel4.ShowBorder = True
+        Me.SiticonePanel4.Size = New System.Drawing.Size(253, 115)
+        Me.SiticonePanel4.TabIndex = 8
+        Me.SiticonePanel4.TabStop = True
+        Me.SiticonePanel4.TrackSystemTheme = False
+        Me.SiticonePanel4.UseBorderGradient = False
+        Me.SiticonePanel4.UseMultiGradient = False
+        Me.SiticonePanel4.UsePatternTexture = False
+        Me.SiticonePanel4.UseRadialGradient = False
         '
-        'Label7
+        'Label2
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(11, 10)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(151, 21)
-        Me.Label7.TabIndex = 10
-        Me.Label7.Text = "Low Stock Product"
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(11, 10)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(151, 21)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "Low Stock Product"
         '
-        'Label6
+        'Label3
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Black", 40.0!, System.Drawing.FontStyle.Bold)
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(3, 38)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(94, 72)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "50"
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Black", 40.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(3, 38)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(94, 72)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "50"
         '
         'SiticonePanel2
         '
@@ -215,6 +216,69 @@ Partial Class DashboardContent
         Me.Label4.Size = New System.Drawing.Size(94, 72)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "50"
+        '
+        'SiticonePanel1
+        '
+        Me.SiticonePanel1.AcrylicTintColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticonePanel1.BackColor = System.Drawing.Color.Transparent
+        Me.SiticonePanel1.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center
+        Me.SiticonePanel1.BorderDashPattern = Nothing
+        Me.SiticonePanel1.BorderGradientEndColor = System.Drawing.Color.DimGray
+        Me.SiticonePanel1.BorderGradientStartColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.SiticonePanel1.BorderThickness = 2.0!
+        Me.SiticonePanel1.Controls.Add(Me.Label7)
+        Me.SiticonePanel1.Controls.Add(Me.Label6)
+        Me.SiticonePanel1.CornerRadiusBottomLeft = 16.0!
+        Me.SiticonePanel1.CornerRadiusBottomRight = 16.0!
+        Me.SiticonePanel1.CornerRadiusTopLeft = 16.0!
+        Me.SiticonePanel1.CornerRadiusTopRight = 16.0!
+        Me.SiticonePanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SiticonePanel1.EnableAcrylicEffect = False
+        Me.SiticonePanel1.EnableMicaEffect = False
+        Me.SiticonePanel1.EnableRippleEffect = False
+        Me.SiticonePanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.SiticonePanel1.GradientColors = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.LightGray, System.Drawing.Color.Gray}
+        Me.SiticonePanel1.GradientPositions = New Single() {0!, 0.5!, 1.0!}
+        Me.SiticonePanel1.Location = New System.Drawing.Point(521, 3)
+        Me.SiticonePanel1.Name = "SiticonePanel1"
+        Me.SiticonePanel1.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid
+        Me.SiticonePanel1.RippleAlpha = 50
+        Me.SiticonePanel1.RippleAlphaDecrement = 3
+        Me.SiticonePanel1.RippleColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticonePanel1.RippleMaxSize = 600.0!
+        Me.SiticonePanel1.RippleSpeed = 15.0!
+        Me.SiticonePanel1.ShowBorder = True
+        Me.SiticonePanel1.Size = New System.Drawing.Size(254, 115)
+        Me.SiticonePanel1.TabIndex = 6
+        Me.SiticonePanel1.TabStop = True
+        Me.SiticonePanel1.TrackSystemTheme = False
+        Me.SiticonePanel1.UseBorderGradient = False
+        Me.SiticonePanel1.UseMultiGradient = False
+        Me.SiticonePanel1.UsePatternTexture = False
+        Me.SiticonePanel1.UseRadialGradient = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(11, 10)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(151, 21)
+        Me.Label7.TabIndex = 10
+        Me.Label7.Text = "Low Stock Product"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Black", 40.0!, System.Drawing.FontStyle.Bold)
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(3, 38)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(94, 72)
+        Me.Label6.TabIndex = 9
+        Me.Label6.Text = "50"
         '
         'SiticonePanel3
         '
@@ -308,10 +372,10 @@ Partial Class DashboardContent
         Me.SiticoneBarChart1.TabIndex = 2
         BarChartTheme1.AxisLabelColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
         BarChartTheme1.BackColor = System.Drawing.SystemColors.Control
-        BarChartTheme1.BarColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        BarChartTheme1.BarHighlightColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(246, Byte), Integer))
+        BarChartTheme1.BarColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(226, Byte), Integer))
+        BarChartTheme1.BarHighlightColor = System.Drawing.Color.FromArgb(CType(CType(179, Byte), Integer), CType(CType(157, Byte), Integer), CType(CType(219, Byte), Integer))
         BarChartTheme1.GridColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        BarChartTheme1.Name = "Default Blue"
+        BarChartTheme1.Name = "Royal Purple"
         BarChartTheme1.ValueLabelColor = System.Drawing.Color.Black
         Me.SiticoneBarChart1.Theme = BarChartTheme1
         Me.SiticoneBarChart1.ValueMember = "Revenue"
@@ -400,69 +464,6 @@ Partial Class DashboardContent
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Top 5 Item Sales"
         '
-        'SiticonePanel4
-        '
-        Me.SiticonePanel4.AcrylicTintColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticonePanel4.BackColor = System.Drawing.Color.Transparent
-        Me.SiticonePanel4.BorderAlignment = System.Drawing.Drawing2D.PenAlignment.Center
-        Me.SiticonePanel4.BorderDashPattern = Nothing
-        Me.SiticonePanel4.BorderGradientEndColor = System.Drawing.Color.DimGray
-        Me.SiticonePanel4.BorderGradientStartColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.SiticonePanel4.BorderThickness = 2.0!
-        Me.SiticonePanel4.Controls.Add(Me.Label2)
-        Me.SiticonePanel4.Controls.Add(Me.Label3)
-        Me.SiticonePanel4.CornerRadiusBottomLeft = 16.0!
-        Me.SiticonePanel4.CornerRadiusBottomRight = 16.0!
-        Me.SiticonePanel4.CornerRadiusTopLeft = 16.0!
-        Me.SiticonePanel4.CornerRadiusTopRight = 16.0!
-        Me.SiticonePanel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SiticonePanel4.EnableAcrylicEffect = False
-        Me.SiticonePanel4.EnableMicaEffect = False
-        Me.SiticonePanel4.EnableRippleEffect = False
-        Me.SiticonePanel4.FillColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.SiticonePanel4.GradientColors = New System.Drawing.Color() {System.Drawing.Color.White, System.Drawing.Color.LightGray, System.Drawing.Color.Gray}
-        Me.SiticonePanel4.GradientPositions = New Single() {0!, 0.5!, 1.0!}
-        Me.SiticonePanel4.Location = New System.Drawing.Point(3, 3)
-        Me.SiticonePanel4.Name = "SiticonePanel4"
-        Me.SiticonePanel4.PatternStyle = System.Drawing.Drawing2D.HatchStyle.LargeGrid
-        Me.SiticonePanel4.RippleAlpha = 50
-        Me.SiticonePanel4.RippleAlphaDecrement = 3
-        Me.SiticonePanel4.RippleColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticonePanel4.RippleMaxSize = 600.0!
-        Me.SiticonePanel4.RippleSpeed = 15.0!
-        Me.SiticonePanel4.ShowBorder = True
-        Me.SiticonePanel4.Size = New System.Drawing.Size(253, 115)
-        Me.SiticonePanel4.TabIndex = 8
-        Me.SiticonePanel4.TabStop = True
-        Me.SiticonePanel4.TrackSystemTheme = False
-        Me.SiticonePanel4.UseBorderGradient = False
-        Me.SiticonePanel4.UseMultiGradient = False
-        Me.SiticonePanel4.UsePatternTexture = False
-        Me.SiticonePanel4.UseRadialGradient = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(11, 10)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(151, 21)
-        Me.Label2.TabIndex = 10
-        Me.Label2.Text = "Low Stock Product"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Black", 40.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(3, 38)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(94, 72)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "50"
-        '
         'DashboardContent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -473,10 +474,12 @@ Partial Class DashboardContent
         Me.Size = New System.Drawing.Size(778, 658)
         Me.Panel2.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.SiticonePanel1.ResumeLayout(False)
-        Me.SiticonePanel1.PerformLayout()
+        Me.SiticonePanel4.ResumeLayout(False)
+        Me.SiticonePanel4.PerformLayout()
         Me.SiticonePanel2.ResumeLayout(False)
         Me.SiticonePanel2.PerformLayout()
+        Me.SiticonePanel1.ResumeLayout(False)
+        Me.SiticonePanel1.PerformLayout()
         Me.SiticonePanel3.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
@@ -489,8 +492,6 @@ Partial Class DashboardContent
         Me.Panel8.PerformLayout()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
-        Me.SiticonePanel4.ResumeLayout(False)
-        Me.SiticonePanel4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
