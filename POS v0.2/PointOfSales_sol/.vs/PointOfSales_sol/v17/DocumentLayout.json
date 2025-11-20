@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|c:\\users\\zaii\\desktop\\0\\latest system\\pointofsales_sol\\pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PointOfSales||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 332,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PointOfSales",
+              "DocumentMoniker": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\PointOfSales\\PointOfSales.vbproj",
+              "RelativeDocumentMoniker": "PointOfSales\\PointOfSales.vbproj",
+              "ToolTip": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\PointOfSales\\PointOfSales.vbproj",
+              "RelativeToolTip": "PointOfSales\\PointOfSales.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-26T11:19:02.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardContent.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\DashboardContent.vb",
+              "ToolTip": "C:\\Users\\Zaii\\Desktop\\0\\Latest System\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\DashboardContent.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-26T10:41:24.97Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
