@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class UserContent
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,16 +20,18 @@ Partial Class UserContent
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Panel22 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.cb_ur = New System.Windows.Forms.ComboBox()
         Me.BtnSave = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.cb_sq = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.SiticoneTextBox6 = New SiticoneNetFrameworkUI.SiticoneTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -42,19 +44,17 @@ Partial Class UserContent
         Me.Label3 = New System.Windows.Forms.Label()
         Me.SiticoneTextBox3 = New SiticoneNetFrameworkUI.SiticoneTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SiticoneDashboardCard1 = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
+        Me.SiticoneDashboardCard = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
         Me.SiticoneButton3 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.cb_ur = New System.Windows.Forms.ComboBox()
-        Me.cb_sq = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.Panel22.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        Me.SiticoneDashboardCard1.SuspendLayout()
+        Me.SiticoneDashboardCard.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -188,6 +188,16 @@ Partial Class UserContent
         Me.Panel6.Size = New System.Drawing.Size(248, 202)
         Me.Panel6.TabIndex = 2
         '
+        'cb_ur
+        '
+        Me.cb_ur.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cb_ur.FormattingEnabled = True
+        Me.cb_ur.Items.AddRange(New Object() {"Admin", "Cashier"})
+        Me.cb_ur.Location = New System.Drawing.Point(26, 32)
+        Me.cb_ur.Name = "cb_ur"
+        Me.cb_ur.Size = New System.Drawing.Size(164, 29)
+        Me.cb_ur.TabIndex = 17
+        '
         'BtnSave
         '
         Me.BtnSave.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
@@ -294,6 +304,16 @@ Partial Class UserContent
         Me.Panel4.Padding = New System.Windows.Forms.Padding(10)
         Me.Panel4.Size = New System.Drawing.Size(246, 202)
         Me.Panel4.TabIndex = 0
+        '
+        'cb_sq
+        '
+        Me.cb_sq.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cb_sq.FormattingEnabled = True
+        Me.cb_sq.Items.AddRange(New Object() {"What is your mother’s maiden name?", "What was the name of your first pet?", "What city were you born in?", "What was the name of your elementary school?", "What is your favorite food?", "What was the model of your first phone?", "Who is your childhood best friend?", "What is your father’s middle name?", "What was the name of your first teacher?", "What is the title of your favorite movie?"})
+        Me.cb_sq.Location = New System.Drawing.Point(22, 148)
+        Me.cb_sq.Name = "cb_sq"
+        Me.cb_sq.Size = New System.Drawing.Size(180, 29)
+        Me.cb_sq.TabIndex = 18
         '
         'Label2
         '
@@ -660,20 +680,20 @@ Partial Class UserContent
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Email"
         '
-        'SiticoneDashboardCard1
+        'SiticoneDashboardCard
         '
-        Me.SiticoneDashboardCard1.BackColor = System.Drawing.Color.Black
-        Me.SiticoneDashboardCard1.BackgroundEndColor = System.Drawing.Color.White
-        Me.SiticoneDashboardCard1.BackgroundStartColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.SiticoneDashboardCard1.BorderColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard1.BorderEndColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard1.BorderStartColor = System.Drawing.Color.Silver
-        Me.SiticoneDashboardCard1.Controls.Add(Me.SiticoneButton3)
-        Me.SiticoneDashboardCard1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.SiticoneDashboardCard1.Location = New System.Drawing.Point(0, 259)
-        Me.SiticoneDashboardCard1.Name = "SiticoneDashboardCard1"
-        Me.SiticoneDashboardCard1.Size = New System.Drawing.Size(758, 54)
-        Me.SiticoneDashboardCard1.TabIndex = 5
+        Me.SiticoneDashboardCard.BackColor = System.Drawing.Color.Black
+        Me.SiticoneDashboardCard.BackgroundEndColor = System.Drawing.Color.White
+        Me.SiticoneDashboardCard.BackgroundStartColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SiticoneDashboardCard.BorderColor = System.Drawing.Color.Silver
+        Me.SiticoneDashboardCard.BorderEndColor = System.Drawing.Color.Silver
+        Me.SiticoneDashboardCard.BorderStartColor = System.Drawing.Color.Silver
+        Me.SiticoneDashboardCard.Controls.Add(Me.SiticoneButton3)
+        Me.SiticoneDashboardCard.Dock = System.Windows.Forms.DockStyle.Top
+        Me.SiticoneDashboardCard.Location = New System.Drawing.Point(0, 259)
+        Me.SiticoneDashboardCard.Name = "SiticoneDashboardCard"
+        Me.SiticoneDashboardCard.Size = New System.Drawing.Size(758, 54)
+        Me.SiticoneDashboardCard.TabIndex = 5
         '
         'SiticoneButton3
         '
@@ -775,32 +795,12 @@ Partial Class UserContent
         Me.DataGridView1.Size = New System.Drawing.Size(752, 214)
         Me.DataGridView1.TabIndex = 0
         '
-        'cb_ur
-        '
-        Me.cb_ur.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb_ur.FormattingEnabled = True
-        Me.cb_ur.Items.AddRange(New Object() {"Admin", "Cashier"})
-        Me.cb_ur.Location = New System.Drawing.Point(26, 32)
-        Me.cb_ur.Name = "cb_ur"
-        Me.cb_ur.Size = New System.Drawing.Size(164, 29)
-        Me.cb_ur.TabIndex = 17
-        '
-        'cb_sq
-        '
-        Me.cb_sq.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb_sq.FormattingEnabled = True
-        Me.cb_sq.Items.AddRange(New Object() {"What is your mother’s maiden name?", "What was the name of your first pet?", "What city were you born in?", "What was the name of your elementary school?", "What is your favorite food?", "What was the model of your first phone?", "Who is your childhood best friend?", "What is your father’s middle name?", "What was the name of your first teacher?", "What is the title of your favorite movie?"})
-        Me.cb_sq.Location = New System.Drawing.Point(22, 148)
-        Me.cb_sq.Name = "cb_sq"
-        Me.cb_sq.Size = New System.Drawing.Size(180, 29)
-        Me.cb_sq.TabIndex = 18
-        '
         'UserContent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.SiticoneDashboardCard1)
+        Me.Controls.Add(Me.SiticoneDashboardCard)
         Me.Controls.Add(Me.Panel22)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "UserContent"
@@ -814,7 +814,7 @@ Partial Class UserContent
         Me.Panel4.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        Me.SiticoneDashboardCard1.ResumeLayout(False)
+        Me.SiticoneDashboardCard.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -847,4 +847,5 @@ Partial Class UserContent
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents cb_ur As ComboBox
     Friend WithEvents cb_sq As ComboBox
+    Friend WithEvents SiticoneDashboardCard As SiticoneDashboardCard
 End Class

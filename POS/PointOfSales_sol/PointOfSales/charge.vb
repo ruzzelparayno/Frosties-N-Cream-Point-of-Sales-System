@@ -44,7 +44,7 @@ Public Class Charge
         ' Wire text changed events from child forms to local handlers
         Try
             AddHandler cashForm.txt_cashs.TextChanged, AddressOf txt_cashs_TextChanged
-            AddHandler gcashForm.txt_ref.TextChanged, AddressOf txt_reference_TextChanged
+            AddHandler gcashForm.txt_ref.TextChanged, AddressOf txt_ref_TextChanged
         Catch ex As Exception
             ' ignore if child controls not present
         End Try
@@ -100,7 +100,6 @@ Public Class Charge
             gcashForm.txt_ref.Clear()
         Catch ex As Exception
         End Try
-
 
         Dim subtotal As Decimal = 0D
         Dim posForm As PosControl = Dashboard.posInstance
@@ -192,6 +191,20 @@ Public Class Charge
     Private Sub txt_cashs_TextChanged(sender As Object, e As EventArgs)
         CalculateChange()
     End Sub
+    ' Inside Charge class
+    Private Sub txt_ref_TextChanged(sender As Object, e As EventArgs)
+        Dim tb As TextBox = gcashForm.txt_ref
+        Dim reference As String = tb.Text.Trim()
+
+        ' Limit to max 12 characters
+        If reference.Length > 12 Then
+            tb.Text = reference.Substring(0, 12)
+            tb.SelectionStart = tb.Text.Length
+        End If
+    End Sub
+
+
+
 
     Private Sub CalculateChange()
         Dim cash As Decimal = 0D
@@ -210,13 +223,11 @@ Public Class Charge
         Dim change As Decimal = cash - totalPaid
 
         If change >= 0D Then
-
             Try
                 cashForm.lbl_change.Text = "₱" & change.ToString("N2")
             Catch ex As Exception
             End Try
         Else
-
             Try
                 cashForm.lbl_change.Text = "₱0.00"
             Catch ex As Exception
@@ -370,39 +381,30 @@ Public Class Charge
                 conn.Open()
                 Using tr As MySqlTransaction = conn.BeginTransaction()
                     Try
-                        For i As Integer = 0 To posForm.ListBox1.Items.Count - 1
-                            Dim itemText As String = posForm.ListBox1.Items(i).ToString()
-                            Dim priceText As String = If(i < posForm.ListBox2.Items.Count, posForm.ListBox2.Items(i).ToString().Replace("₱", "").Replace(",", "").Trim(), "0")
-                            Dim qty As Integer = 1
-                            Dim regex As New System.Text.RegularExpressions.Regex("^(\d+)x\s+(.+)$")
-                            Dim m = regex.Match(itemText)
-                            Dim pname As String = itemText
-                            If m.Success Then
-                                qty = Convert.ToInt32(m.Groups(1).Value)
-                                pname = m.Groups(2).Value.Trim()
-                            End If
+                        For i As Integer = 0 To posForm.Guna2DataGridView1.Rows.Count - 1
+                            If posForm.Guna2DataGridView1.Rows(i).IsNewRow Then Continue For
 
-                            Dim pricePerUnit As Decimal = 0D
-                            If qty > 0 AndAlso Decimal.TryParse(priceText, pricePerUnit) Then
-                                Dim unitPrice As Decimal = pricePerUnit / qty
+                            Dim qty As Integer = Convert.ToInt32(posForm.Guna2DataGridView1.Rows(i).Cells(0).Value)
+                            Dim pname As String = posForm.Guna2DataGridView1.Rows(i).Cells(1).Value.ToString()
+                            Dim pricePerUnit As Decimal = Convert.ToDecimal(posForm.Guna2DataGridView1.Rows(i).Cells(2).Value)
+                            Dim subTotal As Decimal = pricePerUnit * qty
 
-                                Dim cmd As New MySqlCommand("
-                                    INSERT INTO sales (TicketNumber, SaleDate, ProductName, Price, Quantity, SubTotal, TotalAmount, ModeOfPayment, Reference, Status)
-                                    VALUES (@TicketNumber, @SaleDate, @ProductName, @Price, @Quantity, @SubTotal, @TotalAmount, @ModeOfPayment, @Reference, @Status)
-                                ", conn, tr)
+                            Dim cmd As New MySqlCommand("
+                                INSERT INTO sales (TicketNumber, SaleDate, ProductName, Price, Quantity, SubTotal, TotalAmount, ModeOfPayment, Reference, Status)
+                                VALUES (@TicketNumber, @SaleDate, @ProductName, @Price, @Quantity, @SubTotal, @TotalAmount, @ModeOfPayment, @Reference, @Status)
+                            ", conn, tr)
 
-                                cmd.Parameters.AddWithValue("@TicketNumber", posForm.lbl_tickets.Text)
-                                cmd.Parameters.AddWithValue("@SaleDate", DateTime.Now)
-                                cmd.Parameters.AddWithValue("@ProductName", pname)
-                                cmd.Parameters.AddWithValue("@Price", unitPrice)
-                                cmd.Parameters.AddWithValue("@Quantity", qty)
-                                cmd.Parameters.AddWithValue("@SubTotal", unitPrice * qty)
-                                cmd.Parameters.AddWithValue("@TotalAmount", totalPaid)
-                                cmd.Parameters.AddWithValue("@ModeOfPayment", modeOfPayment)
-                                cmd.Parameters.AddWithValue("@Reference", reference)
-                                cmd.Parameters.AddWithValue("@Status", "Completed")
-                                cmd.ExecuteNonQuery()
-                            End If
+                            cmd.Parameters.AddWithValue("@TicketNumber", posForm.lbl_tickets.Text)
+                            cmd.Parameters.AddWithValue("@SaleDate", DateTime.Now)
+                            cmd.Parameters.AddWithValue("@ProductName", pname)
+                            cmd.Parameters.AddWithValue("@Price", pricePerUnit)
+                            cmd.Parameters.AddWithValue("@Quantity", qty)
+                            cmd.Parameters.AddWithValue("@SubTotal", subTotal)
+                            cmd.Parameters.AddWithValue("@TotalAmount", totalPaid)
+                            cmd.Parameters.AddWithValue("@ModeOfPayment", modeOfPayment)
+                            cmd.Parameters.AddWithValue("@Reference", reference)
+                            cmd.Parameters.AddWithValue("@Status", "Completed")
+                            cmd.ExecuteNonQuery()
                         Next
 
                         tr.Commit()
@@ -432,7 +434,7 @@ Public Class Charge
     Private Sub PD_BeginPrint(sender As Object, e As Printing.PrintEventArgs) Handles PD.BeginPrint
         ' Estimate paper height based on item count
         Dim posForm As PosControl = Dashboard.posInstance
-        Dim itemCount As Integer = If(posForm IsNot Nothing, posForm.ListBox1.Items.Count, 1)
+        Dim itemCount As Integer = If(posForm IsNot Nothing, posForm.Guna2DataGridView1.Rows.Count, 1)
 
         ' Each product line adds about 20 units height
         longpaper = 250 + (itemCount * 20)
@@ -441,7 +443,6 @@ Public Class Charge
         pagesetup.PaperSize = New PaperSize("Custom", 300, longpaper)
         PD.DefaultPageSettings = pagesetup
     End Sub
-
 
     ' Actual print page drawing
     Private Sub PD_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PD.PrintPage
@@ -466,91 +467,93 @@ Public Class Charge
         Dim modePayment As String = If(SiticoneRadioButton1.Checked, "Cash", If(SiticoneRadioButton2.Checked, "GCash", "N/A"))
         Dim reference As String = If(modePayment = "GCash", (If(gcashForm IsNot Nothing, gcashForm.txt_ref.Text.Trim(), "")), "")
 
-        Dim line As String = "======================================="
+        ' ✅ Use global username variable
 
+        Dim line As String = "======================================="
         Dim currentY As Integer = 20
+
+        ' Header
         e.Graphics.DrawString("Frosties N' Cream", f14, Brushes.Black, 95, currentY, center)
         currentY += 15
         e.Graphics.DrawString("10 Rosal, Las Piñas City", f8, Brushes.Black, 95, currentY, center)
         currentY += 12
         e.Graphics.DrawString("Contact: 0917 557 5485", f8, Brushes.Black, 95, currentY, center)
         currentY += 15
-        e.Graphics.DrawString("Service Invoice", f10, Brushes.Black, 95, currentY, center)
-        currentY += 20
-        e.Graphics.DrawString("Ticket No: " & ticketNumber, f8, Brushes.Black, 10, currentY)
-        currentY += 12
-        e.Graphics.DrawString(line, f8, Brushes.Black, 100, currentY, center)
-        currentY += 12
-        e.Graphics.DrawString("Date: " & DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), f8, Brushes.Black, 10, currentY)
-        currentY += 12
-        e.Graphics.DrawString(line, f8, Brushes.Black, 100, currentY, center)
-        currentY += 14
+        e.Graphics.DrawString(line, f8, Brushes.Black, 0, currentY)
+        currentY += 15
 
-        ' Product header
-        e.Graphics.DrawString("Qty", f8, Brushes.Black, 15, currentY, center)
-        e.Graphics.DrawString("Product", f8, Brushes.Black, 90, currentY, center)
-        e.Graphics.DrawString("Price", f8, Brushes.Black, 178, currentY, right)
+        ' Ticket info
+        e.Graphics.DrawString("Ticket #: " & ticketNumber, f10, Brushes.Black, 50, currentY, center)
+        e.Graphics.DrawString("Date: " & Date.Now.ToString("yyyy-MM-dd HH:mm:ss"), f10, Brushes.Black, 84, currentY + 12, center)
+        currentY += 35
+
+        ' Column headers
+        e.Graphics.DrawString("QTY", f10, Brushes.Black, 15, currentY, center)
+        e.Graphics.DrawString("PRODUCT", f10, Brushes.Black, 90, currentY, center)
+        e.Graphics.DrawString("PRICE", f10, Brushes.Black, 178, currentY, right)
+        currentY += 15
+        e.Graphics.DrawString(line, f8, Brushes.Black, 100, currentY, center)
         currentY += 10
-        e.Graphics.DrawString("----------------------------------------------------------------", f8, Brushes.Black, 100, currentY, center)
-        currentY += 12
 
-        ' Product lines
-        Dim totalAmount As Decimal = 0D
+        ' Items
+        For i As Integer = 0 To posForm.Guna2DataGridView1.Rows.Count - 1
+            If posForm.Guna2DataGridView1.Rows(i).IsNewRow Then Continue For
 
-        For i As Integer = 0 To posForm.ListBox1.Items.Count - 1
-            Dim itemText As String = posForm.ListBox1.Items(i).ToString()
-            Dim priceText As String = If(i < posForm.ListBox2.Items.Count, posForm.ListBox2.Items(i).ToString(), "₱0.00")
+            Dim qty As String = posForm.Guna2DataGridView1.Rows(i).Cells(0).Value.ToString()
+            Dim pname As String = posForm.Guna2DataGridView1.Rows(i).Cells(1).Value.ToString()
+            Dim price As String = posForm.Guna2DataGridView1.Rows(i).Cells(2).Value.ToString()
 
-            Dim qty As Integer = 1
-            Dim prodName As String = itemText
-            Dim rx As New System.Text.RegularExpressions.Regex("^(\d+)x\s+(.+)$")
-            Dim m = rx.Match(itemText)
-            If m.Success Then
-                qty = Convert.ToInt32(m.Groups(1).Value)
-                prodName = m.Groups(2).Value.Trim()
-            End If
-
-            Dim lineTotal As Decimal = 0D
-            Decimal.TryParse(priceText.Replace("₱", "").Replace(",", "").Trim(), lineTotal)
-            Dim unitPrice As Decimal = If(qty > 0, Math.Round(lineTotal / qty, 2), 0D)
-
-            e.Graphics.DrawString(qty.ToString(), f8, Brushes.Black, 15, currentY, center)
-            e.Graphics.DrawString(prodName, f8, Brushes.Black, 90, currentY, center)
-            e.Graphics.DrawString(lineTotal.ToString("N2"), f8, Brushes.Black, 178, currentY, right)
-
-            currentY += 12
-            totalAmount += lineTotal
+            e.Graphics.DrawString(qty, f8, Brushes.Black, 15, currentY, center)
+            e.Graphics.DrawString(pname, f8, Brushes.Black, 90, currentY, center)
+            e.Graphics.DrawString(price, f8, Brushes.Black, 178, currentY, right)
+            currentY += 15
         Next
 
-        currentY += 6
-        e.Graphics.DrawString("----------------------------------------------------------------", f8, Brushes.Black, 100, currentY, center)
-        currentY += 14
+        ' Totals
+        e.Graphics.DrawString(line, f8, Brushes.Black, 100, currentY, center)
+        currentY += 15
 
-        e.Graphics.DrawString("Payment: " & modePayment, f8, Brushes.Black, 10, currentY)
-        currentY += 12
-        If modePayment = "GCash" AndAlso reference <> "" Then
-            e.Graphics.DrawString("Reference: " & reference, f8, Brushes.Black, 10, currentY)
+        e.Graphics.DrawString("Total: " & lbl_totalpaid.Text, f10, Brushes.Black, 10, currentY)
+        currentY += 20
+        e.Graphics.DrawString("Mode of Payment: " & modePayment, f8, Brushes.Black, 10, currentY)
+        If modePayment = "GCash" Then
             currentY += 12
+            e.Graphics.DrawString("Reference #: " & reference, f8, Brushes.Black, 10, currentY)
+        End If
+        currentY += 25
+
+        ' ✅ Discounts
+        Dim discountType As String = ""
+        If Me.cb_employee.Checked Then
+            discountType = "Employee Discount"
+        ElseIf Me.cb_pwd.Checked Then
+            discountType = "PWD Discount"
+        ElseIf Me.cb_senior.Checked Then
+            discountType = "Senior Discount"
+        End If
+        If discountType <> "" Then
+            e.Graphics.DrawString("Discount Applied: " & discountType, f8, Brushes.Black, 10, currentY)
+            currentY += 15
         End If
 
-        e.Graphics.DrawString(line, f8, Brushes.Black, 100, currentY, center)
-        currentY += 14
-        e.Graphics.DrawString("TOTAL: ₱" & totalAmount.ToString("N2"), f10, Brushes.Black, 95, currentY, center)
-        currentY += 20
-        e.Graphics.DrawString("Thank you for your purchase!", f8, Brushes.Black, 95, currentY, center)
+        ' ✅ Extra receipt details
+        e.Graphics.DrawString(line, f8, Brushes.Black, 0, currentY)
+        currentY += 15
+        e.Graphics.DrawString("VAT REG. TIN: 123-456-789-000", f8, Brushes.Black, 10, currentY)
+        currentY += 12
+        e.Graphics.DrawString("BIR Permit No.: 1234-5678-9012-3456", f8, Brushes.Black, 10, currentY)
+        currentY += 12
+        e.Graphics.DrawString("Date Issued: 2024-01-01", f8, Brushes.Black, 10, currentY)
+        currentY += 12
+        e.Graphics.DrawString("Valid Until: 2025-12-31", f8, Brushes.Black, 10, currentY)
+        currentY += 15
 
-        longpaper = currentY + 80
-        PD.DefaultPageSettings.PaperSize = New PaperSize("Custom", 300, longpaper)
-    End Sub
-
-    ' Empty handler used by AddHandler wiring
-    Private Sub txt_reference_TextChanged(sender As Object, e As EventArgs)
-        ' you may implement validation of reference here if desired
+        ' Footer
+        e.Graphics.DrawString("Thank you for your purchase!", f10, Brushes.Black, 95, currentY, center)
     End Sub
 
     Private Sub SiticoneImageButton1_Click(sender As Object, e As EventArgs) Handles SiticoneImageButton1.Click
         Me.Close()
-        ' Return to POS screen via Dashboard
         Dashboard.posInstance.BringToFront()
     End Sub
 End Class

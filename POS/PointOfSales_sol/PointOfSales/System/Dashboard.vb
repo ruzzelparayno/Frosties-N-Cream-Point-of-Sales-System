@@ -15,7 +15,7 @@ Public Class Dashboard
         ' ✅ Register views (assuming ContentPanel is a custom view manager)
         ContentPanel.AddContentToView("Dashboard", New DashboardContent())
         ContentPanel.AddContentToView("Point Of Sales", posInstance)
-        ContentPanel.AddContentToView("Inventory", productInstance)
+        ContentPanel.AddContentToView("Inventory", New inventory)
         ContentPanel.AddContentToView("Users", New UserContent())
         ContentPanel.AddContentToView("Sales", New SalesContent())
         ContentPanel.AddContentToView("Transaction", New TransactionContent())

@@ -22,9 +22,14 @@ Partial Class PosControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.SiticoneDashboardCard = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
+        Me.SiticoneButtonTextbox1 = New SiticoneNetFrameworkUI.SiticoneButtonTextbox()
         Me.cb_cate1 = New System.Windows.Forms.ComboBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.lbl_dandt = New System.Windows.Forms.Label()
         Me.lbl_tickets = New System.Windows.Forms.Label()
         Me.lbl_total = New System.Windows.Forms.Label()
@@ -33,8 +38,6 @@ Partial Class PosControl
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.SiticoneActivityButton6 = New SiticoneNetFrameworkUI.SiticoneActivityButton()
@@ -52,9 +55,9 @@ Partial Class PosControl
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.SiticoneButtonTextbox1 = New SiticoneNetFrameworkUI.SiticoneButtonTextbox()
         Me.SiticoneDashboardCard.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -83,6 +86,52 @@ Partial Class PosControl
         Me.SiticoneDashboardCard.Size = New System.Drawing.Size(758, 54)
         Me.SiticoneDashboardCard.TabIndex = 7
         '
+        'SiticoneButtonTextbox1
+        '
+        Me.SiticoneButtonTextbox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SiticoneButtonTextbox1.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneButtonTextbox1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.SiticoneButtonTextbox1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.SiticoneButtonTextbox1.BottomLeftCornerRadius = 20
+        Me.SiticoneButtonTextbox1.BottomRightCornerRadius = 20
+        Me.SiticoneButtonTextbox1.ButtonColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ButtonCornerRadius = 15
+        Me.SiticoneButtonTextbox1.ButtonHoverColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ButtonImageHover = Nothing
+        Me.SiticoneButtonTextbox1.ButtonImageIdle = Nothing
+        Me.SiticoneButtonTextbox1.ButtonImagePress = Nothing
+        Me.SiticoneButtonTextbox1.ButtonPlaceholderColor = System.Drawing.Color.Black
+        Me.SiticoneButtonTextbox1.ButtonPlaceholderFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneButtonTextbox1.ButtonPressColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.SiticoneButtonTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.SiticoneButtonTextbox1.FocusBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneButtonTextbox1.FocusImage = Nothing
+        Me.SiticoneButtonTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.SiticoneButtonTextbox1.HoverBorderColor = System.Drawing.Color.Gray
+        Me.SiticoneButtonTextbox1.HoverImage = Nothing
+        Me.SiticoneButtonTextbox1.IdleImage = Nothing
+        Me.SiticoneButtonTextbox1.Location = New System.Drawing.Point(533, 10)
+        Me.SiticoneButtonTextbox1.Name = "SiticoneButtonTextbox1"
+        Me.SiticoneButtonTextbox1.PlaceholderColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.SiticoneButtonTextbox1.PlaceholderFocusColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(12, Byte), Integer))
+        Me.SiticoneButtonTextbox1.PlaceholderFont = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneButtonTextbox1.PlaceholderText = "Search..."
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.ButtonColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.ButtonPlaceholderColor = System.Drawing.Color.Gray
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.SiticoneButtonTextbox1.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.SiticoneButtonTextbox1.RippleColor = System.Drawing.Color.White
+        Me.SiticoneButtonTextbox1.Size = New System.Drawing.Size(214, 38)
+        Me.SiticoneButtonTextbox1.TabIndex = 19
+        Me.SiticoneButtonTextbox1.TextColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.SiticoneButtonTextbox1.TextContent = ""
+        Me.SiticoneButtonTextbox1.TextLeftMargin = 0
+        Me.SiticoneButtonTextbox1.TopLeftCornerRadius = 20
+        Me.SiticoneButtonTextbox1.TopRightCornerRadius = 20
+        Me.SiticoneButtonTextbox1.ValidationEnabled = False
+        '
         'cb_cate1
         '
         Me.cb_cate1.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -95,6 +144,7 @@ Partial Class PosControl
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.Guna2DataGridView1)
         Me.Panel1.Controls.Add(Me.lbl_dandt)
         Me.Panel1.Controls.Add(Me.lbl_tickets)
         Me.Panel1.Controls.Add(Me.lbl_total)
@@ -103,8 +153,6 @@ Partial Class PosControl
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.ListBox2)
-        Me.Panel1.Controls.Add(Me.ListBox1)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -112,6 +160,57 @@ Partial Class PosControl
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(222, 527)
         Me.Panel1.TabIndex = 0
+        '
+        'Guna2DataGridView1
+        '
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
+        Me.Guna2DataGridView1.ColumnHeadersHeight = 4
+        Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle18
+        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(8, 145)
+        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
+        Me.Guna2DataGridView1.ReadOnly = True
+        Me.Guna2DataGridView1.RowHeadersVisible = False
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(205, 203)
+        Me.Guna2DataGridView1.TabIndex = 13
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4
+        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = True
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
         'lbl_dandt
         '
@@ -184,22 +283,6 @@ Partial Class PosControl
         Me.Label7.Size = New System.Drawing.Size(28, 13)
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "VAT"
-        '
-        'ListBox2
-        '
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Location = New System.Drawing.Point(160, 145)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(54, 186)
-        Me.ListBox2.TabIndex = 4
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(8, 145)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(137, 186)
-        Me.ListBox1.TabIndex = 3
         '
         'Panel4
         '
@@ -391,11 +474,12 @@ Partial Class PosControl
         '
         'SiticoneActivityButton1
         '
-        Me.SiticoneActivityButton1.ActivityDuration = 2000
+        Me.SiticoneActivityButton1.ActivityDuration = 5
         Me.SiticoneActivityButton1.ActivityIndicatorColor = System.Drawing.Color.White
         Me.SiticoneActivityButton1.ActivityIndicatorSize = 4
         Me.SiticoneActivityButton1.ActivityIndicatorSpeed = 100
         Me.SiticoneActivityButton1.ActivityText = "Processing..."
+        Me.SiticoneActivityButton1.AnimateProgressChanges = False
         Me.SiticoneActivityButton1.AnimationEasing = SiticoneNetFrameworkUI.SiticoneActivityButton.AnimationEasingType.EaseOutQuad
         Me.SiticoneActivityButton1.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneActivityButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(80, Byte), Integer))
@@ -416,8 +500,10 @@ Partial Class PosControl
         Me.SiticoneActivityButton1.PressAnimationDuration = 150
         Me.SiticoneActivityButton1.PressedColor = System.Drawing.Color.FromArgb(CType(CType(56, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.SiticoneActivityButton1.PressedElevation = 1.0!
+        Me.SiticoneActivityButton1.ProgressDuration = 0
+        Me.SiticoneActivityButton1.ProgressValue = 0
         Me.SiticoneActivityButton1.RippleColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticoneActivityButton1.RippleDuration = 1800
+        Me.SiticoneActivityButton1.RippleDuration = 5
         Me.SiticoneActivityButton1.RippleSize = 5
         Me.SiticoneActivityButton1.ShowActivityText = True
         Me.SiticoneActivityButton1.Size = New System.Drawing.Size(68, 39)
@@ -510,56 +596,11 @@ Partial Class PosControl
         '
         'FlowLayoutPanel1
         '
+        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(3, 3)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(524, 524)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(524, 527)
         Me.FlowLayoutPanel1.TabIndex = 1
-        '
-        'SiticoneButtonTextbox1
-        '
-        Me.SiticoneButtonTextbox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SiticoneButtonTextbox1.BackColor = System.Drawing.Color.Transparent
-        Me.SiticoneButtonTextbox1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.SiticoneButtonTextbox1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.SiticoneButtonTextbox1.BottomLeftCornerRadius = 20
-        Me.SiticoneButtonTextbox1.BottomRightCornerRadius = 20
-        Me.SiticoneButtonTextbox1.ButtonColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ButtonCornerRadius = 15
-        Me.SiticoneButtonTextbox1.ButtonHoverColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ButtonImageHover = Nothing
-        Me.SiticoneButtonTextbox1.ButtonImageIdle = Nothing
-        Me.SiticoneButtonTextbox1.ButtonImagePress = Nothing
-        Me.SiticoneButtonTextbox1.ButtonPlaceholderColor = System.Drawing.Color.Black
-        Me.SiticoneButtonTextbox1.ButtonPlaceholderFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.SiticoneButtonTextbox1.ButtonPressColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.SiticoneButtonTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.SiticoneButtonTextbox1.FocusBorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.SiticoneButtonTextbox1.FocusImage = Nothing
-        Me.SiticoneButtonTextbox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
-        Me.SiticoneButtonTextbox1.HoverBorderColor = System.Drawing.Color.Gray
-        Me.SiticoneButtonTextbox1.HoverImage = Nothing
-        Me.SiticoneButtonTextbox1.IdleImage = Nothing
-        Me.SiticoneButtonTextbox1.Location = New System.Drawing.Point(533, 10)
-        Me.SiticoneButtonTextbox1.Name = "SiticoneButtonTextbox1"
-        Me.SiticoneButtonTextbox1.PlaceholderColor = System.Drawing.Color.FromArgb(CType(CType(108, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.SiticoneButtonTextbox1.PlaceholderFocusColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(12, Byte), Integer))
-        Me.SiticoneButtonTextbox1.PlaceholderFont = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.SiticoneButtonTextbox1.PlaceholderText = "Search..."
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.ButtonColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.ButtonPlaceholderColor = System.Drawing.Color.Gray
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
-        Me.SiticoneButtonTextbox1.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.SiticoneButtonTextbox1.RippleColor = System.Drawing.Color.White
-        Me.SiticoneButtonTextbox1.Size = New System.Drawing.Size(214, 38)
-        Me.SiticoneButtonTextbox1.TabIndex = 19
-        Me.SiticoneButtonTextbox1.TextColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
-        Me.SiticoneButtonTextbox1.TextContent = ""
-        Me.SiticoneButtonTextbox1.TextLeftMargin = 0
-        Me.SiticoneButtonTextbox1.TopLeftCornerRadius = 20
-        Me.SiticoneButtonTextbox1.TopRightCornerRadius = 20
-        Me.SiticoneButtonTextbox1.ValidationEnabled = False
         '
         'PosControl
         '
@@ -572,6 +613,7 @@ Partial Class PosControl
         Me.SiticoneDashboardCard.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
@@ -593,16 +635,6 @@ Partial Class PosControl
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents SiticoneActivityButton6 As SiticoneNetFrameworkUI.SiticoneActivityButton
-    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents SiticoneActivityButton3 As SiticoneNetFrameworkUI.SiticoneActivityButton
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents SiticoneActivityButton2 As SiticoneNetFrameworkUI.SiticoneActivityButton
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents SiticoneActivityButton1 As SiticoneNetFrameworkUI.SiticoneActivityButton
     Friend WithEvents SiticoneLabel2 As SiticoneNetFrameworkUI.SiticoneLabel
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
@@ -610,8 +642,6 @@ Partial Class PosControl
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents ListBox2 As ListBox
-    Friend WithEvents ListBox1 As ListBox
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents Label7 As Label
     Friend WithEvents Label9 As Label
@@ -624,4 +654,15 @@ Partial Class PosControl
     Friend WithEvents lbl_dandt As Label
     Friend WithEvents SiticoneDashboardCard As SiticoneNetFrameworkUI.SiticoneDashboardCard
     Friend WithEvents SiticoneButtonTextbox1 As SiticoneNetFrameworkUI.SiticoneButtonTextbox
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents SiticoneActivityButton3 As SiticoneActivityButton
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents SiticoneActivityButton2 As SiticoneActivityButton
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents SiticoneActivityButton1 As SiticoneActivityButton
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents SiticoneActivityButton6 As SiticoneActivityButton
+    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
 End Class

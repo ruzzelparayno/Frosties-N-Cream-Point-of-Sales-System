@@ -39,12 +39,12 @@ Partial Class Dashboard
         Me.SiticoneAnimateForm1 = New SiticoneNetFrameworkUI.SiticoneAnimateForm(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.SiticoneDashboardCard1 = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
+        Me.SiticoneDashboardCard = New SiticoneNetFrameworkUI.SiticoneDashboardCard()
         Me.ContentPanel = New SiticoneNetFrameworkUI.SiticoneContentPanel()
         SiticoneNavbar1 = New SiticoneNetFrameworkUI.SiticoneNavbar()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.SiticoneDashboardCard1.SuspendLayout()
+        Me.SiticoneDashboardCard.SuspendLayout()
         Me.SuspendLayout()
         '
         'SiticoneNavbar1
@@ -260,7 +260,7 @@ Partial Class Dashboard
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.SiticoneDashboardCard1)
+        Me.Panel2.Controls.Add(Me.SiticoneDashboardCard)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(300, 0)
         Me.Panel2.Name = "Panel2"
@@ -268,25 +268,25 @@ Partial Class Dashboard
         Me.Panel2.Size = New System.Drawing.Size(778, 658)
         Me.Panel2.TabIndex = 1
         '
-        'SiticoneDashboardCard1
+        'SiticoneDashboardCard
         '
-        Me.SiticoneDashboardCard1.AutoSize = True
-        Me.SiticoneDashboardCard1.BackColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.BackgroundEndColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.BackgroundStartColor = System.Drawing.Color.White
-        Me.SiticoneDashboardCard1.BorderColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.BorderEndColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.BorderStartColor = System.Drawing.Color.Transparent
-        Me.SiticoneDashboardCard1.Controls.Add(Me.ContentPanel)
-        Me.SiticoneDashboardCard1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SiticoneDashboardCard1.Location = New System.Drawing.Point(10, 10)
-        Me.SiticoneDashboardCard1.Name = "SiticoneDashboardCard1"
-        Me.SiticoneDashboardCard1.Size = New System.Drawing.Size(758, 638)
-        Me.SiticoneDashboardCard1.TabIndex = 3
+        Me.SiticoneDashboardCard.AutoSize = True
+        Me.SiticoneDashboardCard.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.BackgroundEndColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.BackgroundStartColor = System.Drawing.Color.White
+        Me.SiticoneDashboardCard.BorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.BorderEndColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.BorderStartColor = System.Drawing.Color.Transparent
+        Me.SiticoneDashboardCard.Controls.Add(Me.ContentPanel)
+        Me.SiticoneDashboardCard.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SiticoneDashboardCard.Location = New System.Drawing.Point(10, 10)
+        Me.SiticoneDashboardCard.Name = "SiticoneDashboardCard"
+        Me.SiticoneDashboardCard.Size = New System.Drawing.Size(758, 638)
+        Me.SiticoneDashboardCard.TabIndex = 3
         LayoutState1.Location = New System.Drawing.Point(3, 3)
         LayoutState1.Size = New System.Drawing.Size(0, 0)
         LayoutState1.Visible = True
-        Me.SiticoneDashboardCard1.Tag = LayoutState1
+        Me.SiticoneDashboardCard.Tag = LayoutState1
         '
         'ContentPanel
         '
@@ -322,7 +322,7 @@ Partial Class Dashboard
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.SiticoneDashboardCard1.ResumeLayout(False)
+        Me.SiticoneDashboardCard.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -333,4 +333,5 @@ Partial Class Dashboard
     Friend WithEvents Panel2 As Panel
     Friend WithEvents SiticoneDashboardCard1 As SiticoneNetFrameworkUI.SiticoneDashboardCard
     Friend WithEvents ContentPanel As SiticoneNetFrameworkUI.SiticoneContentPanel
+    Friend WithEvents SiticoneDashboardCard As SiticoneDashboardCard
 End Class

@@ -86,7 +86,7 @@ Partial Class LogoutContent
         '
         Me.SiticoneButton2.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
     ""
-        Me.SiticoneButton2.AccessibleName = "NAHHH!"
+        Me.SiticoneButton2.AccessibleName = "No"
         Me.SiticoneButton2.AutoSizeBasedOnText = False
         Me.SiticoneButton2.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton2.BadgeBackColor = System.Drawing.Color.Black
@@ -153,7 +153,7 @@ Partial Class LogoutContent
         Me.SiticoneButton2.ShakeIntensity = 5
         Me.SiticoneButton2.Size = New System.Drawing.Size(116, 40)
         Me.SiticoneButton2.TabIndex = 43
-        Me.SiticoneButton2.Text = "NAHHH!"
+        Me.SiticoneButton2.Text = "No"
         Me.SiticoneButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SiticoneButton2.TextColor = System.Drawing.Color.White
         Me.SiticoneButton2.TooltipText = Nothing
@@ -164,7 +164,7 @@ Partial Class LogoutContent
         '
         Me.SiticoneButton1.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
     ""
-        Me.SiticoneButton1.AccessibleName = "HIYEZZ"
+        Me.SiticoneButton1.AccessibleName = "Yes"
         Me.SiticoneButton1.AutoSizeBasedOnText = False
         Me.SiticoneButton1.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton1.BadgeBackColor = System.Drawing.Color.Black
@@ -231,7 +231,7 @@ Partial Class LogoutContent
         Me.SiticoneButton1.ShakeIntensity = 5
         Me.SiticoneButton1.Size = New System.Drawing.Size(116, 40)
         Me.SiticoneButton1.TabIndex = 42
-        Me.SiticoneButton1.Text = "HIYEZZ"
+        Me.SiticoneButton1.Text = "Yes"
         Me.SiticoneButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.SiticoneButton1.TextColor = System.Drawing.Color.White
         Me.SiticoneButton1.TooltipText = Nothing

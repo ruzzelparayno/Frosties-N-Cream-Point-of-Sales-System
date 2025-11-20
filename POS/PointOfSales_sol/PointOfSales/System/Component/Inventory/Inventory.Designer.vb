@@ -80,9 +80,9 @@ Partial Class Inventory
         Me.btnCategory.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnCategory.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.btnCategory.HintText = Nothing
-        Me.btnCategory.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnCategory.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.btnCategory.HoverTextColor = System.Drawing.Color.Black
+        Me.btnCategory.HoverBackColor = System.Drawing.Color.Transparent
+        Me.btnCategory.HoverFontStyle = System.Drawing.FontStyle.Bold
+        Me.btnCategory.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.btnCategory.HoverTransitionDuration = 250
         Me.btnCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCategory.ImagePadding = 5
@@ -98,7 +98,7 @@ Partial Class Inventory
         Me.btnCategory.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.btnCategory.ParticleCount = 15
         Me.btnCategory.PressAnimationScale = 0.97!
-        Me.btnCategory.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnCategory.PressedBackColor = System.Drawing.Color.Transparent
         Me.btnCategory.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.btnCategory.PressTransitionDuration = 150
         Me.btnCategory.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -159,9 +159,9 @@ Partial Class Inventory
         Me.SiticoneButton1.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton1.HintText = Nothing
-        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SiticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.Black
+        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Bold
+        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton1.HoverTransitionDuration = 250
         Me.SiticoneButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton1.ImagePadding = 5
@@ -177,7 +177,7 @@ Partial Class Inventory
         Me.SiticoneButton1.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.SiticoneButton1.ParticleCount = 15
         Me.SiticoneButton1.PressAnimationScale = 0.97!
-        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton1.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.SiticoneButton1.PressTransitionDuration = 150
         Me.SiticoneButton1.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))

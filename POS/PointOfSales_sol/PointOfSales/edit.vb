@@ -1,33 +1,27 @@
 ﻿Public Class Edit
 
-    ' 🔹 Custom property for passing product name (renamed to avoid conflict)
     Public Property SelectedProductName As String
+    Public Property SelectedProductPrice As Decimal
     Public lbl_quantity As New Label()
 
-    ' Index of the selected product in ListBox1
-    Public Property SelectedIndex As Integer
-
     Private Sub Edit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Initialize SiticoneUpDown1 with the current quantity
-        Dim qty As Integer
-        If Integer.TryParse(lbl_quantity.Text, qty) AndAlso qty > 0 Then
-            SiticoneUpDown1.Value = qty
-        Else
-            SiticoneUpDown1.Value = 1
+        ' Default quantity 1
+        Dim qty As Integer = 1
+        If Integer.TryParse(lbl_quantity.Text, qty) = False OrElse qty <= 0 Then
+            qty = 1
         End If
+        SiticoneUpDown1.Value = qty
+        lbl_quantity.Text = qty.ToString()
     End Sub
 
-    ' 🔹 When quantity is changed using the SiticoneUpDown
     Private Sub SiticoneUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles SiticoneUpDown1.ValueChanged
         lbl_quantity.Text = SiticoneUpDown1.Value.ToString()
     End Sub
 
-    ' 🔹 Save button click
     Private Sub SiticoneButton1_Click(sender As Object, e As EventArgs) Handles SiticoneButton1.Click
         Try
-            ' ✅ Validate values before continuing
-            If String.IsNullOrEmpty(SelectedProductName) Then
-                MessageBox.Show("Product name cannot be empty. Please reopen this edit window from the POS screen.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            If String.IsNullOrWhiteSpace(SelectedProductName) Then
+                MessageBox.Show("Product name cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub
             End If
 
@@ -38,74 +32,61 @@
 
             Dim updatedQty As Integer = CInt(SiticoneUpDown1.Value)
             Dim productName As String = SelectedProductName
+            Dim productPrice As Decimal = SelectedProductPrice
 
-            ' ✅ Step 1: Get the active PosControl from Dashboard
             Dim posForm As PosControl = Dashboard.posInstance
             If posForm Is Nothing Then
-                MessageBox.Show("⚠️ POS screen not loaded in Dashboard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("POS screen not loaded.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Exit Sub
             End If
 
-            ' ✅ Step 2: Find the product in ListBox1
-            Dim index As Integer = -1
-            For i As Integer = 0 To posForm.ListBox1.Items.Count - 1
-                If posForm.ListBox1.Items(i).ToString().Contains(productName) Then
-                    index = i
+            ' Find product row in DataGridView
+            Dim foundRow As DataGridViewRow = Nothing
+            For Each row As DataGridViewRow In posForm.Guna2DataGridView1.Rows
+                If row.IsNewRow Then Continue For
+                If row.Cells("ProductName").Value IsNot Nothing AndAlso
+                   String.Equals(row.Cells("ProductName").Value.ToString(), productName, StringComparison.OrdinalIgnoreCase) Then
+                    foundRow = row
                     Exit For
                 End If
             Next
 
-            If index = -1 Then
-                MessageBox.Show("Product not found in cart.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Exit Sub
-            End If
+            If foundRow Is Nothing Then
+                ' Product not yet in cart → add it
+                posForm.Guna2DataGridView1.Rows.Add(updatedQty, productName, (productPrice * updatedQty).ToString("N2"))
+                posForm.ChangeStock(productName, -updatedQty)
+            Else
+                ' Update existing product
+                Dim oldQty As Integer = Convert.ToInt32(foundRow.Cells("Quantity").Value)
+                Dim delta As Integer = updatedQty - oldQty
 
-            ' ✅ Step 3: Get the old quantity
-            Dim oldItem As String = posForm.ListBox1.Items(index).ToString()
-            Dim regex As New System.Text.RegularExpressions.Regex("(\d+)x")
-            Dim match = regex.Match(oldItem)
-            Dim oldQty As Integer = 1
-            If match.Success Then oldQty = Convert.ToInt32(match.Groups(1).Value)
-
-            Dim delta As Integer = updatedQty - oldQty
-
-            ' ✅ Step 4: Check and adjust stock
-            If delta > 0 Then
-                Dim available As Integer = posForm.GetStockQuantity(productName)
-                If available < delta Then
-                    MessageBox.Show("Not enough stock to increase quantity. Available: " & available, "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                    Exit Sub
+                ' Check stock if increasing quantity
+                If delta > 0 Then
+                    Dim available As Integer = posForm.GetStockQuantity(productName)
+                    If available < delta Then
+                        MessageBox.Show("Not enough stock. Available: " & available, "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                        Exit Sub
+                    End If
+                    posForm.ChangeStock(productName, -delta)
+                ElseIf delta < 0 Then
+                    posForm.ChangeStock(productName, -delta) ' return stock
                 End If
-                posForm.ChangeStock(productName, -delta)
-            ElseIf delta < 0 Then
-                posForm.ChangeStock(productName, -delta)
+
+                foundRow.Cells("Quantity").Value = updatedQty
+                foundRow.Cells("Price").Value = (productPrice * updatedQty).ToString("N2")
             End If
 
-            ' ✅ Step 5: Update ListBox1 & ListBox2
-            posForm.ListBox1.Items(index) = $"{updatedQty}x {productName}"
-
-            Dim oldTotal As Decimal = 0D
-            Dim cleanText As String = posForm.ListBox2.Items(index).ToString().Replace("₱", "").Replace(",", "").Trim()
-            If Decimal.TryParse(cleanText, oldTotal) Then
-                Dim unitPrice As Decimal = If(oldQty > 0, oldTotal / oldQty, oldTotal)
-                posForm.ListBox2.Items(index) = "₱" & (unitPrice * updatedQty).ToString("N2")
-            End If
-
-            ' ✅ Step 6: Recalculate totals
             posForm.CalculateTotals()
-
             MessageBox.Show("Quantity updated successfully!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Me.Close()
 
         Catch ex As Exception
-            MessageBox.Show("An error occurred while saving changes: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Error updating quantity: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 
     Private Sub SiticoneImageButton1_Click(sender As Object, e As EventArgs) Handles SiticoneImageButton1.Click
         Me.Close()
-        ' Return to POS screen via Dashboard
         Dashboard.posInstance.BringToFront()
-
     End Sub
 End Class

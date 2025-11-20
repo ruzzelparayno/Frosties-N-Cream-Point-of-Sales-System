@@ -4,8 +4,9 @@
     "\\PointOfSales",
     "\\PointOfSales\\System",
     "\\PointOfSales\\System\\Cashier",
-    "\\PointOfSales\\System\\Component"
+    "\\PointOfSales\\System\\Component",
+    "\\PointOfSales\\System\\Component\\Pos"
   ],
-  "SelectedNode": "\\PointOfSales\\System\\Cashier\\CashierDashboard.Designer.vb",
+  "SelectedNode": "\\PointOfSales\\System\\Component\\Pos\\PosControl.vb",
   "PreviewInSolutionExplorer": false
 }

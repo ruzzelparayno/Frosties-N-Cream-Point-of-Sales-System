@@ -68,8 +68,11 @@ Public Class LoginPass
 
                 If role = "admin" Then
                     Dashboard.Show()
-                    Me.Hide()
-                    MessageBox.Show("Access denied. Only admin is allowed.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    Login.Hide()
+                    'MessageBox.Show("Access denied. Only admin is allowed.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Else
+                    CashierDashboard.Show()
+                    Login.Hide()
                 End If
             Else
                 MessageBox.Show("Invalid username or password.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)

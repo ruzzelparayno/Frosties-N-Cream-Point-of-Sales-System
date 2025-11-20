@@ -22,7 +22,21 @@ Partial Class DashboardContent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim BarChartTheme3 As SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme = New SiticoneNetFrameworkUI.SiticoneBarChart.BarChartTheme()
+        Dim ChartFont1 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont2 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont3 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim ChartFont4 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid1 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick1 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont5 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid2 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim Tick2 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont6 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Grid3 As Guna.Charts.WinForms.Grid = New Guna.Charts.WinForms.Grid()
+        Dim PointLabel1 As Guna.Charts.WinForms.PointLabel = New Guna.Charts.WinForms.PointLabel()
+        Dim ChartFont7 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim Tick3 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
+        Dim ChartFont8 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.SiticonePanel4 = New SiticoneNetFrameworkUI.SiticonePanel()
@@ -38,14 +52,14 @@ Partial Class DashboardContent
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.SiticoneBarChart1 = New SiticoneNetFrameworkUI.SiticoneBarChart()
+        Me.GunaChart1 = New Guna.Charts.WinForms.GunaChart()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SiticonePanel4.SuspendLayout()
@@ -257,18 +271,20 @@ Partial Class DashboardContent
         '
         'FlowLayoutPanel1
         '
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(5, 34)
+        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(2, 23)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(243, 69)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(249, 90)
         Me.FlowLayoutPanel1.TabIndex = 11
         Me.FlowLayoutPanel1.WrapContents = False
         '
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(11, 10)
+        Me.Label7.Location = New System.Drawing.Point(2, 2)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(151, 21)
         Me.Label7.TabIndex = 10
@@ -344,7 +360,7 @@ Partial Class DashboardContent
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.SiticoneBarChart1)
+        Me.Panel5.Controls.Add(Me.GunaChart1)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(0, 72)
         Me.Panel5.Name = "Panel5"
@@ -352,28 +368,41 @@ Partial Class DashboardContent
         Me.Panel5.Size = New System.Drawing.Size(380, 455)
         Me.Panel5.TabIndex = 3
         '
-        'SiticoneBarChart1
+        'GunaChart1
         '
-        Me.SiticoneBarChart1.AutoSize = True
-        Me.SiticoneBarChart1.BackColor = System.Drawing.Color.Transparent
-        Me.SiticoneBarChart1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SiticoneBarChart1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.SiticoneBarChart1.ForeColor = System.Drawing.Color.White
-        Me.SiticoneBarChart1.LabelMember = "Week"
-        Me.SiticoneBarChart1.Location = New System.Drawing.Point(30, 30)
-        Me.SiticoneBarChart1.Name = "SiticoneBarChart1"
-        Me.SiticoneBarChart1.ShowValueOnBar = False
-        Me.SiticoneBarChart1.Size = New System.Drawing.Size(320, 395)
-        Me.SiticoneBarChart1.TabIndex = 2
-        BarChartTheme3.AxisLabelColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        BarChartTheme3.BackColor = System.Drawing.SystemColors.Control
-        BarChartTheme3.BarColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        BarChartTheme3.BarHighlightColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(181, Byte), Integer), CType(CType(246, Byte), Integer))
-        BarChartTheme3.GridColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        BarChartTheme3.Name = "Default Blue"
-        BarChartTheme3.ValueLabelColor = System.Drawing.Color.Black
-        Me.SiticoneBarChart1.Theme = BarChartTheme3
-        Me.SiticoneBarChart1.ValueMember = "Revenue"
+        Me.GunaChart1.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.GunaChart1.Dock = System.Windows.Forms.DockStyle.Fill
+        ChartFont1.FontName = "Arial"
+        Me.GunaChart1.Legend.LabelFont = ChartFont1
+        Me.GunaChart1.Location = New System.Drawing.Point(30, 30)
+        Me.GunaChart1.Name = "GunaChart1"
+        Me.GunaChart1.Size = New System.Drawing.Size(320, 395)
+        Me.GunaChart1.TabIndex = 0
+        ChartFont2.FontName = "Arial"
+        ChartFont2.Size = 12
+        ChartFont2.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart1.Title.Font = ChartFont2
+        ChartFont3.FontName = "Arial"
+        Me.GunaChart1.Tooltips.BodyFont = ChartFont3
+        ChartFont4.FontName = "Arial"
+        ChartFont4.Size = 9
+        ChartFont4.Style = Guna.Charts.WinForms.ChartFontStyle.Bold
+        Me.GunaChart1.Tooltips.TitleFont = ChartFont4
+        Me.GunaChart1.XAxes.GridLines = Grid1
+        ChartFont5.FontName = "Arial"
+        Tick1.Font = ChartFont5
+        Me.GunaChart1.XAxes.Ticks = Tick1
+        Me.GunaChart1.YAxes.GridLines = Grid2
+        ChartFont6.FontName = "Arial"
+        Tick2.Font = ChartFont6
+        Me.GunaChart1.YAxes.Ticks = Tick2
+        Me.GunaChart1.ZAxes.GridLines = Grid3
+        ChartFont7.FontName = "Arial"
+        PointLabel1.Font = ChartFont7
+        Me.GunaChart1.ZAxes.PointLabels = PointLabel1
+        ChartFont8.FontName = "Arial"
+        Tick3.Font = ChartFont8
+        Me.GunaChart1.ZAxes.Ticks = Tick3
         '
         'Panel6
         '
@@ -418,6 +447,15 @@ Partial Class DashboardContent
         Me.Panel8.Size = New System.Drawing.Size(381, 455)
         Me.Panel8.TabIndex = 5
         '
+        'FlowLayoutPanel2
+        '
+        Me.FlowLayoutPanel2.AutoSize = True
+        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(30, 30)
+        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(321, 395)
+        Me.FlowLayoutPanel2.TabIndex = 2
+        '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(84, Byte), Integer))
@@ -440,15 +478,6 @@ Partial Class DashboardContent
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Top 5 Item Sales"
         '
-        'FlowLayoutPanel2
-        '
-        Me.FlowLayoutPanel2.AutoSize = True
-        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(30, 30)
-        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(321, 395)
-        Me.FlowLayoutPanel2.TabIndex = 2
-        '
         'DashboardContent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -469,7 +498,6 @@ Partial Class DashboardContent
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.Panel7.ResumeLayout(False)
@@ -501,7 +529,7 @@ Partial Class DashboardContent
     Friend WithEvents SiticonePanel4 As SiticoneNetFrameworkUI.SiticonePanel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents SiticoneBarChart1 As SiticoneNetFrameworkUI.SiticoneBarChart
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
+    Friend WithEvents GunaChart1 As Guna.Charts.WinForms.GunaChart
 End Class

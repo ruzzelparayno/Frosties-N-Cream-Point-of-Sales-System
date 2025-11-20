@@ -7,14 +7,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="PointOfSales.exe.manifest" size="22055">
+    <dependentAssembly dependencyType="install" codebase="PointOfSales.exe.manifest" size="24098">
       <assemblyIdentity name="PointOfSales.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>R85A6gOZ7s0cHxYjTM9fIwJlw0Qj7631XiAF3Jxa8Gk=</dsig:DigestValue>
+        <dsig:DigestValue>7xnotZUY/LBazYoyBs9uRrVT6rh+zwPsPDrx5GOEi+A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
