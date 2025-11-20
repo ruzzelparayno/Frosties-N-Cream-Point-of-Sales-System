@@ -8,10 +8,12 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         SiticoneHProgressBar1.Value += 1
 
-        ' Optional: update percentage label
-
+        ' Optional: update percentage label 
         If SiticoneHProgressBar1.Value >= 100 Then
+
+
             Timer1.Stop()
+
 
             ' Show login form and hide splash
             Dim loginForm As New Login

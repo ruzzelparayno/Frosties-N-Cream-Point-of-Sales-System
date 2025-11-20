@@ -45,13 +45,14 @@ Public Class ProductContent
 
     ' Form Load
     Private Sub ProductContent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Instance = Me
         LoadCategories()
         LoadInventory()
         cb_cate.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
 
     ' When a row is clicked in the DataGridView
-    Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
+    Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs)
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
             selectedProductID = Convert.ToInt32(row.Cells("ProductID").Value)
@@ -83,7 +84,7 @@ Public Class ProductContent
 
 
     ' Choose Image button
-    Private Sub siticonebutton2_Click(sender As Object, e As EventArgs) Handles SiticoneButton2.Click
+    Private Sub siticonebutton2_Click(sender As Object, e As EventArgs)
         If selectedProductID <> -1 Then
             MessageBox.Show("Cannot change image while editing. Select a new product to add image.")
             Exit Sub
@@ -97,7 +98,7 @@ Public Class ProductContent
     End Sub
 
     ' Save button (add new product)
-    Private Sub BtnSave_Click(sender As Object, e As EventArgs) Handles BtnSave.Click
+    Private Sub BtnSave_Click(sender As Object, e As EventArgs)
         If SiticoneTextBox1.Text = "" Or SiticoneTextBox2.Text = "" Or SiticoneTextBox3.Text = "" Or cb_cate.SelectedIndex = -1 Or selectedImagePath = "" Then
             MessageBox.Show("Please fill all fields and choose an image.")
             Exit Sub
@@ -132,29 +133,41 @@ Public Class ProductContent
         End Try
     End Sub
 
-    ' Update button 
-    Private Sub SiticoneButton3_Click_1(sender As Object, e As EventArgs) Handles SiticoneButton3.Click
-        If selectedProductID = -1 Then
-            MessageBox.Show("Please select a product to update.")
-            Exit Sub
-        End If
+    Private Sub Guna2DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellDoubleClick
+        If e.RowIndex < 0 Then Exit Sub
 
+        Dim row As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
+
+        Dim id As Integer = row.Cells("ProductID").Value
+        Dim name As String = row.Cells("ProductName").Value.ToString()
+        Dim qty As String = row.Cells("StockQuantity").Value.ToString()
+        Dim price As String = row.Cells("Price").Value.ToString()
+        Dim category As String = row.Cells("CategoryName").Value.ToString()
+
+        ' LOAD IMAGE FROM DATABASE
+        Dim productImage As Image = Nothing
         Try
             conn.Open()
-            Dim query As String = "UPDATE products SET ProductName=@name, StockQuantity=@stock, Price=@price, CategoryName=@category WHERE ProductID=@id"
-            Dim cmd As New MySqlCommand(query, conn)
-            cmd.Parameters.AddWithValue("@name", SiticoneTextBox1.Text)
-            cmd.Parameters.AddWithValue("@stock", SiticoneTextBox2.Text)
-            cmd.Parameters.AddWithValue("@price", SiticoneTextBox3.Text)
-            cmd.Parameters.AddWithValue("@category", cb_cate.SelectedItem.ToString())
-            cmd.Parameters.AddWithValue("@id", selectedProductID)
-            cmd.ExecuteNonQuery()
-            MessageBox.Show("✅ Product updated successfully!")
+            Dim cmd As New MySqlCommand("SELECT ProductImage FROM products WHERE ProductID=@id", conn)
+            cmd.Parameters.AddWithValue("@id", id)
+            Dim imgData As Byte() = CType(cmd.ExecuteScalar(), Byte())
+            If imgData IsNot Nothing Then
+                Using ms As New MemoryStream(imgData)
+                    productImage = Image.FromStream(ms)
+                End Using
+            End If
         Catch ex As Exception
-            MessageBox.Show("Error updating product: " & ex.Message)
+            MessageBox.Show("Error loading image: " & ex.Message)
         Finally
             conn.Close()
-            LoadInventory()
         End Try
+
+        ' OPEN EDIT FORM AND PASS DATA
+        Edit_ProductForm.LoadProductData(id, name, category, qty, price, productImage)
+        Edit_ProductForm.Show()
+    End Sub
+
+    Private Sub BtnSave_Click_1(sender As Object, e As EventArgs) Handles BtnSave.Click
+
     End Sub
 End Class

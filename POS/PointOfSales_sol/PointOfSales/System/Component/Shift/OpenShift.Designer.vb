@@ -187,7 +187,7 @@ Partial Class OpenShift
         Me.SiticoneButton1.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.SiticoneButton1.ParticleCount = 15
         Me.SiticoneButton1.PressAnimationScale = 0.97!
-        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton1.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.SiticoneButton1.PressTransitionDuration = 150
         Me.SiticoneButton1.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -212,6 +212,7 @@ Partial Class OpenShift
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(424, 248)
         Me.Controls.Add(Me.SiticoneButton1)
         Me.Controls.Add(Me.SiticoneLabel3)

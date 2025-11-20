@@ -51,6 +51,14 @@ Public Class DashboardContent
             Label5.Font = New Font(Label5.Font.FontFamily, 20, Label5.Font.Style)
             Label4.Font = New Font(Label4.Font.FontFamily, 60, Label4.Font.Style)
             Label7.Font = New Font(Label7.Font.FontFamily, 20, Label7.Font.Style)
+
+            Label1.Font = New Font(Label1.Font.FontFamily, 20, Label1.Font.Style)
+            Label6.Font = New Font(Label6.Font.FontFamily, 20, Label6.Font.Style)
+            Label8.Font = New Font(Label8.Font.FontFamily, 20, Label8.Font.Style)
+            Label9.Font = New Font(Label9.Font.FontFamily, 20, Label9.Font.Style)
+            Label10.Font = New Font(Label10.Font.FontFamily, 20, Label10.Font.Style)
+
+            FlowLayoutPanel2.Padding = New Padding(85, FlowLayoutPanel2.Padding.Top, FlowLayoutPanel2.Padding.Right, FlowLayoutPanel2.Padding.Bottom)
         Else
             Panel2.Size = New Size(758, 125)
             Label2.Font = New Font(Label2.Font.FontFamily, 12, Label2.Font.Style)
@@ -58,6 +66,14 @@ Public Class DashboardContent
             Label5.Font = New Font(Label5.Font.FontFamily, 12, Label5.Font.Style)
             Label4.Font = New Font(Label4.Font.FontFamily, 40, Label4.Font.Style)
             Label7.Font = New Font(Label7.Font.FontFamily, 12, Label7.Font.Style)
+
+            Label1.Font = New Font(Label1.Font.FontFamily, 12, Label1.Font.Style)
+            Label6.Font = New Font(Label6.Font.FontFamily, 12, Label6.Font.Style)
+            Label8.Font = New Font(Label8.Font.FontFamily, 12, Label8.Font.Style)
+            Label9.Font = New Font(Label9.Font.FontFamily, 12, Label9.Font.Style)
+            Label10.Font = New Font(Label10.Font.FontFamily, 12, Label10.Font.Style)
+
+            FlowLayoutPanel2.Padding = New Padding(0, FlowLayoutPanel2.Padding.Top, FlowLayoutPanel2.Padding.Right, FlowLayoutPanel2.Padding.Bottom)
         End If
     End Sub
 
@@ -96,40 +112,45 @@ Public Class DashboardContent
                             End If
 
                             Dim productPanel As New Panel With {
-                                .Width = 70,
-                                .Height = 75,
+                                .Width = 143,
+                                .Height = 160,
                                 .BackColor = Color.FromArgb(217, 220, 235),
                                 .Margin = New Padding(3)
                             }
 
                             Dim pic As New PictureBox With {
-                                .Width = 60,
-                                .Height = 35,
+                                .Width = 64,
+                                .Height = 54,
                                 .SizeMode = PictureBoxSizeMode.Zoom,
                                 .Image = productImage,
+                                .Dock = DockStyle.Fill,
                                 .Top = 4,
                                 .Left = 5
                             }
 
                             Dim lblName As New Label With {
                                 .AutoSize = False,
-                                .TextAlign = ContentAlignment.MiddleCenter,
-                                .Font = New Font("Segoe UI", 6, FontStyle.Bold),
+                                .TextAlign = ContentAlignment.TopCenter,
+                                .Font = New Font("Segoe UI", 12, FontStyle.Bold),
                                 .Text = pname,
-                                .Width = 60,
-                                .Top = 42,
-                                .Left = 5,
+                                .Width = 89,
+                                .Height = 30,
+                                .Top = 5,
+                                .Dock = DockStyle.Top,
+                                .Left = 170,
                                 .ForeColor = Color.FromArgb(75, 75, 75)
                             }
 
                             Dim lblStock As New Label With {
                                 .AutoSize = False,
                                 .TextAlign = ContentAlignment.MiddleCenter,
-                                .Font = New Font("Segoe UI", 6, FontStyle.Regular),
-                                .Text = "Stock: " & stockQty,
-                                .Width = 60,
-                                .Top = 55,
-                                .Left = 5,
+                                .Font = New Font("Segoe UI", 9, FontStyle.Bold),
+                                .Text = stockQty & " QTY",
+                                .Width = 89,
+                                .Height = 30,
+                                .Top = 5,
+                                .Dock = DockStyle.Bottom,
+                                .Left = 160,
                                 .ForeColor = Color.FromArgb(75, 75, 75)
                             }
 
@@ -140,7 +161,7 @@ Public Class DashboardContent
                             productPanel.Controls.Add(pic)
                             productPanel.Controls.Add(lblName)
                             productPanel.Controls.Add(lblStock)
-                            FlowLayoutPanel1.Controls.Add(productPanel)
+                            FlowLayoutPanel2.Controls.Add(productPanel)
                         End While
                     End Using
                 End Using
@@ -154,102 +175,102 @@ Public Class DashboardContent
     ' 📦 TOP 5 BEST SELLERS (3 PER ROW)
     ' =======================
     Private Sub LoadTop5BestSellers()
-        Try
-            FlowLayoutPanel2.Controls.Clear()
+        'Try
+        '    FlowLayoutPanel2.Controls.Clear()
 
-            ' ✅ Force 3 per row
-            FlowLayoutPanel2.WrapContents = True
-            FlowLayoutPanel2.FlowDirection = FlowDirection.LeftToRight
-            FlowLayoutPanel2.AutoScroll = False
-            FlowLayoutPanel2.Padding = New Padding(10)
-            FlowLayoutPanel2.Width = 3 * 110 + 50 ' each 110px + padding spacing
+        '    ' ✅ Force 3 per row
+        '    FlowLayoutPanel2.WrapContents = True
+        '    FlowLayoutPanel2.FlowDirection = FlowDirection.LeftToRight
+        '    FlowLayoutPanel2.AutoScroll = False
+        '    FlowLayoutPanel2.Padding = New Padding(10)
+        '    FlowLayoutPanel2.Width = 3 * 110 + 50 ' each 110px + padding spacing
 
-            Using conn As New MySqlConnection(connectionString)
-                conn.Open()
+        '    Using conn As New MySqlConnection(connectionString)
+        '        conn.Open()
 
-                Dim query As String = "
-                    SELECT 
-                        s.ProductName, 
-                        SUM(s.Quantity) AS TotalSold,
-                        p.ProductImage
-                    FROM sales s
-                    INNER JOIN products p ON s.ProductName = p.ProductName
-                    GROUP BY s.ProductName
-                    ORDER BY TotalSold DESC
-                    LIMIT 5;
-                "
+        '        Dim query As String = "
+        '            SELECT 
+        '                s.ProductName, 
+        '                SUM(s.Quantity) AS TotalSold,
+        '                p.ProductImage
+        '            FROM sales s
+        '            INNER JOIN products p ON s.ProductName = p.ProductName
+        '            GROUP BY s.ProductName
+        '            ORDER BY TotalSold DESC
+        '            LIMIT 5;
+        '        "
 
-                Using cmd As New MySqlCommand(query, conn)
-                    Using reader As MySqlDataReader = cmd.ExecuteReader()
-                        Dim count As Integer = 0
-                        Dim currentRowPanel As FlowLayoutPanel = Nothing
+        '        Using cmd As New MySqlCommand(query, conn)
+        '            Using reader As MySqlDataReader = cmd.ExecuteReader()
+        '                Dim count As Integer = 0
+        '                Dim currentRowPanel As FlowLayoutPanel = Nothing
 
-                        While reader.Read()
-                            Dim pname As String = reader("ProductName").ToString()
-                            Dim totalSold As Integer = Convert.ToInt32(reader("TotalSold"))
-                            Dim productImage As Image = Nothing
+        '                While reader.Read()
+        '                    Dim pname As String = reader("ProductName").ToString()
+        '                    Dim totalSold As Integer = Convert.ToInt32(reader("TotalSold"))
+        '                    Dim productImage As Image = Nothing
 
-                            If Not IsDBNull(reader("ProductImage")) Then
-                                Dim imgBytes() As Byte = DirectCast(reader("ProductImage"), Byte())
-                                If imgBytes IsNot Nothing AndAlso imgBytes.Length > 0 Then
-                                    Using ms As New MemoryStream(imgBytes)
-                                        productImage = Image.FromStream(ms)
-                                    End Using
-                                End If
-                            End If
+        '                    If Not IsDBNull(reader("ProductImage")) Then
+        '                        Dim imgBytes() As Byte = DirectCast(reader("ProductImage"), Byte())
+        '                        If imgBytes IsNot Nothing AndAlso imgBytes.Length > 0 Then
+        '                            Using ms As New MemoryStream(imgBytes)
+        '                                productImage = Image.FromStream(ms)
+        '                            End Using
+        '                        End If
+        '                    End If
 
-                            Dim productPanel As New Panel With {
-                                .Width = 100,
-                                .Height = 100,
-                                .BackColor = Color.FromArgb(217, 220, 235),
-                                .Margin = New Padding(5),
-                                .BorderStyle = BorderStyle.FixedSingle
-                            }
+        '                    Dim productPanel As New Panel With {
+        '                        .Width = 100,
+        '                        .Height = 100,
+        '                        .BackColor = Color.FromArgb(217, 220, 235),
+        '                        .Margin = New Padding(5),
+        '                        .BorderStyle = BorderStyle.FixedSingle
+        '                    }
 
-                            Dim pic As New PictureBox With {
-                                .Width = 90,
-                                .Height = 55,
-                                .SizeMode = PictureBoxSizeMode.Zoom,
-                                .Image = productImage,
-                                .Top = 5,
-                                .Left = 5
-                            }
+        '                    Dim pic As New PictureBox With {
+        '                        .Width = 90,
+        '                        .Height = 55,
+        '                        .SizeMode = PictureBoxSizeMode.Zoom,
+        '                        .Image = productImage,
+        '                        .Top = 5,
+        '                        .Left = 5
+        '                    }
 
-                            Dim lblName As New Label With {
-                                .AutoSize = False,
-                                .TextAlign = ContentAlignment.MiddleCenter,
-                                .Font = New Font("Segoe UI", 7, FontStyle.Bold),
-                                .Text = pname,
-                                .Width = 90,
-                                .Top = 63,
-                                .Left = 5,
-                                .ForeColor = Color.FromArgb(75, 75, 75)
-                            }
+        '                    Dim lblName As New Label With {
+        '                        .AutoSize = False,
+        '                        .TextAlign = ContentAlignment.MiddleCenter,
+        '                        .Font = New Font("Segoe UI", 7, FontStyle.Bold),
+        '                        .Text = pname,
+        '                        .Width = 90,
+        '                        .Top = 63,
+        '                        .Left = 5,
+        '                        .ForeColor = Color.FromArgb(75, 75, 75)
+        '                    }
 
-                            Dim lblSold As New Label With {
-                                .AutoSize = False,
-                                .TextAlign = ContentAlignment.MiddleCenter,
-                                .Font = New Font("Segoe UI", 7, FontStyle.Regular),
-                                .Text = "Sold: " & totalSold,
-                                .Width = 90,
-                                .Top = 80,
-                                .Left = 5,
-                                .ForeColor = Color.FromArgb(75, 75, 75)
-                            }
+        '                    Dim lblSold As New Label With {
+        '                        .AutoSize = False,
+        '                        .TextAlign = ContentAlignment.MiddleCenter,
+        '                        .Font = New Font("Segoe UI", 7, FontStyle.Regular),
+        '                        .Text = "Sold: " & totalSold,
+        '                        .Width = 90,
+        '                        .Top = 80,
+        '                        .Left = 5,
+        '                        .ForeColor = Color.FromArgb(75, 75, 75)
+        '                    }
 
-                            productPanel.Controls.Add(pic)
-                            productPanel.Controls.Add(lblName)
-                            productPanel.Controls.Add(lblSold)
-                            FlowLayoutPanel2.Controls.Add(productPanel)
+        '                    productPanel.Controls.Add(pic)
+        '                    productPanel.Controls.Add(lblName)
+        '                    productPanel.Controls.Add(lblSold)
+        '                    FlowLayoutPanel2.Controls.Add(productPanel)
 
-                            count += 1
-                        End While
-                    End Using
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show("Error loading top 5 best sellers: " & ex.Message)
-        End Try
+        '                    count += 1
+        '                End While
+        '            End Using
+        '        End Using
+        '    End Using
+        'Catch ex As Exception
+        '    MessageBox.Show("Error loading top 5 best sellers: " & ex.Message)
+        'End Try
     End Sub
 
     ' =======================
@@ -393,6 +414,5 @@ Public Class DashboardContent
             End If
         End If
     End Sub
-
 
 End Class

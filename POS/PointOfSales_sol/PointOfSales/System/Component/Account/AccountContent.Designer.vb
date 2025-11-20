@@ -46,15 +46,19 @@ Partial Class AccountContent
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.SiticoneButton4 = New SiticoneNetFrameworkUI.SiticoneButton()
+        Me.SiticoneButton2 = New SiticoneNetFrameworkUI.SiticoneButton()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Panel18 = New System.Windows.Forms.Panel()
         Me.txt_cpass = New System.Windows.Forms.TextBox()
         Me.lbl_cp = New System.Windows.Forms.Label()
-        Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.SiticoneButton3 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.txt_np = New System.Windows.Forms.TextBox()
         Me.lbl_np = New System.Windows.Forms.Label()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.SiticoneButton3 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.txt_op = New System.Windows.Forms.TextBox()
         Me.lbl_op = New System.Windows.Forms.Label()
@@ -75,9 +79,11 @@ Partial Class AccountContent
         Me.Panel11.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
+        Me.Panel17.SuspendLayout()
+        Me.Panel15.SuspendLayout()
         Me.Panel18.SuspendLayout()
-        Me.Panel13.SuspendLayout()
         Me.Panel16.SuspendLayout()
+        Me.Panel13.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel14.SuspendLayout()
         Me.Panel12.SuspendLayout()
@@ -224,9 +230,9 @@ Partial Class AccountContent
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold)
         Me.Label3.Location = New System.Drawing.Point(15, 8)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(120, 25)
+        Me.Label3.Size = New System.Drawing.Size(116, 25)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Information"
+        Me.Label3.Text = "User Details"
         '
         'Panel1
         '
@@ -343,9 +349,11 @@ Partial Class AccountContent
         Me.TableLayoutPanel3.ColumnCount = 2
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001!))
-        Me.TableLayoutPanel3.Controls.Add(Me.Panel18, 0, 3)
+        Me.TableLayoutPanel3.Controls.Add(Me.Panel17, 0, 3)
+        Me.TableLayoutPanel3.Controls.Add(Me.Panel15, 1, 2)
+        Me.TableLayoutPanel3.Controls.Add(Me.Panel18, 0, 2)
+        Me.TableLayoutPanel3.Controls.Add(Me.Panel16, 1, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.Panel13, 1, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.Panel16, 0, 2)
         Me.TableLayoutPanel3.Controls.Add(Me.Panel9, 0, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.Panel14, 0, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
@@ -359,39 +367,187 @@ Partial Class AccountContent
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(778, 369)
         Me.TableLayoutPanel3.TabIndex = 10
         '
-        'Panel18
+        'Panel17
         '
-        Me.Panel18.BackColor = System.Drawing.Color.White
-        Me.Panel18.Controls.Add(Me.txt_cpass)
-        Me.Panel18.Controls.Add(Me.lbl_cp)
-        Me.Panel18.Controls.Add(Me.SiticoneButton1)
-        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel18.Location = New System.Drawing.Point(3, 257)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(382, 109)
-        Me.Panel18.TabIndex = 20
-        Me.Panel18.Visible = False
+        Me.Panel17.BackColor = System.Drawing.Color.White
+        Me.Panel17.Controls.Add(Me.SiticoneButton4)
+        Me.Panel17.Controls.Add(Me.SiticoneButton2)
+        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel17.Location = New System.Drawing.Point(3, 257)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(382, 109)
+        Me.Panel17.TabIndex = 24
         '
-        'txt_cpass
+        'SiticoneButton4
         '
-        Me.txt_cpass.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txt_cpass.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txt_cpass.Location = New System.Drawing.Point(17, 28)
-        Me.txt_cpass.Name = "txt_cpass"
-        Me.txt_cpass.Size = New System.Drawing.Size(349, 29)
-        Me.txt_cpass.TabIndex = 6
+        Me.SiticoneButton4.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
+    ""
+        Me.SiticoneButton4.AccessibleName = "Import Data"
+        Me.SiticoneButton4.AutoSizeBasedOnText = False
+        Me.SiticoneButton4.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton4.BadgeBackColor = System.Drawing.Color.Black
+        Me.SiticoneButton4.BadgeFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneButton4.BadgeValue = 0
+        Me.SiticoneButton4.BadgeValueForeColor = System.Drawing.Color.White
+        Me.SiticoneButton4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton4.BorderWidth = 2
+        Me.SiticoneButton4.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton4.ButtonImage = Nothing
+        Me.SiticoneButton4.ButtonTextLeftPadding = 0
+        Me.SiticoneButton4.CanBeep = True
+        Me.SiticoneButton4.CanGlow = False
+        Me.SiticoneButton4.CanShake = True
+        Me.SiticoneButton4.ContextMenuStripEx = Nothing
+        Me.SiticoneButton4.CornerRadiusBottomLeft = 5
+        Me.SiticoneButton4.CornerRadiusBottomRight = 5
+        Me.SiticoneButton4.CornerRadiusTopLeft = 5
+        Me.SiticoneButton4.CornerRadiusTopRight = 5
+        Me.SiticoneButton4.CustomCursor = System.Windows.Forms.Cursors.Default
+        Me.SiticoneButton4.DisabledTextColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.SiticoneButton4.EnableLongPress = False
+        Me.SiticoneButton4.EnablePressAnimation = True
+        Me.SiticoneButton4.EnableRippleEffect = True
+        Me.SiticoneButton4.EnableShadow = False
+        Me.SiticoneButton4.EnableTextWrapping = False
+        Me.SiticoneButton4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SiticoneButton4.ForeColor = System.Drawing.Color.White
+        Me.SiticoneButton4.GlowColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneButton4.GlowIntensity = 100
+        Me.SiticoneButton4.GlowRadius = 20.0!
+        Me.SiticoneButton4.GradientBackground = False
+        Me.SiticoneButton4.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.SiticoneButton4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
+        Me.SiticoneButton4.HintText = Nothing
+        Me.SiticoneButton4.HoverBackColor = System.Drawing.Color.White
+        Me.SiticoneButton4.HoverFontStyle = System.Drawing.FontStyle.Regular
+        Me.SiticoneButton4.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton4.HoverTransitionDuration = 250
+        Me.SiticoneButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SiticoneButton4.ImagePadding = 5
+        Me.SiticoneButton4.ImageSize = New System.Drawing.Size(16, 16)
+        Me.SiticoneButton4.IsRadial = False
+        Me.SiticoneButton4.IsReadOnly = False
+        Me.SiticoneButton4.IsToggleButton = False
+        Me.SiticoneButton4.IsToggled = False
+        Me.SiticoneButton4.Location = New System.Drawing.Point(19, 57)
+        Me.SiticoneButton4.LongPressDurationMS = 1000
+        Me.SiticoneButton4.Margin = New System.Windows.Forms.Padding(0)
+        Me.SiticoneButton4.Name = "SiticoneButton4"
+        Me.SiticoneButton4.NormalFontStyle = System.Drawing.FontStyle.Regular
+        Me.SiticoneButton4.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.SiticoneButton4.ParticleCount = 15
+        Me.SiticoneButton4.PressAnimationScale = 0.97!
+        Me.SiticoneButton4.PressedBackColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton4.PressedFontStyle = System.Drawing.FontStyle.Regular
+        Me.SiticoneButton4.PressTransitionDuration = 150
+        Me.SiticoneButton4.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.SiticoneButton4.RippleColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneButton4.RippleOpacity = 0.3!
+        Me.SiticoneButton4.RippleRadiusMultiplier = 0.6!
+        Me.SiticoneButton4.ShadowBlur = 5
+        Me.SiticoneButton4.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SiticoneButton4.ShadowOffset = New System.Drawing.Point(2, 2)
+        Me.SiticoneButton4.ShakeDuration = 500
+        Me.SiticoneButton4.ShakeIntensity = 5
+        Me.SiticoneButton4.Size = New System.Drawing.Size(161, 35)
+        Me.SiticoneButton4.TabIndex = 19
+        Me.SiticoneButton4.Text = "Import Data"
+        Me.SiticoneButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.SiticoneButton4.TextColor = System.Drawing.Color.White
+        Me.SiticoneButton4.TooltipText = Nothing
+        Me.SiticoneButton4.UseAdvancedRendering = True
+        Me.SiticoneButton4.UseParticles = False
         '
-        'lbl_cp
+        'SiticoneButton2
         '
-        Me.lbl_cp.AutoSize = True
-        Me.lbl_cp.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_cp.Location = New System.Drawing.Point(15, 4)
-        Me.lbl_cp.Name = "lbl_cp"
-        Me.lbl_cp.Size = New System.Drawing.Size(142, 21)
-        Me.lbl_cp.TabIndex = 4
-        Me.lbl_cp.Text = "Confirm Password"
+        Me.SiticoneButton2.AccessibleDescription = "The default button control that accept input though the mouse, touch and keyboard" &
+    ""
+        Me.SiticoneButton2.AccessibleName = "Export Data"
+        Me.SiticoneButton2.AutoSizeBasedOnText = False
+        Me.SiticoneButton2.BackColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton2.BadgeBackColor = System.Drawing.Color.Black
+        Me.SiticoneButton2.BadgeFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.SiticoneButton2.BadgeValue = 0
+        Me.SiticoneButton2.BadgeValueForeColor = System.Drawing.Color.White
+        Me.SiticoneButton2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton2.BorderWidth = 2
+        Me.SiticoneButton2.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton2.ButtonImage = Nothing
+        Me.SiticoneButton2.ButtonTextLeftPadding = 0
+        Me.SiticoneButton2.CanBeep = True
+        Me.SiticoneButton2.CanGlow = False
+        Me.SiticoneButton2.CanShake = True
+        Me.SiticoneButton2.ContextMenuStripEx = Nothing
+        Me.SiticoneButton2.CornerRadiusBottomLeft = 5
+        Me.SiticoneButton2.CornerRadiusBottomRight = 5
+        Me.SiticoneButton2.CornerRadiusTopLeft = 5
+        Me.SiticoneButton2.CornerRadiusTopRight = 5
+        Me.SiticoneButton2.CustomCursor = System.Windows.Forms.Cursors.Default
+        Me.SiticoneButton2.DisabledTextColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.SiticoneButton2.EnableLongPress = False
+        Me.SiticoneButton2.EnablePressAnimation = True
+        Me.SiticoneButton2.EnableRippleEffect = True
+        Me.SiticoneButton2.EnableShadow = False
+        Me.SiticoneButton2.EnableTextWrapping = False
+        Me.SiticoneButton2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SiticoneButton2.ForeColor = System.Drawing.Color.White
+        Me.SiticoneButton2.GlowColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneButton2.GlowIntensity = 100
+        Me.SiticoneButton2.GlowRadius = 20.0!
+        Me.SiticoneButton2.GradientBackground = False
+        Me.SiticoneButton2.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.SiticoneButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
+        Me.SiticoneButton2.HintText = Nothing
+        Me.SiticoneButton2.HoverBackColor = System.Drawing.Color.White
+        Me.SiticoneButton2.HoverFontStyle = System.Drawing.FontStyle.Regular
+        Me.SiticoneButton2.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton2.HoverTransitionDuration = 250
+        Me.SiticoneButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SiticoneButton2.ImagePadding = 5
+        Me.SiticoneButton2.ImageSize = New System.Drawing.Size(16, 16)
+        Me.SiticoneButton2.IsRadial = False
+        Me.SiticoneButton2.IsReadOnly = False
+        Me.SiticoneButton2.IsToggleButton = False
+        Me.SiticoneButton2.IsToggled = False
+        Me.SiticoneButton2.Location = New System.Drawing.Point(19, 11)
+        Me.SiticoneButton2.LongPressDurationMS = 1000
+        Me.SiticoneButton2.Margin = New System.Windows.Forms.Padding(0)
+        Me.SiticoneButton2.Name = "SiticoneButton2"
+        Me.SiticoneButton2.NormalFontStyle = System.Drawing.FontStyle.Regular
+        Me.SiticoneButton2.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.SiticoneButton2.ParticleCount = 15
+        Me.SiticoneButton2.PressAnimationScale = 0.97!
+        Me.SiticoneButton2.PressedBackColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton2.PressedFontStyle = System.Drawing.FontStyle.Regular
+        Me.SiticoneButton2.PressTransitionDuration = 150
+        Me.SiticoneButton2.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.SiticoneButton2.RippleColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SiticoneButton2.RippleOpacity = 0.3!
+        Me.SiticoneButton2.RippleRadiusMultiplier = 0.6!
+        Me.SiticoneButton2.ShadowBlur = 5
+        Me.SiticoneButton2.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SiticoneButton2.ShadowOffset = New System.Drawing.Point(2, 2)
+        Me.SiticoneButton2.ShakeDuration = 500
+        Me.SiticoneButton2.ShakeIntensity = 5
+        Me.SiticoneButton2.Size = New System.Drawing.Size(161, 35)
+        Me.SiticoneButton2.TabIndex = 18
+        Me.SiticoneButton2.Text = "Export Data"
+        Me.SiticoneButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.SiticoneButton2.TextColor = System.Drawing.Color.White
+        Me.SiticoneButton2.TooltipText = Nothing
+        Me.SiticoneButton2.UseAdvancedRendering = True
+        Me.SiticoneButton2.UseParticles = False
+        '
+        'Panel15
+        '
+        Me.Panel15.BackColor = System.Drawing.Color.White
+        Me.Panel15.Controls.Add(Me.SiticoneButton1)
+        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel15.Location = New System.Drawing.Point(391, 168)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(384, 83)
+        Me.Panel15.TabIndex = 23
+        Me.Panel15.Visible = False
         '
         'SiticoneButton1
         '
@@ -404,7 +560,7 @@ Partial Class AccountContent
         Me.SiticoneButton1.BadgeFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SiticoneButton1.BadgeValue = 0
         Me.SiticoneButton1.BadgeValueForeColor = System.Drawing.Color.White
-        Me.SiticoneButton1.BorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.SiticoneButton1.BorderWidth = 2
         Me.SiticoneButton1.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.SiticoneButton1.ButtonImage = Nothing
@@ -433,9 +589,9 @@ Partial Class AccountContent
         Me.SiticoneButton1.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton1.HintText = Nothing
-        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.White
         Me.SiticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.Black
+        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
         Me.SiticoneButton1.HoverTransitionDuration = 250
         Me.SiticoneButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton1.ImagePadding = 5
@@ -444,7 +600,7 @@ Partial Class AccountContent
         Me.SiticoneButton1.IsReadOnly = False
         Me.SiticoneButton1.IsToggleButton = False
         Me.SiticoneButton1.IsToggled = False
-        Me.SiticoneButton1.Location = New System.Drawing.Point(104, 61)
+        Me.SiticoneButton1.Location = New System.Drawing.Point(19, 22)
         Me.SiticoneButton1.LongPressDurationMS = 1000
         Me.SiticoneButton1.Margin = New System.Windows.Forms.Padding(0)
         Me.SiticoneButton1.Name = "SiticoneButton1"
@@ -452,7 +608,7 @@ Partial Class AccountContent
         Me.SiticoneButton1.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.SiticoneButton1.ParticleCount = 15
         Me.SiticoneButton1.PressAnimationScale = 0.97!
-        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton1.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.SiticoneButton1.PressTransitionDuration = 150
         Me.SiticoneButton1.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -472,6 +628,72 @@ Partial Class AccountContent
         Me.SiticoneButton1.TooltipText = Nothing
         Me.SiticoneButton1.UseAdvancedRendering = True
         Me.SiticoneButton1.UseParticles = False
+        '
+        'Panel18
+        '
+        Me.Panel18.BackColor = System.Drawing.Color.White
+        Me.Panel18.Controls.Add(Me.txt_cpass)
+        Me.Panel18.Controls.Add(Me.lbl_cp)
+        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel18.Location = New System.Drawing.Point(3, 168)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Size = New System.Drawing.Size(382, 83)
+        Me.Panel18.TabIndex = 22
+        Me.Panel18.Visible = False
+        '
+        'txt_cpass
+        '
+        Me.txt_cpass.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txt_cpass.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.txt_cpass.Location = New System.Drawing.Point(17, 28)
+        Me.txt_cpass.Name = "txt_cpass"
+        Me.txt_cpass.Size = New System.Drawing.Size(349, 29)
+        Me.txt_cpass.TabIndex = 6
+        '
+        'lbl_cp
+        '
+        Me.lbl_cp.AutoSize = True
+        Me.lbl_cp.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_cp.Location = New System.Drawing.Point(15, 4)
+        Me.lbl_cp.Name = "lbl_cp"
+        Me.lbl_cp.Size = New System.Drawing.Size(142, 21)
+        Me.lbl_cp.TabIndex = 4
+        Me.lbl_cp.Text = "Confirm Password"
+        '
+        'Panel16
+        '
+        Me.Panel16.BackColor = System.Drawing.Color.White
+        Me.Panel16.Controls.Add(Me.txt_np)
+        Me.Panel16.Controls.Add(Me.lbl_np)
+        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel16.Location = New System.Drawing.Point(391, 86)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(384, 76)
+        Me.Panel16.TabIndex = 21
+        Me.Panel16.Visible = False
+        '
+        'txt_np
+        '
+        Me.txt_np.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txt_np.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.txt_np.Location = New System.Drawing.Point(17, 27)
+        Me.txt_np.Name = "txt_np"
+        Me.txt_np.Size = New System.Drawing.Size(351, 29)
+        Me.txt_np.TabIndex = 6
+        '
+        'lbl_np
+        '
+        Me.lbl_np.AutoSize = True
+        Me.lbl_np.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_np.Location = New System.Drawing.Point(15, 5)
+        Me.lbl_np.Name = "lbl_np"
+        Me.lbl_np.Size = New System.Drawing.Size(116, 21)
+        Me.lbl_np.TabIndex = 4
+        Me.lbl_np.Text = "New Password"
         '
         'Panel13
         '
@@ -494,7 +716,7 @@ Partial Class AccountContent
         Me.SiticoneButton3.BadgeFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SiticoneButton3.BadgeValue = 0
         Me.SiticoneButton3.BadgeValueForeColor = System.Drawing.Color.White
-        Me.SiticoneButton3.BorderColor = System.Drawing.Color.Transparent
+        Me.SiticoneButton3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton3.BorderWidth = 2
         Me.SiticoneButton3.ButtonBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton3.ButtonImage = Nothing
@@ -523,9 +745,9 @@ Partial Class AccountContent
         Me.SiticoneButton3.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton3.HintText = Nothing
-        Me.SiticoneButton3.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.SiticoneButton3.HoverBackColor = System.Drawing.Color.White
         Me.SiticoneButton3.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton3.HoverTextColor = System.Drawing.Color.Black
+        Me.SiticoneButton3.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(74, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.SiticoneButton3.HoverTransitionDuration = 250
         Me.SiticoneButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton3.ImagePadding = 5
@@ -534,7 +756,7 @@ Partial Class AccountContent
         Me.SiticoneButton3.IsReadOnly = False
         Me.SiticoneButton3.IsToggleButton = False
         Me.SiticoneButton3.IsToggled = False
-        Me.SiticoneButton3.Location = New System.Drawing.Point(28, 26)
+        Me.SiticoneButton3.Location = New System.Drawing.Point(17, 26)
         Me.SiticoneButton3.LongPressDurationMS = 1000
         Me.SiticoneButton3.Margin = New System.Windows.Forms.Padding(0)
         Me.SiticoneButton3.Name = "SiticoneButton3"
@@ -542,7 +764,7 @@ Partial Class AccountContent
         Me.SiticoneButton3.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.SiticoneButton3.ParticleCount = 15
         Me.SiticoneButton3.PressAnimationScale = 0.97!
-        Me.SiticoneButton3.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.SiticoneButton3.PressedBackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton3.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.SiticoneButton3.PressTransitionDuration = 150
         Me.SiticoneButton3.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -562,39 +784,6 @@ Partial Class AccountContent
         Me.SiticoneButton3.TooltipText = Nothing
         Me.SiticoneButton3.UseAdvancedRendering = True
         Me.SiticoneButton3.UseParticles = False
-        '
-        'Panel16
-        '
-        Me.Panel16.BackColor = System.Drawing.Color.White
-        Me.Panel16.Controls.Add(Me.txt_np)
-        Me.Panel16.Controls.Add(Me.lbl_np)
-        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel16.Location = New System.Drawing.Point(3, 168)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(382, 83)
-        Me.Panel16.TabIndex = 16
-        Me.Panel16.Visible = False
-        '
-        'txt_np
-        '
-        Me.txt_np.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txt_np.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txt_np.Location = New System.Drawing.Point(17, 27)
-        Me.txt_np.Name = "txt_np"
-        Me.txt_np.Size = New System.Drawing.Size(349, 29)
-        Me.txt_np.TabIndex = 6
-        '
-        'lbl_np
-        '
-        Me.lbl_np.AutoSize = True
-        Me.lbl_np.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_np.Location = New System.Drawing.Point(15, 5)
-        Me.lbl_np.Name = "lbl_np"
-        Me.lbl_np.Size = New System.Drawing.Size(116, 21)
-        Me.lbl_np.TabIndex = 4
-        Me.lbl_np.Text = "New Password"
         '
         'Panel9
         '
@@ -703,11 +892,13 @@ Partial Class AccountContent
         Me.Panel11.PerformLayout()
         Me.Panel8.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
+        Me.Panel17.ResumeLayout(False)
+        Me.Panel15.ResumeLayout(False)
         Me.Panel18.ResumeLayout(False)
         Me.Panel18.PerformLayout()
-        Me.Panel13.ResumeLayout(False)
         Me.Panel16.ResumeLayout(False)
         Me.Panel16.PerformLayout()
+        Me.Panel13.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
         Me.Panel14.ResumeLayout(False)
@@ -744,16 +935,20 @@ Partial Class AccountContent
     Friend WithEvents txt_pass As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Panel12 As Panel
-    Friend WithEvents Panel16 As Panel
-    Friend WithEvents txt_np As TextBox
-    Friend WithEvents lbl_np As Label
     Friend WithEvents Panel9 As Panel
     Friend WithEvents txt_op As TextBox
     Friend WithEvents lbl_op As Label
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents SiticoneButton3 As SiticoneNetFrameworkUI.SiticoneButton
+    Friend WithEvents Panel15 As Panel
+    Friend WithEvents SiticoneButton1 As SiticoneButton
     Friend WithEvents Panel18 As Panel
     Friend WithEvents txt_cpass As TextBox
     Friend WithEvents lbl_cp As Label
-    Friend WithEvents Panel13 As Panel
-    Friend WithEvents SiticoneButton3 As SiticoneNetFrameworkUI.SiticoneButton
-    Friend WithEvents SiticoneButton1 As SiticoneNetFrameworkUI.SiticoneButton
+    Friend WithEvents Panel16 As Panel
+    Friend WithEvents txt_np As TextBox
+    Friend WithEvents lbl_np As Label
+    Friend WithEvents Panel17 As Panel
+    Friend WithEvents SiticoneButton4 As SiticoneButton
+    Friend WithEvents SiticoneButton2 As SiticoneButton
 End Class

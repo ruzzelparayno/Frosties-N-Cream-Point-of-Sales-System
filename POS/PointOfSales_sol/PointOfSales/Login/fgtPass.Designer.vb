@@ -139,7 +139,7 @@ Partial Class fgtPass
         Me.SiticoneLabel5.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneLabel5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.SiticoneLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.SiticoneLabel5.Location = New System.Drawing.Point(8, 101)
+        Me.SiticoneLabel5.Location = New System.Drawing.Point(7, 101)
         Me.SiticoneLabel5.Name = "SiticoneLabel5"
         Me.SiticoneLabel5.Size = New System.Drawing.Size(121, 21)
         Me.SiticoneLabel5.TabIndex = 29

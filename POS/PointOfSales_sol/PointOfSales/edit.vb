@@ -1,6 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Edit
+    Public ParentPOS As PosControl
+    Public AllowCloseOverlay As Boolean = False
 
     ' 🔹 Properties to receive product details from PosControl
     Public Property SelectedProductName As String
@@ -97,6 +99,11 @@ Public Class Edit
             End If
 
             posForm.CalculateTotals()
+            MessageBox.Show("Quantity updated successfully!", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            AllowCloseOverlay = True
+            If ParentPOS IsNot Nothing Then
+                ParentPOS.SiticoneOverlay1.Show = False
+            End If
             Me.Close()
 
         Catch ex As Exception
@@ -105,8 +112,11 @@ Public Class Edit
     End Sub
 
     Private Sub SiticoneImageButton1_Click(sender As Object, e As EventArgs) Handles SiticoneImageButton1.Click
+        AllowCloseOverlay = True
+        If ParentPOS IsNot Nothing Then
+            ParentPOS.SiticoneOverlay1.Show = False
+        End If
         Me.Close()
-        Dashboard.posInstance.BringToFront()
     End Sub
 
 End Class

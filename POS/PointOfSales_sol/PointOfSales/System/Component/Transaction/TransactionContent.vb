@@ -1,56 +1,104 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Globalization
+Imports System.Threading.Tasks
 
 Public Class TransactionContent
+    Public Property AllowCloseOverlay As Boolean = True
     Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
-    Private connectionString As String = "server=localhost;userid=root;password=;database=pos"
     Private dt As DataTable
 
-    Private Sub TransactionContent_load(sender As Object, e As EventArgs) Handles MyBase.Load
+    ' ----------------- FORM LOAD -----------------
+    Private Sub TransactionContent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadSortOptions()
         LoadTransactions()
-        Guna2DataGridView1.ScrollBars = ScrollBars.Vertical
-        Guna2DataGridView1.Dock = DockStyle.Fill
     End Sub
-    ' Add this inside your TransactionContent class
 
-    ' Update LoadTransactions to accept an optional filter parameter
-    Public Sub LoadTransactions(Optional ByVal filter As String = "")
+    ' ----------------- SORT OPTIONS -----------------
+    Private Sub LoadSortOptions()
+        ComboBox1.Items.Clear()
+        ComboBox1.Items.Add("Date Ascending")
+        ComboBox1.Items.Add("Date Descending")
+        ComboBox1.Items.Add("TotalAmount Ascending")
+        ComboBox1.Items.Add("TotalAmount Descending")
+        ComboBox1.SelectedIndex = 1 ' default: Date Descending
+    End Sub
+
+    Private Function GetSortQuery() As String
+        Select Case ComboBox1.SelectedItem.ToString()
+            Case "Date Ascending"
+                Return "SaleDate ASC"
+            Case "Date Descending"
+                Return "SaleDate DESC"
+            Case "TotalAmount Ascending"
+                Return "TotalAmount ASC"
+            Case "TotalAmount Descending"
+                Return "TotalAmount DESC"
+            Case Else
+                Return "SaleDate DESC"
+        End Select
+    End Function
+
+    ' ----------------- LOAD TRANSACTIONS ASYNC -----------------
+    Public Async Sub LoadTransactionsAsync()
+        SiticoneOverlay1.Show = True
+        Await Task.Delay(2000)
+        If AllowCloseOverlay Then
+            SiticoneOverlay1.Show = False
+        End If
+    End Sub
+
+    ' Main function to load transactions with filters
+    Private Sub LoadTransactions(Optional ByVal filter As String = "")
         Try
             conn.Open()
 
-            ' Base query
             Dim query As String = "
-            SELECT 
-                TicketNumber, 
-                ProductName, 
-                SaleDate, 
-                Subtotal, 
-                DiscountType, 
-                Vat, 
-                TotalAmount, 
-                Status 
-            FROM sales 
-            WHERE 1=1
-        "
+                SELECT 
+                    TicketNumber, 
+                    ProductName, 
+                    SaleDate, 
+                    Subtotal, 
+                    DiscountType, 
+                    Vat, 
+                    TotalAmount, 
+                    Status 
+                FROM sales 
+                WHERE 1=1
+            "
 
-            ' Add filtering if search text is provided
+            ' ----------------- DATE FILTER -----------------
+            If SiticoneDateTimePicker1.Value.HasValue AndAlso SiticoneDateTimePicker2.Value.HasValue Then
+                query &= " AND SaleDate BETWEEN @dateFrom AND @dateTo"
+            ElseIf SiticoneDateTimePicker1.Value.HasValue Then
+                query &= " AND DATE(SaleDate) = @dateFrom"
+            ElseIf SiticoneDateTimePicker2.Value.HasValue Then
+                query &= " AND SaleDate <= @dateTo"
+            End If
+
+            ' ----------------- SEARCH FILTER -----------------
             If filter <> "" Then
                 query &= " AND (ProductName LIKE @filter OR TicketNumber LIKE @filter OR SaleDate LIKE @filter)"
             End If
 
-            query &= " ORDER BY SaleDate DESC"
+            ' ----------------- SORT -----------------
+            query &= " ORDER BY " & GetSortQuery()
 
             Dim cmd As New MySqlCommand(query, conn)
-            If filter <> "" Then
-                cmd.Parameters.AddWithValue("@filter", "%" & filter & "%")
-            End If
+
+            ' Add parameters
+            If SiticoneDateTimePicker1.Value.HasValue Then cmd.Parameters.AddWithValue("@dateFrom", SiticoneDateTimePicker1.SelectedDate)
+            If SiticoneDateTimePicker2.Value.HasValue Then cmd.Parameters.AddWithValue("@dateTo", SiticoneDateTimePicker2.SelectedDate)
+            If filter <> "" Then cmd.Parameters.AddWithValue("@filter", "%" & filter & "%")
 
             Dim adapter As New MySqlDataAdapter(cmd)
             dt = New DataTable()
             adapter.Fill(dt)
 
-            Guna2DataGridView1.DataSource = dt
-            Guna2DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-            Guna2DataGridView1.ReadOnly = True
+            If Guna2DataGridView1.InvokeRequired Then
+                Guna2DataGridView1.Invoke(Sub() Guna2DataGridView1.DataSource = dt)
+            Else
+                Guna2DataGridView1.DataSource = dt
+            End If
 
         Catch ex As Exception
             MessageBox.Show("Error loading transactions: " & ex.Message)
@@ -59,63 +107,52 @@ Public Class TransactionContent
         End Try
     End Sub
 
-    ' Add this event handler for SiticoneButtonTextbox1 text change
+    ' ----------------- EVENT HANDLERS -----------------
     Private Sub SiticoneButtonTextbox1_TextChanged(sender As Object, e As EventArgs) Handles SiticoneButtonTextbox1.TextChanged
-        ' Pass the search text to LoadTransactions
-        LoadTransactions(SiticoneButtonTextbox1.Text.Trim())
+        LoadTransactions()
     End Sub
 
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        LoadTransactions()
+    End Sub
 
-    'Show ProductName in tooltip when hovering
-    Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs)
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex >= 0 Then
-            If Guna2DataGridView1.Columns(e.ColumnIndex).Name = "ProductName" Then
-                Dim cellValue = Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
-                If cellValue IsNot Nothing Then
-                    Guna2DataGridView1.Rows(e.RowIndex).Cells(e.ColumnIndex).ToolTipText = cellValue.ToString
-                End If
-            End If
+    Private Sub SiticoneDateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles SiticoneDateTimePicker1.ValueChanged
+        LoadTransactions()
+    End Sub
+
+    Private Sub SiticoneDateTimePicker2_ValueChanged(sender As Object, e As EventArgs) Handles SiticoneDateTimePicker2.ValueChanged
+        LoadTransactions()
+    End Sub
+
+    Private Async Sub ComboBox1_Click(sender As Object, e As EventArgs) Handles ComboBox1.Click
+        SiticoneOverlay1.Show = True
+        Await Task.Delay(2000)
+        If AllowCloseOverlay Then
+            SiticoneOverlay1.Show = False
         End If
     End Sub
 
-    'Function to get product price by name
-    Private Function GetProductPrice(productName As String) As String
-        Dim price As String = "₱0.00"
-
-        Try
-            Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
-                conn.Open()
-
-                Dim query As String = "SELECT Price FROM products WHERE ProductName = @ProductName LIMIT 1"
-                Using cmd As New MySqlCommand(query, conn)
-                    cmd.Parameters.AddWithValue("@ProductName", productName.Trim())
-                    Dim result = cmd.ExecuteScalar()
-                    If result IsNot Nothing Then
-
-                        price = Convert.ToDecimal(result).ToString("₱0.00")
-                    Else
-                        Debug.WriteLine("Product not found in products table: " & productName)
-                    End If
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show("Error getting product price: " & ex.Message)
-        End Try
-
-        Return price
-    End Function
-
-
-    Private Sub dgv_transactions_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
-
+    Private Async Sub SiticoneDateTimePicker1_Click(sender As Object, e As EventArgs) Handles SiticoneDateTimePicker1.Click
+        SiticoneOverlay1.Show = True
+        Await Task.Delay(2000)
+        If AllowCloseOverlay Then
+            SiticoneOverlay1.Show = False
+        End If
     End Sub
 
+    Private Async Sub SiticoneDateTimePicker2_Click(sender As Object, e As EventArgs) Handles SiticoneDateTimePicker2.Click
+        SiticoneOverlay1.Show = True
+        Await Task.Delay(2000)
+        If AllowCloseOverlay Then
+            SiticoneOverlay1.Show = False
+        End If
+    End Sub
 
-    ' NEW FUNCTION: Get total refunded amount
+    ' ----------------- ORIGINAL FUNCTIONS -----------------
     Private Function GetTotalRefunded() As Decimal
         Dim totalRefund As Decimal = 0D
         Try
-            Using conn As New MySqlConnection(connectionString)
+            Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
                 conn.Open()
                 Dim query As String = "SELECT IFNULL(SUM(TotalAmount),0) FROM sales WHERE Status='Refunded'"
                 Using cmd As New MySqlCommand(query, conn)
@@ -130,12 +167,12 @@ Public Class TransactionContent
         End Try
         Return totalRefund
     End Function
+
     Private Sub RestoreStockForTicket(ticketNumber As String)
         Try
-            Using c As New MySqlConnection(connectionString)
+            Using c As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
                 c.Open()
-                ' Find all items for that ticket (only those that were completed)
-                Dim q As String = "SELECT ProductName, Quantity FROM sales WHERE TicketNumber = @TicketNumber AND Status = 'Completed'"
+                Dim q As String = "SELECT ProductName, Quantity FROM sales WHERE TicketNumber=@TicketNumber AND Status='Completed'"
                 Using cmd As New MySqlCommand(q, c)
                     cmd.Parameters.AddWithValue("@TicketNumber", ticketNumber)
                     Using reader = cmd.ExecuteReader()
@@ -146,10 +183,8 @@ Public Class TransactionContent
                             If qty > 0 Then toRestore.Add((pname, qty))
                         End While
                         reader.Close()
-
-                        ' Update product stock for each item
                         For Each pair In toRestore
-                            Using upd As New MySqlCommand("UPDATE products SET StockQuantity = StockQuantity + @qty WHERE ProductName = @pname", c)
+                            Using upd As New MySqlCommand("UPDATE products SET StockQuantity = StockQuantity + @qty WHERE ProductName=@pname", c)
                                 upd.Parameters.AddWithValue("@qty", pair.Item2)
                                 upd.Parameters.AddWithValue("@pname", pair.Item1)
                                 upd.ExecuteNonQuery()
@@ -163,65 +198,81 @@ Public Class TransactionContent
         End Try
     End Sub
 
-    Private Sub Guna2DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellDoubleClick
-        If e.RowIndex < 0 Then Exit Sub
+    Private Function GetProductPrice(productName As String) As String
+        Dim price As String = "₱0.00"
+        Try
+            Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
+                conn.Open()
+                Dim query As String = "SELECT Price FROM products WHERE ProductName=@ProductName LIMIT 1"
+                Using cmd As New MySqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@ProductName", productName.Trim())
+                    Dim result = cmd.ExecuteScalar()
+                    If result IsNot Nothing Then price = Convert.ToDecimal(result).ToString("₱0.00")
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error getting product price: " & ex.Message)
+        End Try
+        Return price
+    End Function
 
-        ' Get selected row
+    Private Sub Guna2DataGridView1_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentDoubleClick
+
+    End Sub
+
+    Private Async Sub Guna2DataGridView1_CellDoubleClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellDoubleClick
+        If e.RowIndex < 0 Then Exit Sub
+        SiticoneOverlay1.Show = True
+        Await Task.Delay(1500)
         Dim selectedRow = Guna2DataGridView1.Rows(e.RowIndex)
         Dim ticketNum = selectedRow.Cells("TicketNumber").Value.ToString()
         Dim productName = selectedRow.Cells("ProductName").Value.ToString().Trim()
-        Dim priceText = selectedRow.Cells("TotalAmount").Value.ToString()
-        Dim totalPrice As Decimal = 0D
-        Decimal.TryParse(priceText.Replace("₱", "").Replace(",", "").Trim(), totalPrice)
+        Dim subtotal = selectedRow.Cells("Subtotal").Value.ToString()
+        Dim vat = selectedRow.Cells("Vat").Value.ToString()
+        Dim totalAmount = selectedRow.Cells("TotalAmount").Value.ToString()
 
-        Dim mop As String = ""
+        Dim allPrices As New List(Of String)
+        Dim mop = ""
 
-        Dim connStr = "server=localhost;userid=root;password=;database=pos"
-
-        ' Optional: get Mode of Payment from database
         Try
-            Using conn As New MySqlConnection(connStr)
+            Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
                 conn.Open()
-                Dim query = "SELECT ModeOfPayment FROM sales WHERE TRIM(ProductName) = @ProductName AND TicketNumber = @TicketNumber LIMIT 1"
+                Dim query = "SELECT Price, ModeOfPayment FROM sales WHERE TRIM(ProductName)=@ProductName AND TicketNumber=@TicketNumber"
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@ProductName", productName)
                     cmd.Parameters.AddWithValue("@TicketNumber", ticketNum)
-
                     Using reader = cmd.ExecuteReader()
-                        If reader.Read() Then
-                            If Not IsDBNull(reader("ModeOfPayment")) Then
-                                mop = reader("ModeOfPayment").ToString().Trim()
-                            End If
-                        End If
+                        While reader.Read()
+                            allPrices.Add(reader("Price").ToString().Trim())
+                            If mop = "" AndAlso Not IsDBNull(reader("ModeOfPayment")) Then mop = reader("ModeOfPayment").ToString().Trim()
+                        End While
                     End Using
                 End Using
             End Using
         Catch ex As Exception
-            MessageBox.Show("Error getting mode of payment: " & ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Error getting prices: " & ex.Message)
+            If AllowCloseOverlay Then
+                SiticoneOverlay1.Show = False
+            End If
+            Exit Sub
         End Try
 
-        ' ✅ VAT calculation: 12% of total price
-        Dim vatRate As Decimal = 0.12D
-        Dim vatAmount As Decimal = Math.Round(totalPrice * vatRate, 2)
-        Dim subtotalAmount As Decimal = Math.Round(totalPrice - vatAmount, 2)
+        Dim displayPrices = If(allPrices.Count > 0, String.Join(Environment.NewLine, allPrices), "₱0.00")
 
-        ' Send data to refund form
+        ' Open refund form
         Dim refundForm As New RefundForm
         refundForm.lbl_getticket.Text = ticketNum
         refundForm.lbl_getproducts.Text = productName
-        refundForm.lbl_getprice.Text = "₱" & totalPrice.ToString("N2") ' Total price
-        refundForm.lbl_getsubtotal.Text = "₱" & subtotalAmount.ToString("N2") ' Price without VAT
-        refundForm.lbl_getvat.Text = "₱" & vatAmount.ToString("N2")
-        refundForm.lbl_gettotal.Text = "₱" & totalPrice.ToString("N2") ' Total including VAT
+        refundForm.lbl_getprice.Text = displayPrices
+        refundForm.lbl_getsubtotal.Text = subtotal
+        refundForm.lbl_getvat.Text = vat
+        refundForm.lbl_gettotal.Text = totalAmount
         refundForm.lbl_MOP.Text = If(mop <> "", mop, "")
-
         refundForm.ShowDialog()
 
-        ' Refund confirmed
         If refundForm.DialogResult = DialogResult.OK Then
             RestoreStockForTicket(ticketNum)
             LoadTransactions()
-
             Dim shiftForm As ShiftContent = Dashboard.shiftInstance
             If shiftForm IsNot Nothing AndAlso shiftForm.Panel2.Controls.Count > 0 Then
                 Dim cashCtrl As CashManagementControll = TryCast(shiftForm.Panel2.Controls(0), CashManagementControll)
@@ -231,9 +282,10 @@ Public Class TransactionContent
                     cashCtrl.ComputeTotal()
                 End If
             End If
-
             MessageBox.Show("Refund applied and stock restored successfully.", "Refund", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            If AllowCloseOverlay Then
+                SiticoneOverlay1.Show = False
+            End If
         End If
     End Sub
-
 End Class

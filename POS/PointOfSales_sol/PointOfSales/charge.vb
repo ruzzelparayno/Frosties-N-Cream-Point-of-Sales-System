@@ -371,6 +371,11 @@ Public Class Charge
             posForm.ClearTransaction()
         Catch ex As Exception
         End Try
+
+        Me.Hide()
+    End Sub
+
+    Private Sub SaveToDatabase(posForm As PosControl, modeOfPayment As String, reference As String, totalPaid As Decimal)
         Try
             Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
                 conn.Open()
@@ -418,12 +423,6 @@ Public Class Charge
         Catch ex As Exception
             MessageBox.Show("Error saving sales: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-
-        Me.Hide()
-    End Sub
-
-    Private Sub SaveToDatabase(posForm As PosControl, modeOfPayment As String, reference As String, totalPaid As Decimal)
-
     End Sub
 
     ' When form visibility changes, refresh totals

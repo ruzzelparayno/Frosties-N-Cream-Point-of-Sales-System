@@ -1,6 +1,20 @@
 ﻿Public Class CashManagementControll
     ' Removed Private shiftAmount As Decimal = 0D - shift amount is read directly from lbl_sc1.Text
     Public Property ParentShift As ShiftContent
+    ' Store the current shift ID (you can set this when the shift starts)
+    Private _currentShiftID As Integer = 0
+
+    ' Public read-only property to access it
+    Public ReadOnly Property CurrentShiftID As Integer
+        Get
+            Return _currentShiftID
+        End Get
+    End Property
+
+    ' Call this when opening a shift
+    Public Sub StartShift(shiftID As Integer)
+        _currentShiftID = shiftID
+    End Sub
 
     Private Sub cashmanagementcontroll_load(sender As Object, e As EventArgs) Handles MyBase.Load
         clearalllabels()
@@ -22,6 +36,8 @@
             MessageBox.Show("Please enter a shift amount first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Exit Sub
         End If
+        ' Example: Assign a shift ID when shift starts
+        StartShift(1) ' Or dynamically get the shift ID from DB
 
         ' ✅ Show welcome message
         MessageBox.Show("Welcome to Shift!", "Shift Started", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -309,6 +325,4 @@
         lbl_ngcash.Visible = False
         lbl_sc1.Visible = False
     End Sub
-
-
 End Class

@@ -94,6 +94,42 @@
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net48\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="itext.barcodes, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.bouncy-castle-connector, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.bouncy-castle-connector.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.commons, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.commons.9.4.0\lib\net461\itext.commons.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfua, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.pdfua.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=9.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext.9.4.0\lib\net461\itext.svg.dll</HintPath>
+    </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
     </Reference>
@@ -111,6 +147,24 @@
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.7, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.7\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.5.0.0\lib\net461\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.5.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.5.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=9.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.9.4.0\lib\net48\MySql.Data.dll</HintPath>
@@ -157,6 +211,16 @@
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.1\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml, Version=6.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Xml.6.0.2\lib\net461\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encodings.Web, Version=9.0.0.7, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encodings.Web.9.0.7\lib\net462\System.Text.Encodings.Web.dll</HintPath>
@@ -301,6 +365,12 @@
     <Compile Include="System\Component\Inventory\CategoryForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="System\Component\Inventory\Edit_ProductForm.Designer.vb">
+      <DependentUpon>Edit_ProductForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Component\Inventory\Edit_ProductForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="System\Component\Inventory\Guna2Category.Designer.vb">
       <DependentUpon>Guna2Category.vb</DependentUpon>
     </Compile>
@@ -349,6 +419,12 @@
     <Compile Include="System\Component\Pos\PosControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="System\Component\Pos\SelectedProduct.Designer.vb">
+      <DependentUpon>SelectedProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Component\Pos\SelectedProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="System\Component\Sales\SalesContent.Designer.vb">
       <DependentUpon>SalesContent.vb</DependentUpon>
     </Compile>
@@ -390,6 +466,12 @@
     </Compile>
     <Compile Include="System\Component\Transaction\TransactionContent.vb">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\Component\Users\EditUser.Designer.vb">
+      <DependentUpon>EditUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="System\Component\Users\EditUser.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="System\Component\Users\UserContent.Designer.vb">
       <DependentUpon>UserContent.vb</DependentUpon>
@@ -447,6 +529,9 @@
     <EmbeddedResource Include="System\Component\Inventory\CategoryForm.resx">
       <DependentUpon>CategoryForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="System\Component\Inventory\Edit_ProductForm.resx">
+      <DependentUpon>Edit_ProductForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="System\Component\Inventory\Guna2Category.resx">
       <DependentUpon>Guna2Category.vb</DependentUpon>
     </EmbeddedResource>
@@ -471,6 +556,9 @@
     <EmbeddedResource Include="System\Component\Pos\PosControl.resx">
       <DependentUpon>PosControl.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="System\Component\Pos\SelectedProduct.resx">
+      <DependentUpon>SelectedProduct.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="System\Component\Sales\SalesContent.resx">
       <DependentUpon>SalesContent.vb</DependentUpon>
     </EmbeddedResource>
@@ -491,6 +579,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="System\Component\Transaction\TransactionContent.resx">
       <DependentUpon>TransactionContent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\Component\Users\EditUser.resx">
+      <DependentUpon>EditUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="System\Component\Users\UserContent.resx">
       <DependentUpon>UserContent.vb</DependentUpon>

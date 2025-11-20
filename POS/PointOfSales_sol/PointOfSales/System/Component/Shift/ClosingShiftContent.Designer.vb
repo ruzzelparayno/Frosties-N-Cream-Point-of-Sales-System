@@ -82,9 +82,9 @@ Partial Class ClosingShiftContent
         Me.SiticoneButton1.GradientColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SiticoneButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
         Me.SiticoneButton1.HintText = Nothing
-        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SiticoneButton1.HoverBackColor = System.Drawing.Color.White
         Me.SiticoneButton1.HoverFontStyle = System.Drawing.FontStyle.Regular
-        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.Black
+        Me.SiticoneButton1.HoverTextColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.SiticoneButton1.HoverTransitionDuration = 250
         Me.SiticoneButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SiticoneButton1.ImagePadding = 5
@@ -93,14 +93,14 @@ Partial Class ClosingShiftContent
         Me.SiticoneButton1.IsReadOnly = False
         Me.SiticoneButton1.IsToggleButton = False
         Me.SiticoneButton1.IsToggled = False
-        Me.SiticoneButton1.Location = New System.Drawing.Point(39, 136)
+        Me.SiticoneButton1.Location = New System.Drawing.Point(39, 166)
         Me.SiticoneButton1.LongPressDurationMS = 1000
         Me.SiticoneButton1.Name = "SiticoneButton1"
         Me.SiticoneButton1.NormalFontStyle = System.Drawing.FontStyle.Regular
         Me.SiticoneButton1.ParticleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.SiticoneButton1.ParticleCount = 15
         Me.SiticoneButton1.PressAnimationScale = 0.97!
-        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.SiticoneButton1.PressedBackColor = System.Drawing.Color.Transparent
         Me.SiticoneButton1.PressedFontStyle = System.Drawing.FontStyle.Regular
         Me.SiticoneButton1.PressTransitionDuration = 150
         Me.SiticoneButton1.ReadOnlyTextColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
@@ -126,8 +126,6 @@ Partial Class ClosingShiftContent
         Me.SiticoneTextBox1.AccessibleDescription = "A customizable text input field."
         Me.SiticoneTextBox1.AccessibleName = "Text Box"
         Me.SiticoneTextBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text
-        Me.SiticoneTextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SiticoneTextBox1.BackColor = System.Drawing.Color.Transparent
         Me.SiticoneTextBox1.BlinkCount = 3
         Me.SiticoneTextBox1.BlinkShadow = False
@@ -155,7 +153,7 @@ Partial Class ClosingShiftContent
         Me.SiticoneTextBox1.HoverBorderColor1 = System.Drawing.Color.Gray
         Me.SiticoneTextBox1.HoverBorderColor2 = System.Drawing.Color.Gray
         Me.SiticoneTextBox1.IsEnabled = True
-        Me.SiticoneTextBox1.Location = New System.Drawing.Point(39, 89)
+        Me.SiticoneTextBox1.Location = New System.Drawing.Point(39, 114)
         Me.SiticoneTextBox1.Name = "SiticoneTextBox1"
         Me.SiticoneTextBox1.PlaceholderColor = System.Drawing.Color.Gray
         Me.SiticoneTextBox1.PlaceholderText = "Enter Amount here..."
@@ -182,7 +180,7 @@ Partial Class ClosingShiftContent
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(37, 65)
+        Me.Label2.Location = New System.Drawing.Point(37, 90)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(161, 21)
         Me.Label2.TabIndex = 37

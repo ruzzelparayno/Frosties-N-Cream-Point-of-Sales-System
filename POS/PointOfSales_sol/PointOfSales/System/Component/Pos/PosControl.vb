@@ -27,8 +27,16 @@ Public Class PosControl
             .Columns.Add("Quantity", "Qty")
             .Columns.Add("ProductName", "Product Name")
             .Columns.Add("Price", "Price (₱)")
-
         End With
+        If Guna2DataGridView1.Columns.Contains("ProductName") Then
+            Guna2DataGridView1.Columns("ProductName").Width = 80
+        End If
+        If Guna2DataGridView1.Columns.Contains("Quantity") Then
+            Guna2DataGridView1.Columns("Quantity").Width = 10
+        End If
+        If Guna2DataGridView1.Columns.Contains("Price") Then
+            Guna2DataGridView1.Columns("Price").Width = 10
+        End If
     End Sub
 
     Private Sub LoadCategories()
@@ -158,6 +166,7 @@ Public Class PosControl
                 Return
             End If
 
+
             ' Determine current quantity if product already in cart
             Dim currentQty As Integer = 1
             Dim foundRow As DataGridViewRow = Nothing
@@ -170,15 +179,18 @@ Public Class PosControl
                 End If
             Next
 
-            ' Open Edit form and pass product details safely
             Dim editForm As New Edit()
             editForm.SelectedProductName = productName
             editForm.SelectedProductPrice = productPrice
             editForm.SelectedProductImage = productImage
 
+            SiticoneOverlay1.Show = True
+            editForm.ParentPOS = Me
             editForm.ShowDialog()
             CalculateTotals()
-
+            If editForm.AllowCloseOverlay Then
+                SiticoneOverlay1.Show = False
+            End If
         Catch ex As Exception
             MessageBox.Show("Error adding product: " & ex.Message)
         End Try

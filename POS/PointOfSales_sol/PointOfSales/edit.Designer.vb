@@ -30,11 +30,13 @@ Partial Class Edit
         Me.SiticoneImageButton1 = New SiticoneNetFrameworkUI.SiticoneImageButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SiticoneButton1 = New SiticoneNetFrameworkUI.SiticoneButton()
         Me.SiticoneUpDown1 = New SiticoneNetFrameworkUI.SiticoneUpDown()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
+        Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,6 +132,23 @@ Partial Class Edit
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(319, 80)
         Me.Panel3.TabIndex = 10
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(5, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(90, 74)
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        '
+        'Label4
+        '
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(129, 35)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(128, 24)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Price:"
         '
         'Label1
         '
@@ -260,22 +279,15 @@ Partial Class Edit
         Me.SiticoneUpDown1.UseGradient = False
         Me.SiticoneUpDown1.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
-        'Label4
+        'Guna2AnimateWindow1
         '
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(129, 35)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(128, 24)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Price:"
+        Me.Guna2AnimateWindow1.TargetForm = Me
         '
-        'PictureBox1
+        'Guna2DragControl1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(5, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(90, 74)
-        Me.PictureBox1.TabIndex = 13
-        Me.PictureBox1.TabStop = False
+        Me.Guna2DragControl1.DockIndicatorTransparencyValue = 0.6R
+        Me.Guna2DragControl1.TargetControl = Me
+        Me.Guna2DragControl1.UseTransparentDrag = True
         '
         'Edit
         '
@@ -312,4 +324,6 @@ Partial Class Edit
     Friend WithEvents SiticoneUpDown1 As SiticoneNetFrameworkUI.SiticoneUpDown
     Friend WithEvents Label4 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
+    Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
 End Class
