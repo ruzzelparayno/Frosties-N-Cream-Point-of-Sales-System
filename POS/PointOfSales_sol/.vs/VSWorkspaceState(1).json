@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PointOfSales",
+    "\\PointOfSales\\System",
+    "\\PointOfSales\\System\\Cashier",
+    "\\PointOfSales\\System\\Component"
+  ],
+  "SelectedNode": "\\PointOfSales\\System\\Cashier\\CashierDashboard.Designer.vb",
+  "PreviewInSolutionExplorer": false
+}

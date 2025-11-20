@@ -1,10 +1,9 @@
-﻿Imports SiticoneNetFrameworkUI
+﻿Public Class DashboardContent
+    Private Sub DashboardContent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-Public Class DashboardContent
+    End Sub
 
-
-    Private Sub DashboardContent_Resize(sender As Object, e As EventArgs)
-
+    Private Sub DashboardContent_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         If Me.Parent IsNot Nothing AndAlso Me.Parent.FindForm().WindowState = FormWindowState.Maximized Then
             ' When maximized, set Top padding = 50 
             Panel2.Size = New Size(Panel2.Height, 175)
@@ -33,10 +32,7 @@ Public Class DashboardContent
             Label7.Font = New Font(Label7.Font.FontFamily, 12, Label7.Font.Style)
             Label6.Font = New Font(Label6.Font.FontFamily, 40, Label6.Font.Style)
 
-
         End If
 
     End Sub
-
-
 End Class
