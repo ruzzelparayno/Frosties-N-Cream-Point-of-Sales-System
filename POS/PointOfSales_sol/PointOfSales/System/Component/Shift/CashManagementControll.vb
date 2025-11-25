@@ -11,6 +11,8 @@
         End Get
     End Property
 
+
+
     ' Call this when opening a shift
     Public Sub StartShift(shiftID As Integer)
         _currentShiftID = shiftID
@@ -41,7 +43,7 @@
 
         ' ✅ Show welcome message
         MessageBox.Show("Welcome to Shift!", "Shift Started", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
+        SiticoneTextBox1.Text = ""
         ' ✅ Get the ShiftContent instance from Dashboard
         Dim shiftForm As ShiftContent = Dashboard.shiftInstance
 

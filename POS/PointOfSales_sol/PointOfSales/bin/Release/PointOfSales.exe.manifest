@@ -402,14 +402,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PointOfSales.exe" size="1200600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PointOfSales.exe" size="1201112">
       <assemblyIdentity name="PointOfSales" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xIS8twY9QquDXvKpL1tsxvj3DISZu7hy8XeNfz+kqSs=</dsig:DigestValue>
+        <dsig:DigestValue>DOnX0m4inlWWPyadJl5mB3qb9/m4dHt0++GuOGW0xjs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -68,7 +68,10 @@ Public Class LoginPass
 
                     currentUsername = username
 
-                    MessageBox.Show("Login successful!" & vbCrLf & "Role: " & dbRole)
+                    MessageBox.Show("Login successful!" & vbCrLf & "Role: " & dbRole,
+                "Success",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information)
 
                     If dbRole = "admin" Then
                         Dashboard.Show()
@@ -77,7 +80,8 @@ Public Class LoginPass
                         CashierDashboard.Show()
                         Login.Hide()
                     End If
-
+                    SiticoneTextBox1.Text = ""
+                    SiticoneTextBox2.Text = ""
                 Else
                     MessageBox.Show("Incorrect password.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 End If

@@ -42,6 +42,10 @@ Partial Class EditUser
         Me.txtAdminPass = New SiticoneNetFrameworkUI.SiticoneTextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtConfirmPass = New SiticoneNetFrameworkUI.SiticoneTextBox()
+        Me.cb_sq = New System.Windows.Forms.ComboBox()
+        Me.satextbox = New SiticoneNetFrameworkUI.SiticoneTextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel6.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
@@ -393,6 +397,10 @@ Partial Class EditUser
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.cb_sq)
+        Me.Panel4.Controls.Add(Me.satextbox)
+        Me.Panel4.Controls.Add(Me.Label7)
+        Me.Panel4.Controls.Add(Me.Label8)
         Me.Panel4.Controls.Add(Me.Label6)
         Me.Panel4.Controls.Add(Me.txtAdminPass)
         Me.Panel4.Controls.Add(Me.Label5)
@@ -548,6 +556,100 @@ Partial Class EditUser
         Me.txtConfirmPass.ValidationErrorMessage = "Invalid input."
         Me.txtConfirmPass.ValidationFunction = Nothing
         '
+        'cb_sq
+        '
+        Me.cb_sq.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cb_sq.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cb_sq.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.cb_sq.FormattingEnabled = True
+        Me.cb_sq.Items.AddRange(New Object() {"What is your mother’s maiden name?", "What was the name of your first pet?", "What city were you born in?", "What was the name of your elementary school?", "What is your favorite food?", "What was the model of your first phone?", "Who is your childhood best friend?", "What is your father’s middle name?", "What was the name of your first teacher?", "What is the title of your favorite movie?"})
+        Me.cb_sq.Location = New System.Drawing.Point(340, 200)
+        Me.cb_sq.Name = "cb_sq"
+        Me.cb_sq.Size = New System.Drawing.Size(180, 29)
+        Me.cb_sq.TabIndex = 39
+        '
+        'satextbox
+        '
+        Me.satextbox.AccessibleDescription = "A customizable text input field."
+        Me.satextbox.AccessibleName = "Text Box"
+        Me.satextbox.AccessibleRole = System.Windows.Forms.AccessibleRole.Text
+        Me.satextbox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.satextbox.BackColor = System.Drawing.Color.Transparent
+        Me.satextbox.BlinkCount = 3
+        Me.satextbox.BlinkShadow = False
+        Me.satextbox.BorderColor1 = System.Drawing.Color.LightSlateGray
+        Me.satextbox.BorderColor2 = System.Drawing.Color.LightSlateGray
+        Me.satextbox.BorderFocusColor1 = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.satextbox.BorderFocusColor2 = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.satextbox.CanShake = True
+        Me.satextbox.ContinuousBlink = False
+        Me.satextbox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.satextbox.CursorBlinkRate = 500
+        Me.satextbox.CursorColor = System.Drawing.Color.Black
+        Me.satextbox.CursorHeight = 26
+        Me.satextbox.CursorOffset = 0
+        Me.satextbox.CursorStyle = SiticoneNetFrameworkUI.Helpers.DrawingStyle.SiticoneDrawingStyle.Solid
+        Me.satextbox.CursorWidth = 1
+        Me.satextbox.DisabledBackColor = System.Drawing.Color.WhiteSmoke
+        Me.satextbox.DisabledBorderColor = System.Drawing.Color.LightGray
+        Me.satextbox.DisabledTextColor = System.Drawing.Color.Gray
+        Me.satextbox.EnableDropShadow = False
+        Me.satextbox.FillColor1 = System.Drawing.Color.White
+        Me.satextbox.FillColor2 = System.Drawing.Color.White
+        Me.satextbox.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.satextbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.satextbox.HoverBorderColor1 = System.Drawing.Color.Gray
+        Me.satextbox.HoverBorderColor2 = System.Drawing.Color.Gray
+        Me.satextbox.IsEnabled = True
+        Me.satextbox.Location = New System.Drawing.Point(338, 293)
+        Me.satextbox.Name = "satextbox"
+        Me.satextbox.PlaceholderColor = System.Drawing.Color.Gray
+        Me.satextbox.PlaceholderText = "Enter text here..."
+        Me.satextbox.ReadOnlyBorderColor1 = System.Drawing.Color.LightGray
+        Me.satextbox.ReadOnlyBorderColor2 = System.Drawing.Color.LightGray
+        Me.satextbox.ReadOnlyFillColor1 = System.Drawing.Color.WhiteSmoke
+        Me.satextbox.ReadOnlyFillColor2 = System.Drawing.Color.WhiteSmoke
+        Me.satextbox.ReadOnlyPlaceholderColor = System.Drawing.Color.DarkGray
+        Me.satextbox.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.satextbox.ShadowAnimationDuration = 1
+        Me.satextbox.ShadowBlur = 10
+        Me.satextbox.ShadowColor = System.Drawing.Color.FromArgb(CType(CType(15, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.satextbox.Size = New System.Drawing.Size(182, 33)
+        Me.satextbox.SolidBorderColor = System.Drawing.Color.LightSlateGray
+        Me.satextbox.SolidBorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.satextbox.SolidBorderHoverColor = System.Drawing.Color.Gray
+        Me.satextbox.SolidFillColor = System.Drawing.Color.White
+        Me.satextbox.TabIndex = 37
+        Me.satextbox.TextPadding = New System.Windows.Forms.Padding(16, 0, 6, 0)
+        Me.satextbox.ValidationErrorMessage = "Invalid input."
+        Me.satextbox.ValidationFunction = Nothing
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(343, 176)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(139, 21)
+        Me.Label7.TabIndex = 36
+        Me.Label7.Text = "Security Question"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(340, 269)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(127, 21)
+        Me.Label8.TabIndex = 38
+        Me.Label8.Text = "Security Answer"
+        '
         'EditUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -585,4 +687,8 @@ Partial Class EditUser
     Friend WithEvents txtAdminPass As SiticoneTextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents txtConfirmPass As SiticoneTextBox
+    Friend WithEvents cb_sq As ComboBox
+    Friend WithEvents satextbox As SiticoneTextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
 End Class

@@ -52,6 +52,8 @@ Partial Class DashboardContent
         Dim ChartFont15 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim Tick6 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
         Dim ChartFont16 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
+        Dim DoughnutChartTheme1 As SiticoneNetFrameworkUI.SiticoneDoughnutChart.DoughnutChartTheme = New SiticoneNetFrameworkUI.SiticoneDoughnutChart.DoughnutChartTheme()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardContent))
         Dim ChartFont17 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim ChartFont18 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim ChartFont19 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
@@ -67,8 +69,6 @@ Partial Class DashboardContent
         Dim ChartFont23 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
         Dim Tick9 As Guna.Charts.WinForms.Tick = New Guna.Charts.WinForms.Tick()
         Dim ChartFont24 As Guna.Charts.WinForms.ChartFont = New Guna.Charts.WinForms.ChartFont()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardContent))
-        Dim DoughnutChartTheme1 As SiticoneNetFrameworkUI.SiticoneDoughnutChart.DoughnutChartTheme = New SiticoneNetFrameworkUI.SiticoneDoughnutChart.DoughnutChartTheme()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.SiticonePanel4 = New SiticoneNetFrameworkUI.SiticonePanel()
@@ -92,17 +92,17 @@ Partial Class DashboardContent
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.SiticonePanel6 = New SiticoneNetFrameworkUI.SiticonePanel()
+        Me.SiticoneDoughnutChart1 = New SiticoneNetFrameworkUI.SiticoneDoughnutChart()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.SiticonePanel5 = New SiticoneNetFrameworkUI.SiticonePanel()
         Me.GunaChart1 = New Guna.Charts.WinForms.GunaChart()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.SiticonePanel3 = New SiticoneNetFrameworkUI.SiticonePanel()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.SiticoneShimmerLabel1 = New SiticoneNetFrameworkUI.SiticoneShimmerLabel()
+        Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SiticoneDoughnutChart1 = New SiticoneNetFrameworkUI.SiticoneDoughnutChart()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Me.SiticoneShimmerLabel1 = New SiticoneNetFrameworkUI.SiticoneShimmerLabel()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SiticonePanel4.SuspendLayout()
@@ -624,6 +624,28 @@ Partial Class DashboardContent
         Me.SiticonePanel6.UsePatternTexture = False
         Me.SiticonePanel6.UseRadialGradient = False
         '
+        'SiticoneDoughnutChart1
+        '
+        Me.SiticoneDoughnutChart1.BackColor = System.Drawing.SystemColors.Control
+        Me.SiticoneDoughnutChart1.CenterSubText = "₱2,901.50"
+        Me.SiticoneDoughnutChart1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SiticoneDoughnutChart1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.SiticoneDoughnutChart1.LabelMember = "Category"
+        Me.SiticoneDoughnutChart1.Location = New System.Drawing.Point(10, 60)
+        Me.SiticoneDoughnutChart1.Name = "SiticoneDoughnutChart1"
+        Me.SiticoneDoughnutChart1.ShowPercentageOnSlice = True
+        Me.SiticoneDoughnutChart1.Size = New System.Drawing.Size(286, 261)
+        Me.SiticoneDoughnutChart1.TabIndex = 11
+        DoughnutChartTheme1.BackColor = System.Drawing.SystemColors.Control
+        DoughnutChartTheme1.BorderColor = System.Drawing.Color.White
+        DoughnutChartTheme1.CenterSubTextColor = System.Drawing.Color.Gray
+        DoughnutChartTheme1.CenterTextColor = System.Drawing.Color.Black
+        DoughnutChartTheme1.Name = "Monochromatic"
+        DoughnutChartTheme1.SliceColors = CType(resources.GetObject("DoughnutChartTheme1.SliceColors"), System.Collections.Generic.List(Of System.Drawing.Color))
+        DoughnutChartTheme1.TextColor = System.Drawing.Color.Black
+        Me.SiticoneDoughnutChart1.Theme = DoughnutChartTheme1
+        Me.SiticoneDoughnutChart1.ValueMember = "Amount"
+        '
         'Label8
         '
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Top
@@ -768,6 +790,50 @@ Partial Class DashboardContent
         Me.SiticonePanel3.UsePatternTexture = False
         Me.SiticonePanel3.UseRadialGradient = False
         '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.Controls.Add(Me.SiticoneShimmerLabel1)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2CirclePictureBox1)
+        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 60)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.Size = New System.Drawing.Size(149, 271)
+        Me.Guna2Panel1.TabIndex = 0
+        Me.Guna2Panel1.Visible = False
+        '
+        'SiticoneShimmerLabel1
+        '
+        Me.SiticoneShimmerLabel1.AutoReverse = False
+        Me.SiticoneShimmerLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.SiticoneShimmerLabel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SiticoneShimmerLabel1.Direction = SiticoneNetFrameworkUI.ShimmerDirection.LeftToRight
+        Me.SiticoneShimmerLabel1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SiticoneShimmerLabel1.IsAnimating = True
+        Me.SiticoneShimmerLabel1.IsPaused = False
+        Me.SiticoneShimmerLabel1.Location = New System.Drawing.Point(8, 133)
+        Me.SiticoneShimmerLabel1.Name = "SiticoneShimmerLabel1"
+        Me.SiticoneShimmerLabel1.PauseDuration = 0
+        Me.SiticoneShimmerLabel1.ShimmerColor = System.Drawing.Color.Cyan
+        Me.SiticoneShimmerLabel1.ShimmerOpacity = 1.0!
+        Me.SiticoneShimmerLabel1.ShimmerSpeed = 50
+        Me.SiticoneShimmerLabel1.ShimmerWidth = 0.2!
+        Me.SiticoneShimmerLabel1.Size = New System.Drawing.Size(132, 32)
+        Me.SiticoneShimmerLabel1.TabIndex = 1
+        Me.SiticoneShimmerLabel1.Text = "All Stocks Are Available"
+        Me.SiticoneShimmerLabel1.ToolTipText = ""
+        '
+        'Guna2CirclePictureBox1
+        '
+        Me.Guna2CirclePictureBox1.Image = Global.PointOfSales.My.Resources.Resources.POS_terminal
+        Me.Guna2CirclePictureBox1.ImageRotate = 0!
+        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(35, 55)
+        Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
+        Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(71, 72)
+        Me.Guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2CirclePictureBox1.TabIndex = 0
+        Me.Guna2CirclePictureBox1.TabStop = False
+        '
         'FlowLayoutPanel2
         '
         Me.FlowLayoutPanel2.AutoScroll = True
@@ -791,72 +857,6 @@ Partial Class DashboardContent
         Me.Label1.Size = New System.Drawing.Size(149, 60)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Low Stock Product"
-        '
-        'SiticoneDoughnutChart1
-        '
-        Me.SiticoneDoughnutChart1.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.SiticoneDoughnutChart1.CenterSubText = "₱2,901.50"
-        Me.SiticoneDoughnutChart1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SiticoneDoughnutChart1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.SiticoneDoughnutChart1.LabelMember = "Category"
-        Me.SiticoneDoughnutChart1.Location = New System.Drawing.Point(10, 60)
-        Me.SiticoneDoughnutChart1.Name = "SiticoneDoughnutChart1"
-        Me.SiticoneDoughnutChart1.ShowPercentageOnSlice = True
-        Me.SiticoneDoughnutChart1.Size = New System.Drawing.Size(286, 261)
-        Me.SiticoneDoughnutChart1.TabIndex = 11
-        DoughnutChartTheme1.BackColor = System.Drawing.SystemColors.Control
-        DoughnutChartTheme1.BorderColor = System.Drawing.Color.White
-        DoughnutChartTheme1.CenterSubTextColor = System.Drawing.Color.Gray
-        DoughnutChartTheme1.CenterTextColor = System.Drawing.Color.Black
-        DoughnutChartTheme1.Name = "Monochromatic"
-        DoughnutChartTheme1.SliceColors = CType(resources.GetObject("DoughnutChartTheme1.SliceColors"), System.Collections.Generic.List(Of System.Drawing.Color))
-        DoughnutChartTheme1.TextColor = System.Drawing.Color.Black
-        Me.SiticoneDoughnutChart1.Theme = DoughnutChartTheme1
-        Me.SiticoneDoughnutChart1.ValueMember = "Amount"
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.Controls.Add(Me.SiticoneShimmerLabel1)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2CirclePictureBox1)
-        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 60)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(149, 271)
-        Me.Guna2Panel1.TabIndex = 0
-        Me.Guna2Panel1.Visible = False
-        '
-        'Guna2CirclePictureBox1
-        '
-        Me.Guna2CirclePictureBox1.Image = Global.PointOfSales.My.Resources.Resources.POS_terminal
-        Me.Guna2CirclePictureBox1.ImageRotate = 0!
-        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(35, 55)
-        Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
-        Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(71, 72)
-        Me.Guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Guna2CirclePictureBox1.TabIndex = 0
-        Me.Guna2CirclePictureBox1.TabStop = False
-        '
-        'SiticoneShimmerLabel1
-        '
-        Me.SiticoneShimmerLabel1.AutoReverse = False
-        Me.SiticoneShimmerLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.SiticoneShimmerLabel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.SiticoneShimmerLabel1.Direction = SiticoneNetFrameworkUI.ShimmerDirection.LeftToRight
-        Me.SiticoneShimmerLabel1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SiticoneShimmerLabel1.IsAnimating = True
-        Me.SiticoneShimmerLabel1.IsPaused = False
-        Me.SiticoneShimmerLabel1.Location = New System.Drawing.Point(8, 133)
-        Me.SiticoneShimmerLabel1.Name = "SiticoneShimmerLabel1"
-        Me.SiticoneShimmerLabel1.PauseDuration = 0
-        Me.SiticoneShimmerLabel1.ShimmerColor = System.Drawing.Color.Cyan
-        Me.SiticoneShimmerLabel1.ShimmerOpacity = 1.0!
-        Me.SiticoneShimmerLabel1.ShimmerSpeed = 50
-        Me.SiticoneShimmerLabel1.ShimmerWidth = 0.2!
-        Me.SiticoneShimmerLabel1.Size = New System.Drawing.Size(132, 32)
-        Me.SiticoneShimmerLabel1.TabIndex = 1
-        Me.SiticoneShimmerLabel1.Text = "All Stocks Are Available"
-        Me.SiticoneShimmerLabel1.ToolTipText = ""
         '
         'DashboardContent
         '

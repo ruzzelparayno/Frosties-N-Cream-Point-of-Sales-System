@@ -1,8 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Security.Cryptography
 Imports System.Text
+
 Public Class EditUser
     Public CurrentUserID As Integer = -1
+
     Private Sub EditUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtAdminPass.UseSystemPasswordChar = True
         txtConfirmPass.UseSystemPasswordChar = True
@@ -10,7 +12,12 @@ Public Class EditUser
         txtAdminPass.PasswordChar = "•"c
         txtConfirmPass.PasswordChar = "•"c
         txtPassword.PasswordChar = "•"c
+        satextbox.UseSystemPasswordChar = True
+        satextbox.PasswordChar = "•"c
+        cbRole.DropDownStyle = ComboBoxStyle.DropDownList
+        cb_sq.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
+
     Private Function HashText(input As String) As String
         Using sha As SHA256 = SHA256.Create()
             Dim bytes = Encoding.UTF8.GetBytes(input)
@@ -37,6 +44,11 @@ Public Class EditUser
             Exit Sub
         End If
 
+        If cb_sq.Text = "" Or satextbox.Text = "" Then
+            MessageBox.Show("Please fill the security question and answer.")
+            Exit Sub
+        End If
+
         ' VERIFY ADMIN PASSWORD
         Dim adminCorrect As Boolean = False
 
@@ -60,32 +72,40 @@ Public Class EditUser
             Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
                 conn.Open()
 
+                ' 🔥 Updated to use Secret_Question and Secret_Answer
                 Dim query As String =
-                    "UPDATE users SET username=@u, email=@e, role=@r, password=@p WHERE userid=@id"
+                    "UPDATE users SET username=@u, email=@e, role=@r, password=@p, " &
+                    "Secret_Question=@sq, Secret_Answer=@sa WHERE userid=@id"
 
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@u", txtUsername.Text)
                     cmd.Parameters.AddWithValue("@e", txtEmail.Text)
                     cmd.Parameters.AddWithValue("@r", cbRole.Text)
                     cmd.Parameters.AddWithValue("@p", HashText(txtPassword.Text))
+                    cmd.Parameters.AddWithValue("@sq", cb_sq.Text)
+                    cmd.Parameters.AddWithValue("@sa", HashText(satextbox.Text))  ' 🔥 hashed answer
                     cmd.Parameters.AddWithValue("@id", CurrentUserID)
 
                     cmd.ExecuteNonQuery()
                 End Using
             End Using
 
-            ' SHOW OVERLAY FROM USERCONTENT
-
-
-            ' REFRESH MAIN USER LIST
+            ' REFRESH USER LIST + OVERLAY
             UserContent.Instance.LoadUsers()
 
             Me.Close()
 
-            MessageBox.Show("User updated successfully!")
+            MessageBox.Show(
+                "User updated successfully!",
+                "Success",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            )
+
             UserContent.Instance.SiticoneOverlay1.Show = True
             Await Task.Delay(1500)
             UserContent.Instance.SiticoneOverlay1.Show = False
+
         Catch ex As Exception
             MessageBox.Show("Error updating user: " & ex.Message)
         End Try
