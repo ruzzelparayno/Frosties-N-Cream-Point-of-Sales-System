@@ -1,0 +1,281 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\system\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\system\\component\\shift\\cashmanagementcontroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\cashmanagementcontroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\system\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\dashboard.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|d:\\latest\\pos version 6.0\\pos version 6.0\\pointofsales_sol\\pointofsales\\system\\component\\transaction\\refundform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\transaction\\refundform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\system\\component\\shift\\cashmanagementcontroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\shift\\cashmanagementcontroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\system\\component\\transaction\\refundform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\transaction\\refundform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\charge.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\charge.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\edit.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\edit.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\edit.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\edit.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\charge.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\charge.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\login\\loginpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\login\\loginpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\login\\loginpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\login\\loginpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\login\\fgtpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\login\\fgtpass.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\system\\component\\transaction\\transactioncontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\transaction\\transactioncontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\system\\component\\transaction\\transactioncontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\transaction\\transactioncontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7DFCA3E0-E981-4768-B049-6CB17A1FFD5C}|PointOfSales\\PointOfSales.vbproj|solutionrelative:pointofsales\\system\\component\\dashboardcontent.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.vb [Design]",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Dashboard.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Dashboard.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Dashboard.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\System\\Dashboard.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T00:56:13.848Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CashManagementControll.vb [Design]",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb [Design]",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-24T17:59:34.606Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboard.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Dashboard.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Dashboard.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Dashboard.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Dashboard.vb",
+              "ViewState": "AgIAACIAAAAAAAAAAAAnwDYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T04:12:29.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RefundForm.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\RefundForm.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Transaction\\RefundForm.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\RefundForm.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Transaction\\RefundForm.vb",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwv10AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-24T17:36:52.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "edit.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\edit.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\edit.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\edit.vb",
+              "RelativeToolTip": "PointOfSales\\edit.vb",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwGQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-24T17:34:12.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "edit.vb [Design]",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\edit.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\edit.vb",
+              "ToolTip": "C:\\Users\\cyder\\Downloads\\POS version 5.9-20251122T133245Z-1-001\\POS version 5.9\\PointOfSales_sol\\PointOfSales\\edit.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-24T17:33:43.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "charge.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\charge.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\charge.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\charge.vb",
+              "RelativeToolTip": "PointOfSales\\charge.vb",
+              "ViewState": "AgIAAGACAAAAAAAAAAAgwHYCAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-23T06:09:47.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CashManagementControll.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Shift\\CashManagementControll.vb",
+              "ViewState": "AgIAABUBAAAAAAAAAAAcwEQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-24T18:10:14.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "charge.vb [Design]",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\charge.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\charge.vb",
+              "ToolTip": "C:\\Users\\cyder\\Downloads\\POS version 5.9-20251122T133245Z-1-001\\POS version 5.9\\PointOfSales_sol\\PointOfSales\\charge.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-23T06:09:24.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginPass.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\Login\\LoginPass.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\Login\\LoginPass.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\Login\\LoginPass.vb",
+              "RelativeToolTip": "PointOfSales\\Login\\LoginPass.vb",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAwwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T04:27:06.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginPass.vb [Design]",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\Login\\LoginPass.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\Login\\LoginPass.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS v0.7.1\\PointOfSales_sol\\PointOfSales\\Login\\LoginPass.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T04:27:02.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "fgtPass.vb [Design]",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\Login\\fgtPass.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\Login\\fgtPass.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS v0.7.1\\PointOfSales_sol\\PointOfSales\\Login\\fgtPass.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T04:25:28.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RefundForm.vb [Design]",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\RefundForm.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Transaction\\RefundForm.vb",
+              "ToolTip": "C:\\Users\\cyder\\Downloads\\POS version 5.9-20251122T133245Z-1-001\\POS version 5.9\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\RefundForm.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T04:23:47.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TransactionContent.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "ViewState": "AgIAALkAAAAAAAAAAAAqwBYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T04:16:58.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TransactionContent.vb [Design]",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS v0.7.1\\PointOfSales_sol\\PointOfSales\\System\\Component\\Transaction\\TransactionContent.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T04:16:54.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DashboardContent.vb",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\DashboardContent.vb",
+              "ToolTip": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
+              "RelativeToolTip": "PointOfSales\\System\\Component\\DashboardContent.vb",
+              "ViewState": "AgIAAKsBAAAAAAAAAAAkwM4BAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T00:57:44.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DashboardContent.vb [Design]",
+              "DocumentMoniker": "D:\\latest\\POS version 6.0\\POS version 6.0\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb",
+              "RelativeDocumentMoniker": "PointOfSales\\System\\Component\\DashboardContent.vb",
+              "ToolTip": "C:\\Users\\User\\Downloads\\POS version control\\POS v0.7.1\\PointOfSales_sol\\PointOfSales\\System\\Component\\DashboardContent.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T00:56:23.391Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

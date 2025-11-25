@@ -1,0 +1,1229 @@
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+D:\Project\POS version 5-20251107T134343Z-1-001\POS version 5\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+D:\latest\POS version 5.1\POS version 5.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryForm.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryForm.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Guna.UI2.dll
+C:\Users\User\Downloads\POS version 5.2\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Guna.UI2.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryForm.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+D:\latest\POS version 5.3\POS version 5.3\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Guna2Category.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Guna.UI2.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryForm.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Guna2Category.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SplashScreen.resources
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+C:\Users\User\Downloads\POS version 5.4\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Guna.UI2.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryForm.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Guna2Category.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SplashScreen.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit_ProductForm.resources
+D:\latest\POS version 5.5\POS version 5.5\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SelectedProduct.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Guna.UI2.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryForm.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit_ProductForm.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Guna2Category.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SelectedProduct.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SplashScreen.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.EditUser.resources
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.barcodes.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.bouncy-castle-connector.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.commons.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.forms.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.io.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.kernel.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.layout.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfa.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfua.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.sign.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.styledxmlparser.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.svg.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Options.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Security.AccessControl.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Cryptography.Xml.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.barcodes.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.bouncy-castle-connector.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.commons.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.forms.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.io.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.kernel.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.layout.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfa.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfua.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.sign.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.styledxmlparser.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\itext.svg.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Options.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Primitives.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Security.AccessControl.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Cryptography.Xml.xml
+C:\Users\User\Downloads\POS version 5.7\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Principal.Windows.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Guna.UI2.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.barcodes.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.bouncy-castle-connector.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.commons.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.forms.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.io.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.kernel.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.layout.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfa.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfua.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.sign.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.styledxmlparser.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.svg.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Options.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Security.AccessControl.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Cryptography.Xml.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.barcodes.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.bouncy-castle-connector.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.commons.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.forms.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.io.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.kernel.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.layout.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfa.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfua.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.sign.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.styledxmlparser.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\itext.svg.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Options.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Primitives.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Security.AccessControl.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Cryptography.Xml.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Principal.Windows.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryForm.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit_ProductForm.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Guna2Category.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SelectedProduct.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.EditUser.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SplashScreen.resources
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+C:\Users\User\Downloads\POS version control\POS v0.7.1\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Guna.UI2.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.barcodes.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.bouncy-castle-connector.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.commons.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.forms.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.io.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.kernel.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.layout.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfa.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfua.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.sign.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.styledxmlparser.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.svg.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Options.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Primitives.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Security.AccessControl.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Cryptography.Xml.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.barcodes.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.bouncy-castle-connector.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.commons.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.forms.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.io.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.kernel.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.layout.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfa.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfua.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.sign.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.styledxmlparser.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\itext.svg.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Options.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Primitives.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Security.AccessControl.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Cryptography.Xml.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Principal.Windows.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryForm.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit_ProductForm.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Guna2Category.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SelectedProduct.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.EditUser.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SplashScreen.resources
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+C:\Users\cyder\Downloads\POS version 5.9-20251122T133245Z-1-001\POS version 5.9\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.AssemblyReference.cache
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.config
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.pdb
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.config
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe.manifest
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.application
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.exe
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.pdb
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\PointOfSales.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Guna.UI2.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.barcodes.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.bouncy-castle-connector.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.commons.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.forms.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.io.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.kernel.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.layout.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfa.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfua.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.sign.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.styledxmlparser.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.svg.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.Abstractions.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Options.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Primitives.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\QRCoder.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\SiticoneNetFrameworkUI.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Security.AccessControl.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Cryptography.Xml.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Principal.Windows.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\ZstdSharp.dll
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\BouncyCastle.Cryptography.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.pdb
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Google.Protobuf.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Guna.Charts.WinForms.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.barcodes.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.bouncy-castle-connector.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.commons.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.forms.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.io.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.kernel.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.layout.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfa.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.pdfua.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.sign.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.styledxmlparser.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\itext.svg.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\K4os.Compression.LZ4.Streams.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\K4os.Hash.xxHash.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Logging.Abstractions.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Options.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Microsoft.Extensions.Primitives.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\MySql.Data.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\Newtonsoft.Json.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Buffers.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Collections.Immutable.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Configuration.ConfigurationManager.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Diagnostics.DiagnosticSource.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.IO.Pipelines.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Memory.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Numerics.Vectors.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Security.AccessControl.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Cryptography.Xml.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Security.Principal.Windows.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Encodings.Web.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Text.Json.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.Threading.Tasks.Extensions.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\bin\Release\System.ValueTuple.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Login.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.fgtPass.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LoginPass.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Resources.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashierDashboard.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.AccountContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.DashboardContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CategoryForm.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Edit_ProductForm.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Guna2Category.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Inventory.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ProductContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.LogoutContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Cash.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Gcash.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Charge_Success.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.PosControl.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SelectedProduct.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SalesContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.CashManagementControll.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ClosingShiftContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.OpenShift.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.ShiftContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.RefundForm.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TransactionContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.EditUser.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.UserContent.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.Dashboard.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.SplashScreen.resources
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.GenerateResource.cache
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.vbproj.CoreCompileInputs.cache
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.TrustInfo.xml
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.exe.manifest
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfSales.application
+D:\latest\POS version 6.0\POS version 6.0\PointOfSales_sol\PointOfSales\obj\Release\PointOfS.CE2E3E08.Up2Date

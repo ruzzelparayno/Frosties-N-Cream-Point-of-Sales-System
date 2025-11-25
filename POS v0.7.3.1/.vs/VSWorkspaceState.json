@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PointOfSales_sol",
+    "\\PointOfSales_sol\\PointOfSales",
+    "\\PointOfSales_sol\\PointOfSales\\System",
+    "\\PointOfSales_sol\\PointOfSales\\System\\Component",
+    "\\PointOfSales_sol\\PointOfSales\\System\\Component\\Pos"
+  ],
+  "SelectedNode": "\\PointOfSales_sol\\PointOfSales\\System\\Component\\Pos\\PosControl.vb",
+  "PreviewInSolutionExplorer": false
+}
