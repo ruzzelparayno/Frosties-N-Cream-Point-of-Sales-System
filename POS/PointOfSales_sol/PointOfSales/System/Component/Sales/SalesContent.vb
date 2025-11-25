@@ -75,7 +75,7 @@ Public Class SalesContent
 
             GunaChart1.Datasets.Clear()
             Dim series As New Guna.Charts.WinForms.GunaBarDataset()
-            series.Label = "Sales"
+            series.Label = "Sales Report"
 
             For i As Integer = 1 To 12
                 Dim monthName As String = CultureInfo.CurrentCulture.DateTimeFormat.GetAbbreviatedMonthName(i)

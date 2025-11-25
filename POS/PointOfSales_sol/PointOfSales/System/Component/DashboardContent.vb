@@ -20,6 +20,7 @@ Public Class DashboardContent
         LoadCategoryDoughnutChart()
         LoadRevenueByCategory_LineChart()
         LoadMonthlyTransactions_GunaChart()
+        LoadTotalRevenue()
     End Sub
 
     ' ✅ Auto-refresh when control becomes visible (e.g., switching panels)
@@ -177,7 +178,6 @@ Public Class DashboardContent
                 Guna2Panel1.Visible = False
             Else
                 ' No items found -> Show the "Empty/All Good" Panel
-                FlowLayoutPanel1.Visible = False
                 Guna2Panel1.Visible = True
             End If
 
@@ -347,6 +347,7 @@ Public Class DashboardContent
             LoadCategoryDoughnutChart()
             LoadRevenueByCategory_LineChart()
             LoadMonthlyTransactions_GunaChart()
+            LoadTotalRevenue()
         Catch ex As Exception
             MessageBox.Show("Error refreshing dashboard: " & ex.Message)
         End Try
@@ -576,5 +577,39 @@ Public Class DashboardContent
             MessageBox.Show("Error loading monthly transactions: " & ex.Message)
         End Try
     End Sub
+    Private Sub LoadTotalRevenue()
+        Try
+            Using conn As New MySqlConnection(connectionString)
+                conn.Open()
+
+                Dim query As String = "
+                SELECT IFNULL(SUM(TotalAmount), 0)
+                FROM sales;
+            "
+
+                Using cmd As New MySqlCommand(query, conn)
+                    Dim totalRev As Decimal = Convert.ToDecimal(cmd.ExecuteScalar())
+                    Label11.Text = "₱" & totalRev.ToString("N2")
+
+                    ' 🔹 Adjust font size based on number of digits
+                    Dim txt As String = Label11.Text.Replace("₱", "").Replace(",", "").Split("."c)(0)
+                    Dim digitCount As Integer = txt.Length
+
+                    If digitCount >= 9 Then
+                        Label11.Font = New Font(Label11.Font.FontFamily, 20, FontStyle.Bold)
+                    ElseIf digitCount >= 8 Then
+                        Label11.Font = New Font(Label11.Font.FontFamily, 24, FontStyle.Bold)
+                    Else
+                        Label11.Font = New Font(Label11.Font.FontFamily, 28, FontStyle.Bold)
+                    End If
+
+                End Using
+            End Using
+
+        Catch ex As Exception
+            MessageBox.Show("Error loading total revenue: " & ex.Message)
+        End Try
+    End Sub
+
 
 End Class

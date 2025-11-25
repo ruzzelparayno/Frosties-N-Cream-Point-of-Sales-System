@@ -11,24 +11,24 @@
         ' Clear Login textboxes
         Login.SiticoneTextBox1.Text = ""
         Login.SiticoneTextBox2.Text = ""
-
-        ' Set focus back to username field
         Login.SiticoneTextBox1.Focus()
 
-
-
-        ' Close Dashboard
-        Dashboard.Close()
-
-        ' Show message
-        MessageBox.Show("You have been logged out successfully!",
-                        "Logout",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information)
-        ' Show login form again
+        ' Show Login form
         Login.Show()
 
+        ' 🔥 IMPORTANT FIX — tell Dashboard not to show exit message
+        Dashboard.IsLoggingOut = True
+
+        ' Close Dashboard ONLY
+        Dashboard.Hide()
+
+        ' Show message AFTER logout
+        MessageBox.Show("You have been logged out successfully!",
+                    "Logout",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information)
     End Sub
+
 
 
     ' ================================

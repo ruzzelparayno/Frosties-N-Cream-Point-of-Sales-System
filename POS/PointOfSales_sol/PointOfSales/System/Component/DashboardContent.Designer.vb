@@ -78,7 +78,7 @@ Partial Class DashboardContent
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.SiticonePanel1 = New SiticoneNetFrameworkUI.SiticonePanel()
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
@@ -292,7 +292,7 @@ Partial Class DashboardContent
         Me.SiticonePanel1.BorderGradientEndColor = System.Drawing.Color.Transparent
         Me.SiticonePanel1.BorderGradientStartColor = System.Drawing.Color.Transparent
         Me.SiticonePanel1.BorderThickness = 2.0!
-        Me.SiticonePanel1.Controls.Add(Me.FlowLayoutPanel1)
+        Me.SiticonePanel1.Controls.Add(Me.Label11)
         Me.SiticonePanel1.Controls.Add(Me.Label7)
         Me.SiticonePanel1.CornerRadiusBottomLeft = 16.0!
         Me.SiticonePanel1.CornerRadiusBottomRight = 16.0!
@@ -323,14 +323,19 @@ Partial Class DashboardContent
         Me.SiticonePanel1.UsePatternTexture = False
         Me.SiticonePanel1.UseRadialGradient = False
         '
-        'FlowLayoutPanel1
+        'Label11
         '
-        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 31)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(254, 84)
-        Me.FlowLayoutPanel1.TabIndex = 11
-        Me.FlowLayoutPanel1.WrapContents = False
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 34.0!, System.Drawing.FontStyle.Bold)
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(75, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(0, 43)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Padding = New System.Windows.Forms.Padding(0, 0, 0, 10)
+        Me.Label11.Size = New System.Drawing.Size(233, 72)
+        Me.Label11.TabIndex = 12
+        Me.Label11.Text = "10,000,00"
         '
         'Label7
         '
@@ -898,7 +903,6 @@ Partial Class DashboardContent
     Friend WithEvents Label7 As Label
     Friend WithEvents SiticonePanel4 As SiticoneNetFrameworkUI.SiticonePanel
     Friend WithEvents Label2 As Label
-    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel1 As Panel
@@ -924,4 +928,5 @@ Partial Class DashboardContent
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents SiticoneShimmerLabel1 As SiticoneShimmerLabel
     Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
+    Friend WithEvents Label11 As Label
 End Class

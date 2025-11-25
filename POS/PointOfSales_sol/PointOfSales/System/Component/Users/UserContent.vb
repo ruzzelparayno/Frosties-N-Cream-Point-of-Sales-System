@@ -155,45 +155,6 @@ Public Class UserContent
         SiticoneTextBox1.Enabled = True
     End Sub
 
-    Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
-        If e.RowIndex >= 0 Then
-            Dim row = Guna2DataGridView1.Rows(e.RowIndex)
-            SiticoneTextBox5.Text = row.Cells("username").Value.ToString
-            cb_ur.Text = row.Cells("role").Value.ToString
-            cb_sq.Text = row.Cells("Secret_Question").Value.ToString
-            SiticoneTextBox1.Text = row.Cells("email").Value.ToString
-
-
-            Dim userid = row.Cells("userid").Value.ToString
-
-
-
-            Try
-
-                Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=pos")
-                    conn.Open()
-                    Dim cmd As New MySqlCommand("SELECT password FROM users WHERE userid=@userid", conn)
-                    cmd.Parameters.AddWithValue("@userid", userid)
-                    Dim dbPassword = cmd.ExecuteScalar
-
-                    If dbPassword IsNot Nothing Then
-                        SiticoneTextBox6.Text = dbPassword.ToString
-                        SiticoneTextBox3.Text = dbPassword.ToString
-                    End If
-                End Using
-
-            Catch ex As Exception
-                MessageBox.Show("Error fetching password: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End Try
-
-
-
-            SiticoneTextBox1.Enabled = False
-            SiticoneTextBox5.Enabled = False
-            SiticoneTextBox3.Enabled = False
-
-        End If
-    End Sub
 
     Private Sub Guna2DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) _
         Handles Guna2DataGridView1.CellDoubleClick
