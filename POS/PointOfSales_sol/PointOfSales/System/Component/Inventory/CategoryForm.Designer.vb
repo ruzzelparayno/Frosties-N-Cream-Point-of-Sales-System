@@ -22,6 +22,7 @@ Partial Class CategoryForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.SiticoneLabel1 = New SiticoneNetFrameworkUI.SiticoneLabel()
@@ -30,6 +31,7 @@ Partial Class CategoryForm
         Me.SiticoneLabel3 = New SiticoneNetFrameworkUI.SiticoneLabel()
         Me.SiticoneTextBox1 = New SiticoneNetFrameworkUI.SiticoneTextBox()
         Me.SiticoneLabel2 = New SiticoneNetFrameworkUI.SiticoneLabel()
+        Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -233,6 +235,12 @@ Partial Class CategoryForm
         Me.SiticoneLabel2.TabIndex = 19
         Me.SiticoneLabel2.Text = "Category Name"
         '
+        'Guna2DragControl1
+        '
+        Me.Guna2DragControl1.DockIndicatorTransparencyValue = 0.6R
+        Me.Guna2DragControl1.TargetControl = Me.Panel1
+        Me.Guna2DragControl1.UseTransparentDrag = True
+        '
         'CategoryForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -263,4 +271,5 @@ Partial Class CategoryForm
     Friend WithEvents SiticoneLabel3 As SiticoneLabel
     Friend WithEvents SiticoneTextBox1 As SiticoneTextBox
     Friend WithEvents SiticoneLabel2 As SiticoneLabel
+    Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
 End Class

@@ -35,7 +35,7 @@ Partial Class ShiftContent
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(246, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.btnCategory)
         Me.Panel1.Controls.Add(Me.SiticoneButton3)
